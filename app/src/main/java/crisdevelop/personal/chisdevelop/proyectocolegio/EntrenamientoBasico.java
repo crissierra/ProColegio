@@ -17,9 +17,6 @@ import java.util.Random;
 
 public class EntrenamientoBasico extends AppCompatActivity {
 
-
-    public class TesteOuvido extends AppCompatActivity {
-
         public static int RESULT_SAVE = 1;
         public static int RESULT_CANCEL = 2;
         private List<NotasMusicais> listMedia;
@@ -41,15 +38,14 @@ public class EntrenamientoBasico extends AppCompatActivity {
 
             listMedia = new ArrayList<>();
 
-            listMedia.add(new NotasMusicais("Nota Do", MediaPlayer.create(this, R.raw.firststring)));
-            listMedia.add(new NotasMusicais("Nota Re", MediaPlayer.create(this, R.raw.secondstring)));
-            listMedia.add(new NotasMusicais("Nota Mi", MediaPlayer.create(this, R.raw.thirdstring)));
-            listMedia.add(new NotasMusicais("Nota Fa", MediaPlayer.create(this, R.raw.fourthstring)));
-            listMedia.add(new NotasMusicais("Nota Sol", MediaPlayer.create(this, R.raw.fithstring)));
-            listMedia.add(new NotasMusicais("Nota La", MediaPlayer.create(this, R.raw.sixthstrin)));
-            listMedia.add(new NotasMusicais("Nota Si", MediaPlayer.create(this, R.raw.sixthstrin)));
+            listMedia.add(new NotasMusicais("MI Agudo", MediaPlayer.create(this, R.raw.firststring)));
+            listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.secondstring)));
+            listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.thirdstring)));
+            listMedia.add(new NotasMusicais("RE", MediaPlayer.create(this, R.raw.fourthstring)));
+            listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.fithstring)));
+            listMedia.add(new NotasMusicais("MI Grave", MediaPlayer.create(this, R.raw.sixthstrin)));
 
-            Collections.shuffle(listMedia, new Random(System.nanoTime()));
+            Collections.shuffle(listMedia,new Random(System.nanoTime()));
 
             atualSom = listMedia.get(index);
             atualSom.getAudio().start();
@@ -60,9 +56,9 @@ public class EntrenamientoBasico extends AppCompatActivity {
             boolean checked = ((CheckBox) view).isChecked();
             TextView textView = (TextView) findViewById((R.id._txtViewPontos));
 
-            if (view.getId() == R.id.botondo) {
-                if (checked && atualSom.getTitle().contains("Nota Do")) {
-                    Toast.makeText(this, "Correcto", Toast.LENGTH_SHORT).show();
+            if (view.getId() == R.id._btnRadioMiAgudo) {
+                if (checked && atualSom.getTitle().contains("Agudo")) {
+                    Toast.makeText(this, "Acertou", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
@@ -70,9 +66,9 @@ public class EntrenamientoBasico extends AppCompatActivity {
                 }
                 ((CheckBox) view).setChecked(false);
             }
-            if (view.getId() == R.id.botonre) {
+            if (view.getId() == R.id._btnRadioSi) {
                 if (checked && atualSom.getTitle().contains("SI")) {
-                    Toast.makeText(this, "Correcto", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Acertou", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
@@ -80,9 +76,9 @@ public class EntrenamientoBasico extends AppCompatActivity {
                 }
                 ((CheckBox) view).setChecked(false);
             }
-            if (view.getId() == R.id.botonmi) {
+            if (view.getId() == R.id._btnRadioSol) {
                 if (checked && atualSom.getTitle().contains("SOL")) {
-                    Toast.makeText(this, "Correcto", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Acertou", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
@@ -90,9 +86,9 @@ public class EntrenamientoBasico extends AppCompatActivity {
                 }
                 ((CheckBox) view).setChecked(false);
             }
-            if (view.getId() == R.id.botonfa) {
+            if (view.getId() == R.id._btnRadioRe) {
                 if (checked && atualSom.getTitle().contains("RE")) {
-                    Toast.makeText(this, "Correcto", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Acertou", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
@@ -100,9 +96,9 @@ public class EntrenamientoBasico extends AppCompatActivity {
                 }
                 ((CheckBox) view).setChecked(false);
             }
-            if (view.getId() == R.id.botonsol) {
+            if (view.getId() == R.id._btnRadioLa) {
                 if (checked && atualSom.getTitle().contains("LA")) {
-                    Toast.makeText(this, "Correcto", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Acertou", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
@@ -110,10 +106,9 @@ public class EntrenamientoBasico extends AppCompatActivity {
                 }
                 ((CheckBox) view).setChecked(false);
             }
-            if (view.getId() == R.id.botonla)
-            {
+            if (view.getId() == R.id._btnRadioMiGrave) {
                 if (checked && atualSom.getTitle().contains("Grave")) {
-                    Toast.makeText(this, "Correcto", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Acertou", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
@@ -121,21 +116,6 @@ public class EntrenamientoBasico extends AppCompatActivity {
                 }
                 ((CheckBox) view).setChecked(false);
             }
-
-            if (view.getId() == R.id.botonsi)
-            {
-                if (checked && atualSom.getTitle().contains("Grave")) {
-                    Toast.makeText(this, "Correcto", Toast.LENGTH_SHORT).show();
-                    setPontos(getPontos() + 1);
-                    textView.setText(getPontos() + "");
-                } else {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
-                }
-                ((CheckBox) view).setChecked(false);
-            }
-
-
-
         }
 
         public void salvarJogo(View view) {
@@ -164,4 +144,3 @@ public class EntrenamientoBasico extends AppCompatActivity {
             this.pontos = pontos;
         }
     }
-}
