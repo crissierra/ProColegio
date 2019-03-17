@@ -38,13 +38,13 @@ public class EntrenamientoBasico extends AppCompatActivity {
 
             listMedia = new ArrayList<>();
 
-            listMedia.add(new NotasMusicais("MI Agudo", MediaPlayer.create(this, R.raw.firststring)));
-            listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.secondstring)));
-            listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.thirdstring)));
-            listMedia.add(new NotasMusicais("RE", MediaPlayer.create(this, R.raw.fourthstring)));
-            listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.fithstring)));
-            listMedia.add(new NotasMusicais("MI Grave", MediaPlayer.create(this, R.raw.sixthstrin)));
-
+            listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.firststring)));
+            listMedia.add(new NotasMusicais("RE", MediaPlayer.create(this, R.raw.secondstring)));
+            listMedia.add(new NotasMusicais("MI", MediaPlayer.create(this, R.raw.thirdstring)));
+            listMedia.add(new NotasMusicais("FA", MediaPlayer.create(this, R.raw.fourthstring)));
+            listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.fithstring)));
+            listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.sixthstrin)));
+            listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.sixthstrin)));
             Collections.shuffle(listMedia,new Random(System.nanoTime()));
 
             atualSom = listMedia.get(index);
@@ -57,62 +57,73 @@ public class EntrenamientoBasico extends AppCompatActivity {
             TextView textView = (TextView) findViewById((R.id._txtViewPontos));
 
             if (view.getId() == R.id._btnRadioMiAgudo) {
-                if (checked && atualSom.getTitle().contains("Agudo")) {
-                    Toast.makeText(this, "Acertou", Toast.LENGTH_SHORT).show();
+                if (checked && atualSom.getTitle().contains("DO")) {
+                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
-                    Toast.makeText(this, "Errou", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
                 ((CheckBox) view).setChecked(false);
             }
             if (view.getId() == R.id._btnRadioSi) {
-                if (checked && atualSom.getTitle().contains("SI")) {
-                    Toast.makeText(this, "Acertou", Toast.LENGTH_SHORT).show();
+                if (checked && atualSom.getTitle().contains("RE")) {
+                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
-                    Toast.makeText(this, "Errou", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
                 ((CheckBox) view).setChecked(false);
             }
             if (view.getId() == R.id._btnRadioSol) {
-                if (checked && atualSom.getTitle().contains("SOL")) {
-                    Toast.makeText(this, "Acertou", Toast.LENGTH_SHORT).show();
+                if (checked && atualSom.getTitle().contains("MI")) {
+                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
-                    Toast.makeText(this, "Errou", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
                 ((CheckBox) view).setChecked(false);
             }
             if (view.getId() == R.id._btnRadioRe) {
-                if (checked && atualSom.getTitle().contains("RE")) {
-                    Toast.makeText(this, "Acertou", Toast.LENGTH_SHORT).show();
+                if (checked && atualSom.getTitle().contains("FA")) {
+                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
-                    Toast.makeText(this, "Errou", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
                 ((CheckBox) view).setChecked(false);
             }
             if (view.getId() == R.id._btnRadioLa) {
-                if (checked && atualSom.getTitle().contains("LA")) {
-                    Toast.makeText(this, "Acertou", Toast.LENGTH_SHORT).show();
+                if (checked && atualSom.getTitle().contains("SOL")) {
+                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
-                    Toast.makeText(this, "Errou", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
                 ((CheckBox) view).setChecked(false);
             }
             if (view.getId() == R.id._btnRadioMiGrave) {
-                if (checked && atualSom.getTitle().contains("Grave")) {
-                    Toast.makeText(this, "Acertou", Toast.LENGTH_SHORT).show();
+                if (checked && atualSom.getTitle().contains("LA")) {
+                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
-                    Toast.makeText(this, "Errou", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+                }
+                ((CheckBox) view).setChecked(false);
+            }
+
+            if (view.getId() == R.id._btnRadioMiGrave) {
+                if (checked && atualSom.getTitle().contains("SI")) {
+                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
+                    setPontos(getPontos() + 1);
+                    textView.setText(getPontos() + "");
+                } else {
+                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
                 ((CheckBox) view).setChecked(false);
             }

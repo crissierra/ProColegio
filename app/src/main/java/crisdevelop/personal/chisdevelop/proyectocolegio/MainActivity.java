@@ -50,25 +50,25 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.notado :
-                mediaPlayer = MediaPlayer.create(this, R.raw.firststring);
+                mediaPlayer = MediaPlayer.create(this, R.raw.notado);
                 break;
             case R.id.notare :
-                mediaPlayer = MediaPlayer.create(this, R.raw.secondstring);
+                mediaPlayer = MediaPlayer.create(this, R.raw.re);
                 break;
             case R.id.notami :
-                mediaPlayer = MediaPlayer.create(this, R.raw.thirdstring);
+                mediaPlayer = MediaPlayer.create(this, R.raw.mi);
                 break;
             case R.id.notafa :
-                mediaPlayer = MediaPlayer.create(this, R.raw.fourthstring);
+                mediaPlayer = MediaPlayer.create(this, R.raw.fa);
                 break;
             case R.id.notasol :
-                mediaPlayer = MediaPlayer.create(this, R.raw.fithstring);
+                mediaPlayer = MediaPlayer.create(this, R.raw.sol);
                 break;
             case R.id.notala :
-                mediaPlayer = MediaPlayer.create(this, R.raw.sixthstrin);
+                mediaPlayer = MediaPlayer.create(this, R.raw.si);
                 break;
             case R.id.notasi :
-                mediaPlayer = MediaPlayer.create(this, R.raw.sixthstrin);
+                mediaPlayer = MediaPlayer.create(this, R.raw.la);
                 break;
         }
         if (STATUS_REPEAT) {
