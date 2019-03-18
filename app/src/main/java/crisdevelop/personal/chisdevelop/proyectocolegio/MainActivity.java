@@ -1,6 +1,7 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Switch;
+import android.widget.TextView;
 
 import model.Jogador;
 
@@ -23,11 +25,20 @@ public class MainActivity extends AppCompatActivity {
     ArrayAdapter adapter;
     ArrayList<String> rankingList;
 
+    static TextView RTA_PRIMERAVEZ;
+    final int DEFAULT = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         rankingList = new ArrayList<>();
+
+        RTA_PRIMERAVEZ= findViewById(R.id.rta_primeravez);
+
+
+        SharedPreferences prefs = this.getSharedPreferences("primeravez",MODE_PRIVATE);
+        RTA_PRIMERAVEZ.setText(String.valueOf(prefs.getInt("primeravez",DEFAULT)));
     }
 
     public void repetirSom(View view)

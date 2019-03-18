@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".integrantes"></activity>
+        <activity android:name=".contrasena"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CirculodeQuintas" />
+        <activity android:name=".Gramatica" />
+        <activity android:name=".integrantes" />
         <activity android:name=".EntrenamientoAvanzado" />
         <activity android:name=".EntrenamientoBasico" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".splashscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
