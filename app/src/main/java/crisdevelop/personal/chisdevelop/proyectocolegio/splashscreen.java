@@ -45,7 +45,7 @@ public class splashscreen extends AppCompatActivity
 
                             if (primeravez >= 1)
                             {
-                                startActivity(new Intent(splashscreen.this,MainActivity.class));
+                                startActivity(new Intent(splashscreen.this, MainActivityOrigin.class));
                                 finish();
                             }
                             else{

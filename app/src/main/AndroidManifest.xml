@@ -21,7 +21,7 @@
         </activity>
 
 
-        <activity android:name=".MainActivity"
+        <activity android:name=".MainActivityOrigin"
                   android:theme="@style/AppTheme.NoActionBar">
 
                 <intent-filter>
@@ -53,6 +53,22 @@
         <activity
             android:name=".contrasena"
             android:theme="@style/AppTheme.NoActionBar"/>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".first_q"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Resultados"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".About"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
 
     </application>
 

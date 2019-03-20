@@ -24,6 +24,8 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
     private NotasMusicais atualSom;
     private int pontos;
     private EditText edtNome;
+    static Button ENLACEQUIENQUIERESER;
+
 
     static Button BOTONDO,BOTONDOSOS, BOTONRE,BOTONRESOS,BOTONMI,BOTONFA,BOTONFASOS, BOTONSOL, BOTONSOLSOS, BOTONLA,BOTONLASOS, BOTONSI;
 
@@ -33,6 +35,9 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
         setContentView(R.layout.activity_entrenamiento_avanzado);
         setPontos(0);
         edtNome = findViewById(R.id.edtNome);
+
+        ENLACEQUIENQUIERESER= findViewById(R.id.enlacequienquiereser);
+        ENLACEQUIENQUIERESER.setOnClickListener(this);
 
         BOTONDO= findViewById(R.id.botondo);
         BOTONDO.setOnClickListener(this);
@@ -224,6 +229,19 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
                 } else {
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
+                break;
+
+
+
+
+
+
+
+            case R.id.enlacequienquiereser:
+
+                Intent intent=new Intent (this, MainActivity.class);
+                startActivity(intent);
+
                 break;
 
         }

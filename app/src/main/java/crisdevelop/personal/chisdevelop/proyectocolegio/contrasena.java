@@ -1,21 +1,15 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
-
 
 
 public class contrasena extends AppCompatActivity
@@ -83,7 +77,7 @@ public class contrasena extends AppCompatActivity
 
 
 
-                                  Intent i=new  Intent(getApplicationContext(), MainActivity.class);
+                                  Intent i=new  Intent(getApplicationContext(), MainActivityOrigin.class);
                                   startActivity(i);
                                }
 
