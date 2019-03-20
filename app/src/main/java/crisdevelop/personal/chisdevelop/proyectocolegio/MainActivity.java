@@ -34,11 +34,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         rankingList = new ArrayList<>();
 
-        RTA_PRIMERAVEZ= findViewById(R.id.rta_primeravez);
 
+        // LO USO PARA IMPRIMIR EL ESTADO DE LA VARIABLE PRIMERA VEZ
+               /* RTA_PRIMERAVEZ= findViewById(R.id.rta_primeravez);
 
-        SharedPreferences prefs = this.getSharedPreferences("primeravez",MODE_PRIVATE);
-        RTA_PRIMERAVEZ.setText(String.valueOf(prefs.getInt("primeravez",DEFAULT)));
+                SharedPreferences prefs = this.getSharedPreferences("primeravez",MODE_PRIVATE);
+                RTA_PRIMERAVEZ.setText(String.valueOf(prefs.getInt("primeravez",DEFAULT)));*/
+        // LO USO PARA IMPRIMIR EL ESTADO DE LA VARIABLE PRIMERA VEZ
     }
 
     public void repetirSom(View view)
@@ -61,25 +63,25 @@ public class MainActivity extends AppCompatActivity {
 
         switch (view.getId()) {
             case R.id.notado :
-                mediaPlayer = MediaPlayer.create(this, R.raw.notado);
+                mediaPlayer = MediaPlayer.create(this, R.raw.do_60);
                 break;
             case R.id.notare :
-                mediaPlayer = MediaPlayer.create(this, R.raw.re);
+                mediaPlayer = MediaPlayer.create(this, R.raw.re_62);
                 break;
             case R.id.notami :
-                mediaPlayer = MediaPlayer.create(this, R.raw.mi);
+                mediaPlayer = MediaPlayer.create(this, R.raw.mi_64);
                 break;
             case R.id.notafa :
-                mediaPlayer = MediaPlayer.create(this, R.raw.fa);
+                mediaPlayer = MediaPlayer.create(this, R.raw.fa_65);
                 break;
             case R.id.notasol :
-                mediaPlayer = MediaPlayer.create(this, R.raw.sol);
+                mediaPlayer = MediaPlayer.create(this, R.raw.sol_67);
                 break;
             case R.id.notala :
-                mediaPlayer = MediaPlayer.create(this, R.raw.si);
+                mediaPlayer = MediaPlayer.create(this, R.raw.la_69);
                 break;
             case R.id.notasi :
-                mediaPlayer = MediaPlayer.create(this, R.raw.la);
+                mediaPlayer = MediaPlayer.create(this, R.raw.si_71);
                 break;
         }
         if (STATUS_REPEAT) {

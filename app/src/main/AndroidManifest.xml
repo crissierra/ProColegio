@@ -9,20 +9,51 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".contrasena"></activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".CirculodeQuintas" />
-        <activity android:name=".Gramatica" />
-        <activity android:name=".integrantes" />
-        <activity android:name=".EntrenamientoAvanzado" />
-        <activity android:name=".EntrenamientoBasico" />
-        <activity android:name=".splashscreen">
+
+
+        <activity android:name=".splashscreen"
+                  android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity android:name=".MainActivity"
+                  android:theme="@style/AppTheme.NoActionBar">
+
+                <intent-filter>
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+                    <data     android:scheme="https"
+                              android:host="cristiancsierra.wixsite.com" />
+                </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".CirculodeQuintas"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Gramatica"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".integrantes"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".EntrenamientoAvanzado"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".EntrenamientoBasico"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".contrasena"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
     </application>
 
 </manifest>

@@ -62,13 +62,13 @@ public class EntrenamientoBasico extends AppCompatActivity  implements View.OnCl
 
             listMedia = new ArrayList<>();
 
-            listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.firststring)));
-            listMedia.add(new NotasMusicais("RE", MediaPlayer.create(this, R.raw.secondstring)));
-            listMedia.add(new NotasMusicais("MI", MediaPlayer.create(this, R.raw.thirdstring)));
-            listMedia.add(new NotasMusicais("FA", MediaPlayer.create(this, R.raw.fourthstring)));
-            listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.fithstring)));
-            listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.sixthstrin)));
-            listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.sixthstrin)));
+            listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
+            listMedia.add(new NotasMusicais("RE", MediaPlayer.create(this, R.raw.re_62)));
+            listMedia.add(new NotasMusicais("MI", MediaPlayer.create(this, R.raw.mi_64)));
+            listMedia.add(new NotasMusicais("FA", MediaPlayer.create(this, R.raw.fa_65)));
+            listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.sol_67)));
+            listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.la_69)));
+            listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.si_71)));
             Collections.shuffle(listMedia,new Random(System.nanoTime()));
 
             atualSom = listMedia.get(index);
@@ -145,6 +145,14 @@ public class EntrenamientoBasico extends AppCompatActivity  implements View.OnCl
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
                 break;
+
+
+            case R.id.iraavanzado:
+
+                Intent i= new  Intent(getApplicationContext(), EntrenamientoAvanzado.class);
+                startActivity(i);
+                break;
+
 
         }
     }
@@ -245,6 +253,12 @@ public class EntrenamientoBasico extends AppCompatActivity  implements View.OnCl
             setResult(RESULT_CANCEL);
             finish();
         }
+
+        public void iraavanzado(View view)
+            {
+                Intent i=new  Intent(getApplicationContext(), EntrenamientoAvanzado.class);
+                startActivity(i);
+            }
 
         public int getPontos() {
             return pontos;
