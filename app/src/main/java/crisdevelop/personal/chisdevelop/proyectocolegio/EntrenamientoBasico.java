@@ -69,6 +69,7 @@ public class EntrenamientoBasico extends AppCompatActivity  implements View.OnCl
             listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.sol_67)));
             listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.la_69)));
             listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.si_71)));
+
             Collections.shuffle(listMedia,new Random(System.nanoTime()));
 
             atualSom = listMedia.get(index);

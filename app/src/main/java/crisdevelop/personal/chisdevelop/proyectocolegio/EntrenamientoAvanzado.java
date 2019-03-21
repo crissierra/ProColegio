@@ -6,9 +6,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.os.Bundle;
         import android.view.View;
         import android.widget.Button;
-        import android.widget.CheckBox;
         import android.widget.EditText;
-        import android.widget.TextView;
         import android.widget.Toast;
         import model.NotasMusicais;
         import java.util.ArrayList;
@@ -239,7 +237,7 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
 
             case R.id.enlacequienquiereser:
 
-                Intent intent=new Intent (this, MainActivity.class);
+                Intent intent=new Intent (this, juegoInicio.class);
                 startActivity(intent);
 
                 break;

@@ -77,7 +77,7 @@ public class contrasena extends AppCompatActivity
 
 
 
-                                  Intent i=new  Intent(getApplicationContext(), MainActivityOrigin.class);
+                                  Intent i=new  Intent(getApplicationContext(), menu_principal.class);
                                   startActivity(i);
                                }
 

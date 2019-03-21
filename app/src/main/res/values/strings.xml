@@ -29,16 +29,84 @@
     <string name="verifyAnswer">Verificar</string>
 
 
-    <string name="gramatica">
-       "Nos referimos a gramatica musical como el estudio de todos los elementos que conforman el lenguaje de la musica,\n"
-       "es decir aquellas figuras o simbolos que aparecen ubicados en una partitura y que se correlacionan a partir del pentagrama.\n"
-        "Para abordar con éxito este estudio, es importante conocer los terminos generales sobre los cuales se guiara su carrera o su hobbie como musico.\n"
-       "El pentagrama Representado por cinco lineas paralelas y equidistantes. Las claves Son signos que definen las notas escritas en el pentagrama,\n"
-        "en el pentagrama, las claves de sol y la clave de fa son las de uso más frecuente, aunque también se utiliza\n"
-        "la clave de do Las notas Se conocen 7 notas, que son las mismas que conforman la escala de Do natural,\n"
-        "estas notas son do, re, mi, fa, sol, la, si, (en orden ascendente), es decir de la más grave a la más aguda.\n"
 
+    <string name="gramatica1"></string>
+
+    <string name="gramatica2">
+        ¿Que es la música?\n"
+       "La música es la combinación de sonidos que puedes producir por medio de un cuerpo sonoro, como lo puedes hacer con tus palmas o tus pies."
     </string>
+
+
+    <string name="gramatica4">
+        "Notas musicales: \n"
+        "Las notas musicales representan los sonidos en la música, las cuales pueden ser escuchadas en cualquier instrumento musical,"
+        "incluyendo la voz a través del canto.\n"
+        "¿Recuerdas las notas musicales?\n"
+        "Obsérvalas."
+    </string>
+
+
+    <string name="gramatica5">
+       "Figuras de duración\n"
+    </string>
+
+    <string name="gramatica6">
+       "Son signos que podemos identificar de distinta forma, con ayuda de  ellas podremos determinar su duración.\n"
+    </string>
+
+    <string name="gramatica7">
+       "Silencios musicales:\n Son signos que representan la duración sin la ejecución de un sonido, nos permite el descanso y la separación de diferentes frases musicales."
+    </string>
+
+    <string name="gramatica8">
+       "Ya que conocemos las figuras de duración super bien, vamos a pasar al ritmo del lenguaje.\n"
+    </string>
+
+    <string name="gramatica9">
+       "Ritmo del Lenguaje\n"
+    </string>
+
+    <string name="gramatica10">
+       "Es el estudio de ciertas figuras de duración apoyadas con el acento de lenguaje castellano.
+    </string>
+
+    <string name="gramatica11">
+       "Vamos a trabajar las siguientes figuras de duración:\n"
+    </string>
+    <string name="gramatica12">
+       "La figura conocida como negra la puedes identificar con una palabra monosílaba, es aquella que tiene una sola silaba.
+        "Ejemplo: pan, pez, tren, sol.\n"
+    </string>
+
+    <string name="gramatica13">
+        "¡Muy bien!\n Lograste interpretar los anteriores ejercicios rítmicos, ahora vamos a subir de nivel. Interpretemos los siguientes"
+        "ejercicios rítmicos con sus respectivos silencios.\n ¡Comencemos!"
+    </string>
+
+    <string name="gramatica14">
+       "La figura conocida como negra la puedes identificar con una palabra monosílaba, es aquella que tiene una sola silaba."
+    </string>
+
+
+    <string name="gramatica15">
+       "¿Quieres saber un truco super importante para los silencios?\n El silencio, como sabemos, es un signo que representa la duración, pero no el sonido."
+    </string>
+
+    <string name="gramatica16">
+         "En la figura de silencio solamente escucharas el “tap” del metrónomo, esto quiere decir que en el silencio respectivo"
+       "seguirá el tiempo indicado, pero sin la ejecución de un sonido."
+    </string>
+
+
+    <string name="gramatica17">
+       "RITMO LENGUAJE\n"
+    </string>
+
+
+
+
+
 
 
 </resources>

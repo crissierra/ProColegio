@@ -16,8 +16,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
 
-public class first_q extends AppCompatActivity {
+public class PreguntasUno extends AppCompatActivity {
     int contador=0;
     int puntos=0;
     int RespuestaH;
@@ -41,38 +43,41 @@ public class first_q extends AppCompatActivity {
 
             //tags para las preguntas
             ArrayList<String> preguntas = new ArrayList<String>();
-            preguntas.add("pregunta1");
-            preguntas.add("pregunta2");
-            preguntas.add("pregunta3");
-            preguntas.add("pregunta4");
-            preguntas.add("pregunta5");
-            preguntas.add("pregunta6");
-            preguntas.add("pregunta7");
-            preguntas.add("pregunta8");
-            preguntas.add("pregunta9");
-            preguntas.add("pregunta10");
-            preguntas.add("pregunta11");
-            preguntas.add("pregunta12");
-            preguntas.add("pregunta13");
-            preguntas.add("pregunta14");
-            preguntas.add("Final");
+                    preguntas.add("pregunta1");
+                    preguntas.add("pregunta2");
+                    preguntas.add("pregunta3");
+                    preguntas.add("pregunta4");
+                    preguntas.add("pregunta5");
+                    preguntas.add("pregunta6");
+                    preguntas.add("pregunta7");
+                    preguntas.add("pregunta8");
+                    preguntas.add("pregunta9");
+                    preguntas.add("pregunta10");
+                    preguntas.add("pregunta11");
+                    preguntas.add("pregunta12");
+                    preguntas.add("pregunta13");
+                    preguntas.add("pregunta14");
+                    preguntas.add("Final");
+
+            Collections.shuffle(preguntas,new Random(System.nanoTime()));
+
             //respuestas codes
             final ArrayList<Integer> Respuestas = new ArrayList<Integer>();
-            Respuestas.add(3);//0
-            Respuestas.add(2); //pregunta 1
-            Respuestas.add(4); //pregunta 2
-            Respuestas.add(1); //pregunta 3
-            Respuestas.add(4); //pregunta 4
-            Respuestas.add(3); //pregunta 5
-            Respuestas.add(4); //pregunta 6
-            Respuestas.add(4); //pregunta 7
-            Respuestas.add(4); //pregunta 8
-            Respuestas.add(2); //pregunta 9
-            Respuestas.add(3); //pregunta 10
-            Respuestas.add(3); //pregunta 11
-            Respuestas.add(4); //pregunta 12
-            Respuestas.add(4); //pregunta 13
-            Respuestas.add(3); //pregunta 14
+                    Respuestas.add(3);//0
+                    Respuestas.add(2); //pregunta 1
+                    Respuestas.add(4); //pregunta 2
+                    Respuestas.add(1); //pregunta 3
+                    Respuestas.add(4); //pregunta 4
+                    Respuestas.add(3); //pregunta 5
+                    Respuestas.add(4); //pregunta 6
+                    Respuestas.add(4); //pregunta 7
+                    Respuestas.add(4); //pregunta 8
+                    Respuestas.add(2); //pregunta 9
+                    Respuestas.add(3); //pregunta 10
+                    Respuestas.add(3); //pregunta 11
+                    Respuestas.add(4); //pregunta 12
+                    Respuestas.add(4); //pregunta 13
+                    Respuestas.add(3); //pregunta 14
 
 
 
@@ -358,7 +363,7 @@ public class first_q extends AppCompatActivity {
                         // Do something after 5s = 5000ms
                         new AlertDialog.Builder(v.getContext())
                                 .setTitle("Final")
-                                .setMessage("Estas seguro de finalizar con esta respuesta")
+                                .setMessage("Estas a punto de ganar.\n Estas seguro que quieres terminar con esta respuesta?")
                                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
                                         // continue with delete
@@ -387,7 +392,7 @@ public class first_q extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_first_q);
+        setContentView(R.layout.preguntas_uno);
 
         // se obtienen las opciones
         opciones = (RadioGroup) findViewById(R.id.opciones);
@@ -530,14 +535,14 @@ public class first_q extends AppCompatActivity {
    public void tiempo()
    {
        kill_tiempo();
-       MyCountDownTimer=new CountDownTimer(45000, 1000) {
+       MyCountDownTimer=new CountDownTimer(46000, 1000) {
 
            public void onTick(long millisUntilFinished) {
-               tiempo.setText("T:" + millisUntilFinished / 1000);
+               tiempo.setText( millisUntilFinished / 1000+ " segundos.");
            }
 
            public void onFinish() {
-               tiempo.setText("\uD83C\uDFB2 ⊙﹏⊙  (ಠ_ಠ) \uD83C\uDFB2)");
+               tiempo.setText("¡Se acabó el tiempo!");
                terminarJuego();
            }
        }.start();
