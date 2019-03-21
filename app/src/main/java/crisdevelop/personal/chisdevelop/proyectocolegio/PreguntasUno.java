@@ -59,7 +59,7 @@ public class PreguntasUno extends AppCompatActivity {
                     preguntas.add("pregunta14");
                     preguntas.add("Final");
 
-            Collections.shuffle(preguntas,new Random(System.nanoTime()));
+            /*Collections.shuffle(preguntas,new Random(System.nanoTime()));*/
 
             //respuestas codes
             final ArrayList<Integer> Respuestas = new ArrayList<Integer>();
@@ -125,10 +125,10 @@ public class PreguntasUno extends AppCompatActivity {
                     Button btn =(Button) v;
                     //btn.setText("primero");
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("$_URL[] ");
-                    opcionesa.add("$_GET[] ");
-                    opcionesa.add("$_FORM[]");
-                    opcionesa.add("Las anteriores respuestas no son correctas");
+                    opcionesa.add("A. $_URL[] ");
+                    opcionesa.add("B. $_GET[] ");
+                    opcionesa.add("C. $_FORM[]");
+                    opcionesa.add("D. Las anteriores respuestas no son correctas");
                     String preguntaa="En PHP, ¿cómo se obtiene la información de un formulario que ha sido enviado mediante el método \"get\"?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                 }
@@ -143,10 +143,10 @@ public class PreguntasUno extends AppCompatActivity {
                     Button btn =(Button) v;
                     //btn.setText("segundo");
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add(" connect_mysql(\"localhost\");");
-                    opcionesa.add("dbopen(\"localhost\"); ");
-                    opcionesa.add("mysql_open(\"localhost\");");
-                    opcionesa.add(" mysql_connect(\"localhost\");");
+                    opcionesa.add("A. connect_mysql(\"localhost\");");
+                    opcionesa.add("B. dbopen(\"localhost\"); ");
+                    opcionesa.add("C. mysql_open(\"localhost\");");
+                    opcionesa.add("D. mysql_connect(\"localhost\");");
                     String preguntaa="En PHP, ¿cuál es la forma correcta de abrir una conexión con una base de datos MySQL?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                 }
@@ -159,10 +159,10 @@ public class PreguntasUno extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("text-transform:capitalize");
-                    opcionesa.add("text-transform:uppercase");
-                    opcionesa.add("text-transform:first-letter");
-                    opcionesa.add("No se puede hacer con CSS");
+                    opcionesa.add("A. text-transform:capitalize");
+                    opcionesa.add("B. text-transform:uppercase");
+                    opcionesa.add("C. text-transform:first-letter");
+                    opcionesa.add("D. No se puede hacer con CSS");
                     String preguntaa="¿Cómo se hace en CSS para que cada palabra en un texto comience con una letra en mayúsculas?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("tercxero");
@@ -175,10 +175,10 @@ public class PreguntasUno extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("lower() ");
-                    opcionesa.add("lowerCase() ");
-                    opcionesa.add("toLower()");
-                    opcionesa.add("toLowerCase()");
+                    opcionesa.add("A. lower() ");
+                    opcionesa.add("B. lowerCase() ");
+                    opcionesa.add("C. toLower()");
+                    opcionesa.add("D. toLowerCase()");
                     String preguntaa="En JavaScript, ¿qué función se emplea para convertir una cadena a minúsculas?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("cuarto");
@@ -191,10 +191,10 @@ public class PreguntasUno extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add(" document.open(\"pagina.html\") ");
-                    opcionesa.add("document.new(\"pagina.html\")");
-                    opcionesa.add("window.open(\"pagina.html\")");
-                    opcionesa.add("window.new(\"pagina.html\") ");
+                    opcionesa.add("A. document.open(\"pagina.html\") ");
+                    opcionesa.add("B. document.new(\"pagina.html\")");
+                    opcionesa.add("C. window.open(\"pagina.html\")");
+                    opcionesa.add("D. window.new(\"pagina.html\") ");
                     String preguntaa="En JavaScript, ¿cómo se abre una ventana nueva del navegador?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("quinto");
@@ -207,10 +207,10 @@ public class PreguntasUno extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("method ");
-                    opcionesa.add("post");
-                    opcionesa.add("target");
-                    opcionesa.add("Las anteriores respuestas no son correctas ");
+                    opcionesa.add("A. method ");
+                    opcionesa.add("B. post");
+                    opcionesa.add("C. target");
+                    opcionesa.add("D. Las anteriores respuestas no son correctas ");
                     String preguntaa="En un formulario HTML, cuando se pulsa sobre un botón de tipo submit, los datos introducidos en el formulario se envían a la URL indicada en el atributo del formulario llamado";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("sexto");
@@ -223,10 +223,10 @@ public class PreguntasUno extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("<-- El comentario --> ");
-                    opcionesa.add("<--! El comentario !-->");
-                    opcionesa.add("<--! El comentario -->");
-                    opcionesa.add("<!-- El comentario --> ");
+                    opcionesa.add("A. <-- El comentario --> ");
+                    opcionesa.add("B. <--! El comentario !-->");
+                    opcionesa.add("C. <--! El comentario -->");
+                    opcionesa.add("D. <!-- El comentario --> ");
                     String preguntaa="En HTML, la forma correcta de crear un comentario es";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("septimo");
@@ -239,10 +239,10 @@ public class PreguntasUno extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("Definen la forma en la que se codifica un carácter dado en un sistema de representación");
-                    opcionesa.add("nfluye en los caracteres que se pueden almacenar");
-                    opcionesa.add("Influye en el espacio de almacenamiento necesario ");
-                    opcionesa.add("Todas las respuestas son correctas");
+                    opcionesa.add("A. Definen la forma en la que se codifica un carácter dado en un sistema de representación");
+                    opcionesa.add("B. Influye en los caracteres que se pueden almacenar");
+                    opcionesa.add("C. Influye en el espacio de almacenamiento necesario ");
+                    opcionesa.add("D. Todas las respuestas son correctas");
                     String preguntaa="Respecto el juego de caracteres";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("octavo");
@@ -256,10 +256,10 @@ public class PreguntasUno extends AppCompatActivity {
 
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add(" information_schema");
-                    opcionesa.add("mysql ");
-                    opcionesa.add("user ");
-                    opcionesa.add("Las anteriores respuestas no son correctas ");
+                    opcionesa.add("A. information_schema");
+                    opcionesa.add("B. mysql ");
+                    opcionesa.add("C. user ");
+                    opcionesa.add("D. Las anteriores respuestas no son correctas ");
                     String preguntaa="En MySQL, la información sobre las cuentas de usuario se almacena en la base de datos";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("noveno");
@@ -271,10 +271,10 @@ public class PreguntasUno extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add(" Un lenguaje de programación orientado a objetos basado en JavaScrip");
-                    opcionesa.add(" Un servidor de aplicaciones basado en JavaScript  ");
-                    opcionesa.add("Un formato ligero para el intercambio de datos empleado en JavaScript ");
-                    opcionesa.add("Las anteriores respuestas no son correctas ");
+                    opcionesa.add("A. Un lenguaje de programación orientado a objetos basado en JavaScrip");
+                    opcionesa.add("B. Un servidor de aplicaciones basado en JavaScript  ");
+                    opcionesa.add("C. Un formato ligero para el intercambio de datos empleado en JavaScript ");
+                    opcionesa.add("D. Las anteriores respuestas no son correctas ");
                     String preguntaa="¿Qué es JSON?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("decimo");
@@ -288,10 +288,10 @@ public class PreguntasUno extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add(" <?php>...</?> ");
-                    opcionesa.add(" <script>...</script> ");
-                    opcionesa.add("<?php…?>");
-                    opcionesa.add( "<&>...</&>");
+                    opcionesa.add("A. <?php>...</?> ");
+                    opcionesa.add("B. <script>...</script> ");
+                    opcionesa.add("C. <?php…?>");
+                    opcionesa.add( "D. <&>...</&>");
                     String preguntaa="¿El código PHP se escribe con los delimitadores?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("once");
@@ -305,10 +305,10 @@ public class PreguntasUno extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add(" ISO-8859-1 también se conoce como Latin1 ");
-                    opcionesa.add("ISO-8859-15 es similar a ISO-8859-1, pero sustituye algunos símbolos poco comunes para incluir, por ejemplo, el símbolo del euro ");
-                    opcionesa.add("Incluye todos los símbolos para las principales lenguas de Europa occidental (alemán, castellano, catalán, danés, finés, francés, inglés, noruego, sueco, etc.)");
-                    opcionesa.add("Todas las respuestas son correctas ");
+                    opcionesa.add("A. ISO-8859-1 también se conoce como Latin1 ");
+                    opcionesa.add("B. ISO-8859-15 es similar a ISO-8859-1, pero sustituye algunos símbolos poco comunes para incluir, por ejemplo, el símbolo del euro ");
+                    opcionesa.add("C. Incluye todos los símbolos para las principales lenguas de Europa occidental (alemán, castellano, catalán, danés, finés, francés, inglés, noruego, sueco, etc.)");
+                    opcionesa.add("D. Todas las respuestas son correctas ");
                     String preguntaa="Respecto el juego de caracteres ISO-8859-1";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("doce");
@@ -339,10 +339,10 @@ public class PreguntasUno extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("1989");
-                    opcionesa.add("1991");
-                    opcionesa.add("1994");
-                    opcionesa.add("1996");
+                    opcionesa.add("A. 1989");
+                    opcionesa.add("B. 1991");
+                    opcionesa.add("C. 1994");
+                    opcionesa.add("D. 1996");
                     String preguntaa="¿Cuando se fundó el W3C?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("catorce");
@@ -405,16 +405,16 @@ public class PreguntasUno extends AppCompatActivity {
                 // TODO Auto-generated method stub
                 // Se comprueban los radioButton
                 if (checkedId == R.id.radioButton){
-                    answer.setText("Ha pulsado la opción 1 \n    Última palabra?");
+                    answer.setText("Ha pulsado la opción A \n    Última palabra?");
                     RespuestaH=1;
                 }else if (checkedId == R.id.radioButton2){
-                    answer.setText("Ha pulsado la opción 2 \n    Última palabra?");
+                    answer.setText("Ha pulsado la opción B \n    Última palabra?");
                     RespuestaH=2;
                 }else if (checkedId == R.id.radioButton3){
-                    answer.setText("Ha pulsado la opción 3 \n    Última palabra?");
+                    answer.setText("Ha pulsado la opción C \n    Última palabra?");
                     RespuestaH=3;
                 }else if (checkedId == R.id.radioButton4){
-                    answer.setText("Ha pulsado la opción 4 \n    Última palabra?");
+                    answer.setText("Ha pulsado la opción D \n    Última palabra?");
                     RespuestaH=4;
                 }else{
                     answer.setText("estas en algo que trasciende lo previsto");
