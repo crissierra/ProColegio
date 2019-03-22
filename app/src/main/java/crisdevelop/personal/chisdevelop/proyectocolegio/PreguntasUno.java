@@ -2,10 +2,12 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
+import android.os.Message;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -19,7 +21,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;
 
+import io.netopen.hotbitmapgg.library.view.RingProgressBar;
+
 public class PreguntasUno extends AppCompatActivity {
+
+    MediaPlayer misonido, sonidocomodin;
+
     int contador=0;
     int puntos=0;
     int RespuestaH;
@@ -29,6 +36,29 @@ public class PreguntasUno extends AppCompatActivity {
     TextView pregunta;
     TextView tiempo;
     TextView premio;
+
+      //  CODIGO PARA EL PROGRESS BAR
+            static RingProgressBar ringProgressBar1;
+            int progress = 0;
+
+            Handler myHandler = new Handler()
+            {
+
+                @Override
+                public void handleMessage(Message msg) {
+                    if (msg.what ==0) {
+                        if (progress < 100)
+                        {
+                            progress++;
+                            ringProgressBar1.setProgress(progress);
+
+                        }
+                    }
+                }
+            };
+    //  ACABA CODIGO PARA EL PROGRESS BAR
+
+
 
     //tiempo
     CountDownTimer MyCountDownTimer=null;
@@ -80,9 +110,6 @@ public class PreguntasUno extends AppCompatActivity {
                     Respuestas.add(3); //pregunta 14
 
 
-
-
-
             //Toast.makeText(v.getContext(),"R-"+Respuestas.get(0),Toast.LENGTH_SHORT).show();
             if (contador<preguntas.size())
             {
@@ -118,6 +145,8 @@ public class PreguntasUno extends AppCompatActivity {
 
             System.out.println("contador Aumentado: "+contador);
 
+
+            // REMUMEN DE TODAS LAS PREGUNTAS
             if (v.getTag()=="pregunta1")
             {
                 if(validar_respuesta(v,Respuestas.get(0)))
@@ -132,8 +161,6 @@ public class PreguntasUno extends AppCompatActivity {
                     String preguntaa="En PHP, ¿cómo se obtiene la información de un formulario que ha sido enviado mediante el método \"get\"?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                 }
-
-
 
             }
             if (v.getTag()=="pregunta2")
@@ -350,6 +377,9 @@ public class PreguntasUno extends AppCompatActivity {
                 }
 
             }
+            // REMUMEN DE TODAS LAS PREGUNTAS
+
+
             if(v.getTag()=="Final")
             {
 
@@ -394,6 +424,33 @@ public class PreguntasUno extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.preguntas_uno);
 
+
+        this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+        misonido = MediaPlayer.create(this,R.raw.reloj45);
+        misonido.start();
+
+
+
+        // COGIDO EXCLUSIVO PARA EL PROGRESS BAR
+            ringProgressBar1 =  findViewById(R.id.progress_bar_1);
+            new Thread (new Runnable() {
+                @Override
+                public void run () {
+                    for (int i = 0; i < 450; i++)
+                    {
+                        try {  Thread.sleep(450);
+                            myHandler.sendEmptyMessage(0);
+                        }
+                        catch (InterruptedException e)
+                        {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }).start();
+        // ACABA COGIDO EXCLUSIVO PARA EL PROGRESS BAR
+
+
         // se obtienen las opciones
         opciones = (RadioGroup) findViewById(R.id.opciones);
         final TextView answer=(TextView ) findViewById(R.id.Answer);
@@ -437,6 +494,21 @@ public class PreguntasUno extends AppCompatActivity {
         premio.setText(""+0);
 
     }
+
+
+    @Override
+    protected void onPause()
+    {
+        super.onPause();
+        misonido.release();
+        sonidocomodin.release();
+
+
+
+        finish();
+    }
+
+
 
     //proceso que verifica la pregunta
     public boolean validar_respuesta(View v,int r)
@@ -627,11 +699,18 @@ public class PreguntasUno extends AppCompatActivity {
         cincuenta_cincuenta(R.id.opciones,correctaActual);
         System.out.println("correcta actual"+correctaActual);
         findViewById(R.id.b50_50).setVisibility(View.INVISIBLE);
+        this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+        sonidocomodin = MediaPlayer.create(this,R.raw.comodin);
+        sonidocomodin.start();
     }
 
     //quitar 50/50
     public void dishide_cincuenta_cincuent_event(View v)
     {
+
+
+
+
         RadioGroup radioGroup = (RadioGroup)findViewById(R.id.opciones);
         for (int i = 0; i < radioGroup.getChildCount(); i++) {
             ((RadioButton) radioGroup.getChildAt(i)).setVisibility(View.VISIBLE);
