@@ -20,7 +20,7 @@ public class juegoInicio extends AppCompatActivity {
         setContentView(R.layout.juego_inicio);
 
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        misonido = MediaPlayer.create(this,R.raw.oficialsong);
+        misonido = MediaPlayer.create(this,R.raw.songjuego);
         misonido.start();
 
     }

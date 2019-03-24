@@ -8,11 +8,11 @@ import android.view.WindowManager;
 import android.widget.Button;
 
 
-public class TeoriaQueEs extends AppCompatActivity implements View.OnClickListener
+public class Teoria8_Ejercicio_pan_sol extends AppCompatActivity implements View.OnClickListener
 
 {
 
-    static Button CONTINUAR, MENU;
+    static Button ANTERIOR, HOME, CONTINUAR;
 
 
 
@@ -24,13 +24,14 @@ public class TeoriaQueEs extends AppCompatActivity implements View.OnClickListen
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria_que_es);
+        setContentView(R.layout.teoria8__ejercicio_pan_sol);
 
         CONTINUAR = findViewById(R.id.continuar);
         CONTINUAR.setOnClickListener(this);
 
-        MENU = findViewById(R.id.menu);
-        MENU.setOnClickListener(this);
+        ANTERIOR = findViewById(R.id.anterior);
+        ANTERIOR.setOnClickListener(this);
+
 
     }
 
@@ -49,7 +50,7 @@ public class TeoriaQueEs extends AppCompatActivity implements View.OnClickListen
 
             case R.id.continuar:
 
-                Intent in= new  Intent(getApplicationContext(), TeoriaNotasMusicales.class);
+                Intent in= new  Intent(getApplicationContext(), Teoria9_Ejercicio_pantren.class);
                 startActivity(in);
                 break;
 

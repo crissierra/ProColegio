@@ -29,7 +29,6 @@
     <string name="verifyAnswer">Verificar</string>
 
 
-
     <string name="gramatica1"></string>
 
     <string name="gramatica2">
@@ -102,11 +101,6 @@
     <string name="gramatica17">
        "RITMO LENGUAJE\n"
     </string>
-
-
-
-
-
 
 
 </resources>

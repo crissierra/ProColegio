@@ -8,13 +8,10 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class TeoriaRitmoLenguaje extends AppCompatActivity implements View.OnClickListener
+public class Teoria7Negra extends AppCompatActivity implements View.OnClickListener
 
 {
-
-    static Button CONTINUAR, MENU;
-    ImageButton HOME;
-
+    ImageButton HOME, ANTERIOR, CONTINUAR;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -24,7 +21,7 @@ public class TeoriaRitmoLenguaje extends AppCompatActivity implements View.OnCli
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria_ritmo_lenguaje);
+        setContentView(R.layout.teoria5_ritmo_lenguaje);
 
         HOME = (ImageButton) findViewById(R.id.home);
 
@@ -42,8 +39,9 @@ public class TeoriaRitmoLenguaje extends AppCompatActivity implements View.OnCli
         CONTINUAR = findViewById(R.id.continuar);
         CONTINUAR.setOnClickListener(this);
 
-        MENU = findViewById(R.id.menu);
-        MENU.setOnClickListener(this);
+        ANTERIOR = findViewById(R.id.anterior);
+        ANTERIOR.setOnClickListener(this);
+
 
     }
 
@@ -62,14 +60,13 @@ public class TeoriaRitmoLenguaje extends AppCompatActivity implements View.OnCli
 
             case R.id.continuar:
 
-                Intent in= new  Intent(getApplicationContext(), TeoriaNegra.class);
+                Intent in= new  Intent(getApplicationContext(), Teoria8_Ejercicio_pan_sol.class);
                 startActivity(in);
                 break;
 
             default:
                 break;
         }
-      /*  mFirebaseAnalytics.logEvent(btnName,params);
-*/
+
     }
 }

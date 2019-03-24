@@ -8,12 +8,11 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class TeoriaNegra extends AppCompatActivity implements View.OnClickListener
+public class Teoria5RitmoLenguaje extends AppCompatActivity implements View.OnClickListener
 
 {
 
-    static Button CONTINUAR, MENU;
-    ImageButton HOME;
+    ImageButton HOME, ANTERIOR, CONTINUAR;
 
 
     @Override
@@ -24,7 +23,7 @@ public class TeoriaNegra extends AppCompatActivity implements View.OnClickListen
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria_ritmo_lenguaje);
+        setContentView(R.layout.teoria5_ritmo_lenguaje);
 
         HOME = (ImageButton) findViewById(R.id.home);
 
@@ -42,8 +41,9 @@ public class TeoriaNegra extends AppCompatActivity implements View.OnClickListen
         CONTINUAR = findViewById(R.id.continuar);
         CONTINUAR.setOnClickListener(this);
 
-        MENU = findViewById(R.id.menu);
-        MENU.setOnClickListener(this);
+        ANTERIOR = findViewById(R.id.anterior);
+        ANTERIOR.setOnClickListener(this);
+
 
     }
 
@@ -62,7 +62,7 @@ public class TeoriaNegra extends AppCompatActivity implements View.OnClickListen
 
             case R.id.continuar:
 
-                Intent in= new  Intent(getApplicationContext(), menu_principal.class);
+                Intent in= new  Intent(getApplicationContext(), Teoria6Shplashscreen.class);
                 startActivity(in);
                 break;
 

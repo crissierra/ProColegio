@@ -9,13 +9,11 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 
-public class TeoriaNotasMusicales extends AppCompatActivity implements View.OnClickListener
+public class Teoria1_QueEsMusica extends AppCompatActivity implements View.OnClickListener
 
 {
 
-    static Button CONTINUAR, MENU;
-    ImageButton HOME;
-
+    ImageButton  HOME,CONTINUAR;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -25,7 +23,7 @@ public class TeoriaNotasMusicales extends AppCompatActivity implements View.OnCl
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.notas_musicales);
+        setContentView(R.layout.teoria1_que_es);
 
         HOME = (ImageButton) findViewById(R.id.home);
 
@@ -39,12 +37,8 @@ public class TeoriaNotasMusicales extends AppCompatActivity implements View.OnCl
             }
         });
 
-
         CONTINUAR = findViewById(R.id.continuar);
         CONTINUAR.setOnClickListener(this);
-
-        MENU = findViewById(R.id.menu);
-        MENU.setOnClickListener(this);
 
     }
 
@@ -57,24 +51,19 @@ public class TeoriaNotasMusicales extends AppCompatActivity implements View.OnCl
         {
             case R.id.menu:
 
-
-       /*         btnName = "Button1Click";
-                setStatus("btn1 clicked");*/
-
                 Intent i= new  Intent(getApplicationContext(), menu_principal.class);
                 startActivity(i);
                 break;
 
             case R.id.continuar:
 
-                Intent in= new  Intent(getApplicationContext(), TeoriaFigurasDuracion.class);
+                Intent in= new  Intent(getApplicationContext(), Teoria2NotasMusicales.class);
                 startActivity(in);
                 break;
 
             default:
                 break;
         }
-      /*  mFirebaseAnalytics.logEvent(btnName,params);
-*/
+
     }
 }

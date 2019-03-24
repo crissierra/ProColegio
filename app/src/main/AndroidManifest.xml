@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="crisdevelop.personal.chisdevelop.proyectocolegio">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
@@ -33,8 +35,6 @@
                     android:scheme="https" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".anexos"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -53,17 +53,16 @@
         <activity
             android:name=".juegoInicio"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".menu_principal"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".piano"
-            android:theme="@style/AppTheme.NoActionBar"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".TeoriaCirculodeQuintas"
+            android:name=".Teoria4Splashscren"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -73,21 +72,44 @@
             android:name=".Resultados"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".TeoriaFigurasDuracion"
+            android:name=".Teoria3FigurasDuracion"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".TeoriaNegra"
+            android:name=".Teoria7Negra"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".TeoriaNotasMusicales"
+            android:name=".Teoria2NotasMusicales"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".TeoriaQueEs"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".TeoriaRitmoLenguaje"
+            android:name=".Teoria1_QueEsMusica"
             android:theme="@style/AppTheme.NoActionBar" />
 
+        <activity
+            android:name=".Teoria8_Ejercicio_pan_sol"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Teoria11_Ejercicio_Pan_pan_pez"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Teoria10_Ejercicio_Pan_tren_pan"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Teoria9_Ejercicio_pantren"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Teoria6Shplashscreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TeoriaEnlaceUno"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria5RitmoLenguaje"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f6c5dc19b3984f1e93cd6b499ca458af453883e4" />
     </application>
 
 </manifest>

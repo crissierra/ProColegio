@@ -591,7 +591,7 @@ public class PreguntasUno extends AppCompatActivity {
             }
             else
             {
-                puntos=0;
+                puntos=1000;
             }
 
             gif=-1;
