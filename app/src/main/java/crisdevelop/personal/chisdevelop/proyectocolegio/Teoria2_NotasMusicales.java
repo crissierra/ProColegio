@@ -65,7 +65,7 @@ public class Teoria2_NotasMusicales extends AppCompatActivity implements View.On
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria2_NotasMusicales.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria3_FigurasDuracion.class);
                 startActivity(intent);
             }
         });
@@ -76,61 +76,48 @@ public class Teoria2_NotasMusicales extends AppCompatActivity implements View.On
     public void onClick(View v)
     {
 
-        switch (v.getId())
+    }
 
-        {
 
-            case R.id.continuar:
-                Intent in= new  Intent(getApplicationContext(), Teoria3_FigurasDuracion.class);
-                startActivity(in);
+    public void onClickStringButton(View view) {
+
+        switch (view.getId()) {
+            case R.id.notado :
+                mediaPlayer = MediaPlayer.create(this, R.raw.do_60);
                 break;
-
-            case R.id.nota_do :
-
-                this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-                nota_do = MediaPlayer.create(this,R.raw.do_60);
-                nota_do.start();
+            case R.id.notare :
+                mediaPlayer = MediaPlayer.create(this, R.raw.re_62);
                 break;
-
-            case R.id.nota_re :
-                this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-                nota_re = MediaPlayer.create(this,R.raw.re_62);
-                nota_re.start();
+            case R.id.notami :
+                mediaPlayer = MediaPlayer.create(this, R.raw.mi_64);
                 break;
-
-            case R.id.nota_mi :
-                this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-                nota_mi = MediaPlayer.create(this,R.raw.mi_64);
-                nota_mi.start();
+            case R.id.notafa :
+                mediaPlayer = MediaPlayer.create(this, R.raw.fa_65);
                 break;
-
-            case R.id.nota_fa :
-                this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-                nota_fa = MediaPlayer.create(this,R.raw.fa_65);
-                nota_fa.start();
+            case R.id.notasol :
+                mediaPlayer = MediaPlayer.create(this, R.raw.sol_67);
                 break;
-
-            case R.id.nota_sol :
-                this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-                nota_sol = MediaPlayer.create(this,R.raw.sol_67);
-                nota_sol.start();
+            case R.id.notala :
+                mediaPlayer = MediaPlayer.create(this, R.raw.la_69);
                 break;
-
-            case R.id.nota_la :
-                this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-                nota_la = MediaPlayer.create(this,R.raw.la_69);
-                nota_la.start();
-                break;
-
-            case R.id.nota_si :
-                this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-                nota_si = MediaPlayer.create(this,R.raw.si_71);
-                nota_si.start();
-                break;
-
-            default:
+            case R.id.notasi :
+                mediaPlayer = MediaPlayer.create(this, R.raw.si_71);
                 break;
         }
 
+        mediaPlayer.start();
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -47,7 +47,8 @@ public class MainActivityOrigin extends AppCompatActivity {
         btnRepetir = findViewById(R.id.swtRepeatSound);
         STATUS_REPEAT = btnRepetir.isChecked();
         if (mediaPlayer != null && !STATUS_REPEAT) {
-            if (mediaPlayer.isLooping()) {
+            if (mediaPlayer.isLooping())
+            {
                 mediaPlayer.release();
             }
         }

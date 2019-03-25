@@ -29,12 +29,17 @@
     <string name="verifyAnswer">Verificar</string>
 
 
-    <string name="gramatica1"></string>
-
-    <string name="gramatica2">
+    <string name="gramatica1">
         ¿Que es la música?\n"
        "La música es la combinación de sonidos que puedes producir por medio de un cuerpo sonoro, como lo puedes hacer con tus palmas o tus pies."
     </string>
+
+    <string name="gramatica3">
+        "Figuras de duración\n"
+       "Son signos que podemos identificar de distinta forma, con ayuda de  ellas podremos determinar su duración."
+    </string>
+
+
 
 
     <string name="gramatica4">
