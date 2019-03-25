@@ -14,9 +14,7 @@ import android.widget.ImageButton;
 public class Teoria2_NotasMusicales extends AppCompatActivity implements View.OnClickListener
 
 {
-    Button CONTINUAR;
-
-    ImageButton HOME, DO, RE, MI, FA, SOL, LA, SI;
+     ImageButton HOME,ANTERIOR, CONTINUAR, DO, RE, MI, FA, SOL, LA, SI;
      MediaPlayer mediaPlayer, nota_do, nota_re, nota_mi, nota_fa, nota_sol, nota_la, nota_si;
 
     @Override
@@ -50,10 +48,27 @@ public class Teoria2_NotasMusicales extends AppCompatActivity implements View.On
             }
         });
 
+        ANTERIOR = (ImageButton) findViewById(R.id.anterior);
+        ANTERIOR.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent=new Intent (getApplicationContext(), menu_principal.class);
+                startActivity(intent);
+            }
+        });
 
-        CONTINUAR = findViewById(R.id.continuar);
-        CONTINUAR.setOnClickListener(this);
-
+        CONTINUAR = (ImageButton) findViewById(R.id.continuar);
+        CONTINUAR.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent=new Intent (getApplicationContext(), Teoria2_NotasMusicales.class);
+                startActivity(intent);
+            }
+        });
 
     }
 

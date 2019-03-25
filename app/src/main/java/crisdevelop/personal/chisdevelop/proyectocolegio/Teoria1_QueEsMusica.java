@@ -12,8 +12,7 @@ import android.widget.ImageButton;
 public class Teoria1_QueEsMusica extends AppCompatActivity implements View.OnClickListener
 
 {
-    Button CONTINUAR;
-    ImageButton  HOME;
+     ImageButton  HOME, ANTERIOR, CONTINUAR;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -26,7 +25,6 @@ public class Teoria1_QueEsMusica extends AppCompatActivity implements View.OnCli
         setContentView(R.layout.teoria1_que_es);
 
         HOME = (ImageButton) findViewById(R.id.home);
-
         HOME.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -37,8 +35,27 @@ public class Teoria1_QueEsMusica extends AppCompatActivity implements View.OnCli
             }
         });
 
-        CONTINUAR = findViewById(R.id.continuar);
-        CONTINUAR.setOnClickListener(this);
+        ANTERIOR = (ImageButton) findViewById(R.id.anterior);
+        ANTERIOR.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent=new Intent (getApplicationContext(), menu_principal.class);
+                startActivity(intent);
+            }
+        });
+
+        CONTINUAR = (ImageButton) findViewById(R.id.continuar);
+        CONTINUAR.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent=new Intent (getApplicationContext(), Teoria2_NotasMusicales.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -49,13 +66,7 @@ public class Teoria1_QueEsMusica extends AppCompatActivity implements View.OnCli
         switch (v.getId())
 
         {
-            case R.id.menu:
-
-                Intent i= new  Intent(getApplicationContext(), menu_principal.class);
-                startActivity(i);
-                break;
-
-            case R.id.continuar:
+                case R.id.continuar:
 
                 Intent in= new  Intent(getApplicationContext(), Teoria2_NotasMusicales.class);
                 startActivity(in);
