@@ -18,12 +18,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Random;
 
 import io.netopen.hotbitmapgg.library.view.RingProgressBar;
 
-public class PreguntasUno extends AppCompatActivity {
+public class PreguntasUnoseguridad extends AppCompatActivity {
 
     MediaPlayer misonido, sonidocomodin;
 
@@ -422,7 +420,7 @@ public class PreguntasUno extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.preguntas_uno);
+        setContentView(R.layout.preguntas);
 
 
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
@@ -502,8 +500,6 @@ public class PreguntasUno extends AppCompatActivity {
         super.onPause();
         misonido.release();
         sonidocomodin.release();
-
-
 
         finish();
     }

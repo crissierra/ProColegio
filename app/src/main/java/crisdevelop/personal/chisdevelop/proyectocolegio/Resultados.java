@@ -17,7 +17,7 @@ public class Resultados extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.resultados);
 
         Intent intent = getIntent();
         //getting
@@ -69,7 +69,7 @@ public class Resultados extends AppCompatActivity {
 
     public void Restart(View v)
     {
-        Intent intent = new Intent(this, PreguntasUno.class);
+        Intent intent = new Intent(this, Preguntas.class);
         startActivity(intent);
     }
 

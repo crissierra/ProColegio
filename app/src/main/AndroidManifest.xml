@@ -55,7 +55,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".PreguntasUno"
+            android:name=".Preguntas"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Resultados"

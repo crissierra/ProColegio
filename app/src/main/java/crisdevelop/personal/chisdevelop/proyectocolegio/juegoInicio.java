@@ -36,7 +36,7 @@ public class juegoInicio extends AppCompatActivity {
     public void start_game(View view)
     {
 
-        Intent i= new Intent(this, PreguntasUno.class);
+        Intent i= new Intent(this, Preguntas.class);
         startActivity(i);
     }
 
