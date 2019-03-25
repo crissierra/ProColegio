@@ -8,7 +8,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import io.fabric.sdk.android.Fabric;
 
 
-public class Teoria4Splashscren extends AppCompatActivity
+public class Teoria4_Splash extends AppCompatActivity
 {
 
 
@@ -17,7 +17,7 @@ public class Teoria4Splashscren extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics());
-        setContentView(R.layout.teoria4_splashscreen);
+        setContentView(R.layout.teoria4_splash);
 
 
         new Handler().postDelayed(new Runnable()
@@ -25,7 +25,7 @@ public class Teoria4Splashscren extends AppCompatActivity
             @Override
             public void run()
             {
-                    startActivity(new Intent(Teoria4Splashscren.this, Teoria5RitmoLenguaje.class));
+                    startActivity(new Intent(Teoria4_Splash.this, Teoria5_RitmoLenguaje.class));
                     finish();
             }
 

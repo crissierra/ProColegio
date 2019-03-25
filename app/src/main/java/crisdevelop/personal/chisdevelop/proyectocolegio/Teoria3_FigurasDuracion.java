@@ -1,17 +1,18 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class TeoriaEnlaceUno extends AppCompatActivity implements View.OnClickListener {
+public class Teoria3_FigurasDuracion extends AppCompatActivity implements View.OnClickListener
 
+{
+    Button CONTINUAR;
 
-    static Button CONTINUAR, MENU;
     ImageButton HOME;
 
 
@@ -23,7 +24,7 @@ public class TeoriaEnlaceUno extends AppCompatActivity implements View.OnClickLi
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria_enlace_uno);
+        setContentView(R.layout.teoria3_figuras_duracion);
 
         HOME = (ImageButton) findViewById(R.id.home);
 
@@ -37,11 +38,9 @@ public class TeoriaEnlaceUno extends AppCompatActivity implements View.OnClickLi
             }
         });
 
+
         CONTINUAR = findViewById(R.id.continuar);
         CONTINUAR.setOnClickListener(this);
-
-        MENU = findViewById(R.id.menu);
-        MENU.setOnClickListener(this);
 
 
     }
@@ -61,14 +60,14 @@ public class TeoriaEnlaceUno extends AppCompatActivity implements View.OnClickLi
 
             case R.id.continuar:
 
-                Intent in= new  Intent(getApplicationContext(), Teoria5RitmoLenguaje.class);
+                Intent in= new  Intent(getApplicationContext(), Teoria4_Splash.class);
                 startActivity(in);
                 break;
 
             default:
                 break;
         }
-        /*  mFirebaseAnalytics.logEvent(btnName,params);
-         */
+      /*  mFirebaseAnalytics.logEvent(btnName,params);
+*/
     }
 }

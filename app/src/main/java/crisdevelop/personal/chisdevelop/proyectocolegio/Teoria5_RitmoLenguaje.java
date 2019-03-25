@@ -8,11 +8,11 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 
-public class Teoria5RitmoLenguaje extends AppCompatActivity implements View.OnClickListener
+public class Teoria5_RitmoLenguaje extends AppCompatActivity implements View.OnClickListener
 
 {
-
-    ImageButton HOME, ANTERIOR, CONTINUAR;
+    Button CONTINUAR;
+    ImageButton HOME, ANTERIOR;
 
 
     @Override
@@ -41,10 +41,6 @@ public class Teoria5RitmoLenguaje extends AppCompatActivity implements View.OnCl
         CONTINUAR = findViewById(R.id.continuar);
         CONTINUAR.setOnClickListener(this);
 
-        ANTERIOR = findViewById(R.id.anterior);
-        ANTERIOR.setOnClickListener(this);
-
-
     }
 
     @Override
@@ -62,7 +58,7 @@ public class Teoria5RitmoLenguaje extends AppCompatActivity implements View.OnCl
 
             case R.id.continuar:
 
-                Intent in= new  Intent(getApplicationContext(), Teoria6Shplashscreen.class);
+                Intent in= new  Intent(getApplicationContext(), Teoria6_Splash.class);
                 startActivity(in);
                 break;
 

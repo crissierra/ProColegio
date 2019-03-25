@@ -6,7 +6,9 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.os.Bundle;
         import android.view.View;
         import android.widget.Button;
+        import android.widget.CheckBox;
         import android.widget.EditText;
+        import android.widget.TextView;
         import android.widget.Toast;
         import model.NotasMusicais;
         import java.util.ArrayList;
@@ -14,7 +16,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import java.util.List;
         import java.util.Random;
 
-public class EntrenamientoAvanzado extends AppCompatActivity  implements View.OnClickListener{
+public class Entrenamiento extends AppCompatActivity  implements View.OnClickListener{
 
     public static int RESULT_SAVE = 1;
     public static int RESULT_CANCEL = 2;
@@ -22,32 +24,21 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
     private NotasMusicais atualSom;
     private int pontos;
     private EditText edtNome;
-    static Button ENLACEQUIENQUIERESER;
 
-
-    static Button BOTONDO,BOTONDOSOS, BOTONRE,BOTONRESOS,BOTONMI,BOTONFA,BOTONFASOS, BOTONSOL, BOTONSOLSOS, BOTONLA,BOTONLASOS, BOTONSI;
+    static Button BOTONDO,BOTONRE,BOTONMI,BOTONFA, BOTONSOL, BOTONLA, BOTONSI;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_entrenamiento_avanzado);
+        setContentView(R.layout.entrenamiento);
         setPontos(0);
         edtNome = findViewById(R.id.edtNome);
-
-        ENLACEQUIENQUIERESER= findViewById(R.id.enlacequienquiereser);
-        ENLACEQUIENQUIERESER.setOnClickListener(this);
 
         BOTONDO= findViewById(R.id.botondo);
         BOTONDO.setOnClickListener(this);
 
-        BOTONDOSOS= findViewById(R.id.botondosos);
-        BOTONDOSOS.setOnClickListener(this);
-
         BOTONRE= findViewById(R.id.botonre);
         BOTONRE.setOnClickListener(this);
-
-        BOTONRESOS= findViewById(R.id.botonresos);
-        BOTONRESOS.setOnClickListener(this);
 
         BOTONMI= findViewById(R.id.botonmi);
         BOTONMI.setOnClickListener(this);
@@ -55,20 +46,11 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
         BOTONFA= findViewById(R.id.botonfa);
         BOTONFA.setOnClickListener(this);
 
-        BOTONFASOS= findViewById(R.id.botonfasos);
-        BOTONFASOS.setOnClickListener(this);
-
         BOTONSOL= findViewById(R.id.botonsol);
         BOTONSOL.setOnClickListener(this);
 
-        BOTONSOLSOS= findViewById(R.id.botonsolsos);
-        BOTONSOLSOS.setOnClickListener(this);
-
         BOTONLA= findViewById(R.id.botonla);
         BOTONLA.setOnClickListener(this);
-
-        BOTONLASOS= findViewById(R.id.botonlasos);
-        BOTONLASOS.setOnClickListener(this);
 
         BOTONSI= findViewById(R.id.botonsi);
         BOTONSI.setOnClickListener(this);
@@ -87,12 +69,6 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
         listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.sol_67)));
         listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.la_69)));
         listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.si_71)));
-
-        listMedia.add(new NotasMusicais("DO SOS", MediaPlayer.create(this, R.raw.do_sostenido_61)));
-        listMedia.add(new NotasMusicais("RE SOS", MediaPlayer.create(this, R.raw.re_sostenido_63)));
-        listMedia.add(new NotasMusicais("FA SOS", MediaPlayer.create(this, R.raw.fa_sostenido_66)));
-        listMedia.add(new NotasMusicais("SOL SOS", MediaPlayer.create(this, R.raw.sol_sostenido_68)));
-        listMedia.add(new NotasMusicais("LA SOS", MediaPlayer.create(this, R.raw.la_sostenido_70)));
 
         Collections.shuffle(listMedia,new Random(System.nanoTime()));
 
@@ -116,16 +92,6 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
                 }
                 break;
 
-            case R.id.botondosos:
-
-                if (atualSom.getTitle().contains("DO SOS")) {
-                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
-                    setPontos(getPontos() + 1);
-                } else {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
-                }
-                break;
-
             case R.id.botonre:
 
                 if (atualSom.getTitle().contains("RE")) {
@@ -135,18 +101,6 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
                 break;
-
-            case R.id.botonresos:
-
-                if (atualSom.getTitle().contains("RE SOS")) {
-                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
-                    setPontos(getPontos() + 1);
-                } else {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
-                }
-                break;
-
-
             case R.id.botonmi:
 
                 if (atualSom.getTitle().contains("MI")) {
@@ -156,7 +110,6 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
                 break;
-
             case R.id.botonfa:
 
                 if (atualSom.getTitle().contains("FA")) {
@@ -166,17 +119,6 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
                 break;
-
-            case R.id.botonfasos:
-
-                if (atualSom.getTitle().contains("FA SOS")) {
-                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
-                    setPontos(getPontos() + 1);
-                } else {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
-                }
-                break;
-
             case R.id.botonsol:
 
                 if (atualSom.getTitle().contains("SOL")) {
@@ -186,18 +128,6 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
                 break;
-
-            case R.id.botonsolsos:
-
-                if (atualSom.getTitle().contains("SOL SOS")) {
-                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
-                    setPontos(getPontos() + 1);
-                } else {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
-                }
-                break;
-
-
             case R.id.botonla:
 
                 if (atualSom.getTitle().contains("LA")) {
@@ -207,18 +137,6 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
                 break;
-
-            case R.id.botonlasos:
-
-                if (atualSom.getTitle().contains("LA SOS")) {
-                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
-                    setPontos(getPontos() + 1);
-                } else {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
-                }
-                break;
-
-
             case R.id.botonsi:
 
                 if (atualSom.getTitle().contains("SI")) {
@@ -229,18 +147,6 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
                 }
                 break;
 
-
-
-
-
-
-
-            case R.id.enlacequienquiereser:
-
-                Intent intent=new Intent (this, juegoInicio.class);
-                startActivity(intent);
-
-                break;
 
         }
     }
@@ -341,6 +247,7 @@ public class EntrenamientoAvanzado extends AppCompatActivity  implements View.On
         setResult(RESULT_CANCEL);
         finish();
     }
+
 
     public int getPontos() {
         return pontos;

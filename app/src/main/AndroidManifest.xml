@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".Anexos"></activity>
+        <activity android:name=".Entrenamiento" />
         <activity
             android:name=".splashscreen"
             android:theme="@style/AppTheme.NoActionBar">
@@ -36,19 +37,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".anexos"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".contrasena"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".EntrenamientoAvanzado"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".EntrenamientoBasico"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".integrantes"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".juegoInicio"
@@ -62,7 +51,7 @@
             android:screenOrientation="landscape"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Teoria4Splashscren"
+            android:name=".Teoria4_Splash"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -72,39 +61,19 @@
             android:name=".Resultados"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Teoria3FigurasDuracion"
+            android:name=".Teoria3_FigurasDuracion"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Teoria7Negra"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Teoria2NotasMusicales"
+            android:name=".Teoria2_NotasMusicales"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Teoria1_QueEsMusica"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
-            android:name=".Teoria8_Ejercicio_pan_sol"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity
-            android:name=".Teoria11_Ejercicio_Pan_pan_pez"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity
-            android:name=".Teoria10_Ejercicio_Pan_tren_pan"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity
-            android:name=".Teoria9_Ejercicio_pantren"
-            android:theme="@style/AppTheme.NoActionBar"/>
-        <activity
-            android:name=".Teoria6Shplashscreen"
+            android:name=".Teoria6_Splash"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".TeoriaEnlaceUno"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
-        <activity
-            android:name=".Teoria5RitmoLenguaje"
+            android:name=".Teoria5_RitmoLenguaje"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data

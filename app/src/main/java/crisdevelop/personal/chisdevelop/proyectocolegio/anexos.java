@@ -1,9 +1,9 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
-public class anexos extends AppCompatActivity {
+public class Anexos extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

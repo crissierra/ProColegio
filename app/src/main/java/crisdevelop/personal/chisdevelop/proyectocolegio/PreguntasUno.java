@@ -610,7 +610,7 @@ public class PreguntasUno extends AppCompatActivity {
        MyCountDownTimer=new CountDownTimer(46000, 1000) {
 
            public void onTick(long millisUntilFinished) {
-               tiempo.setText( millisUntilFinished / 1000+ " segundos.");
+               tiempo.setText( millisUntilFinished / 1000+ " seg.");
            }
 
            public void onFinish() {

@@ -54,7 +54,7 @@ public class MainActivityOrigin extends AppCompatActivity {
     }
 
     public void testarOuvidoAbsButton(View view) {
-        Intent intent = new Intent(this, EntrenamientoBasico.class);
+        Intent intent = new Intent(this, menu_principal.class);
         startActivityForResult(intent, REQUEST_ADD);
     }
 

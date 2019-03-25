@@ -12,8 +12,8 @@ import android.widget.ImageButton;
 public class Teoria1_QueEsMusica extends AppCompatActivity implements View.OnClickListener
 
 {
-
-    ImageButton  HOME,CONTINUAR;
+    Button CONTINUAR;
+    ImageButton  HOME;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -57,7 +57,7 @@ public class Teoria1_QueEsMusica extends AppCompatActivity implements View.OnCli
 
             case R.id.continuar:
 
-                Intent in= new  Intent(getApplicationContext(), Teoria2NotasMusicales.class);
+                Intent in= new  Intent(getApplicationContext(), Teoria2_NotasMusicales.class);
                 startActivity(in);
                 break;
 

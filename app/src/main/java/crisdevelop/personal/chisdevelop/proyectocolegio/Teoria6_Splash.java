@@ -1,7 +1,5 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
-        import android.content.Context;
-        import android.content.SharedPreferences;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.content.Intent;
@@ -10,7 +8,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import io.fabric.sdk.android.Fabric;
 
 
-public class Teoria6Shplashscreen extends AppCompatActivity
+public class Teoria6_Splash extends AppCompatActivity
 {
 
 
@@ -19,7 +17,7 @@ public class Teoria6Shplashscreen extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics());
-        setContentView(R.layout.teoria6_shplashscreen);
+        setContentView(R.layout.teoria6__splash);
 
 
         new Handler().postDelayed(new Runnable()
@@ -27,7 +25,7 @@ public class Teoria6Shplashscreen extends AppCompatActivity
             @Override
             public void run()
             {
-                startActivity(new Intent(Teoria6Shplashscreen.this, Teoria7Negra.class));
+                startActivity(new Intent(Teoria6_Splash.this, menu_principal.class));
                 finish();
             }
 

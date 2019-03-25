@@ -42,7 +42,7 @@ public class juegoInicio extends AppCompatActivity {
 
     public void about_game(View view)
     {
-        Intent i= new Intent(this, anexos.class);
+        Intent i= new Intent(this, Anexos.class);
         startActivity(i);
     }
 }

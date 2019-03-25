@@ -11,12 +11,12 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 
-public class Teoria2NotasMusicales extends AppCompatActivity implements View.OnClickListener
+public class Teoria2_NotasMusicales extends AppCompatActivity implements View.OnClickListener
 
 {
+    Button CONTINUAR;
 
-
-    ImageButton HOME, ANTERIOR, CONTINUAR, DO, RE, MI, FA, SOL, LA, SI;
+    ImageButton HOME, DO, RE, MI, FA, SOL, LA, SI;
      MediaPlayer mediaPlayer, nota_do, nota_re, nota_mi, nota_fa, nota_sol, nota_la, nota_si;
 
     @Override
@@ -54,9 +54,6 @@ public class Teoria2NotasMusicales extends AppCompatActivity implements View.OnC
         CONTINUAR = findViewById(R.id.continuar);
         CONTINUAR.setOnClickListener(this);
 
-        ANTERIOR = findViewById(R.id.anterior);
-        ANTERIOR.setOnClickListener(this);
-
 
     }
 
@@ -67,13 +64,9 @@ public class Teoria2NotasMusicales extends AppCompatActivity implements View.OnC
         switch (v.getId())
 
         {
-            case R.id.menu:
-                Intent i= new  Intent(getApplicationContext(), menu_principal.class);
-                startActivity(i);
-                break;
 
             case R.id.continuar:
-                Intent in= new  Intent(getApplicationContext(), Teoria3FigurasDuracion.class);
+                Intent in= new  Intent(getApplicationContext(), Teoria3_FigurasDuracion.class);
                 startActivity(in);
                 break;
 
