@@ -53,7 +53,7 @@ public class menu_principal extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), juegoInicio.class);
+                Intent intent=new Intent (getApplicationContext(), Inicio.class);
                 startActivity(intent);
             }
         });

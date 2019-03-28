@@ -6,4 +6,29 @@
     <color name="colorintro">#FF004BA7</color>
     <color name="colorletra">#006064</color>
     <color name="colorfondo">#9DA0A0</color>
+
+
+
+    <color name="verde">#218403</color>
+    <color name="verdeOscuro">#114801</color>
+    <color name="rojo">#a90101</color>
+    <color name="rojoOscuro">#630000</color>
+    <color name="negroTransparente">#78000000</color>
+    <color name="negro_tranparente2">#2e000000</color>
+    <color name="fondoApp">#764f25</color>
+    <color name="fondoAppOscuro">#593b1a</color>
+    <color name="cafeSuah">#43311d</color>
+    <color name="cafeOscuro">#352615</color>
+    <color name="cafeClaro">#7b6144</color>
+    <color name="cafeClaroOscuro">#634e38</color>
+    <color name="cafeClaroClaro">#9f8569</color>
+
+    <color name="azul_claro">#1669ce</color>
+    <color name="azul_claro_oscuro">#1353a1</color>
+
+
+
+
+
+
 </resources>

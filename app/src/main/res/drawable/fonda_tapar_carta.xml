@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="80dp"
+        android:height="120dp"
+        >
+        <shape>
+
+
+            <solid android:color="@color/negroTransparente"/>
+            <corners android:radius="5dp"
+                android:bottomLeftRadius="7dp"/>
+        </shape>
+
+    </item>
+    <item
+        android:width="79dp"
+        android:height="119dp"
+        >
+    <shape>
+
+
+        <solid android:color="@color/azul_claro_oscuro"/>
+        <corners android:radius="5dp"/>
+    </shape>
+
+    </item>
+
+    <item
+        android:width="79dp"
+        android:height="115dp"
+        >
+        <shape>
+
+
+            <solid android:color="@color/azul_claro"/>
+            <corners android:radius="5dp"/>
+        </shape>
+
+
+
+    </item>
+    <item
+        android:height="50dp"
+        android:width="40dp"
+        android:gravity="center"
+        android:drawable="@drawable/logo_waa_carta"
+
+        >
+
+
+
+
+    </item>
+
+</layer-list>

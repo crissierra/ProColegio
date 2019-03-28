@@ -76,6 +76,21 @@
             android:name=".Teoria5_RitmoLenguaje"
             android:theme="@style/AppTheme.NoActionBar" />
 
+        <activity
+            android:name=".Partida"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Configura"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Inicio"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="f6c5dc19b3984f1e93cd6b499ca458af453883e4" />
