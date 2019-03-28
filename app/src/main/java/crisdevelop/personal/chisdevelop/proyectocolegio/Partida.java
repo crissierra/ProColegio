@@ -115,7 +115,7 @@ public class Partida extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i=new Intent(getApplicationContext(), Inicio.class);
+                Intent i=new Intent(getApplicationContext(), PressConcentrese.class);
                 startActivity(i);
             }
         });
@@ -262,7 +262,7 @@ public class Partida extends AppCompatActivity {
                 if (valorElegido == cartas.get(posicionActual).getNumero()) {
 
 
-                    Toast.makeText(getApplicationContext(), "correcto", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "¡correcto!", Toast.LENGTH_SHORT).show();
 
                 } else {
 
@@ -272,7 +272,7 @@ public class Partida extends AppCompatActivity {
                     view1.startAnimation(animacionA);
                     view2.startAnimation(animacionA);
 
-                    Toast.makeText(getApplicationContext(), "mal", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show();
 
                 }
 
@@ -323,7 +323,7 @@ public class Partida extends AppCompatActivity {
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent i=new Intent(getApplicationContext(),Inicio.class);
+                    Intent i=new Intent(getApplicationContext(), PressConcentrese.class);
                     startActivity(i);
                 }
             });

@@ -1,7 +1,10 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
 
+import android.app.Dialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -11,8 +14,10 @@ import android.widget.ImageButton;
 
 public class menu_principal extends AppCompatActivity {
 
+    private Dialog escojeJuego;
+
     GridLayout mainGrid;
-    ImageButton TEORIA, JUEGO, ENTRENAMIENTO, PIANO, ANEXO;
+    ImageButton TEORIA, ENTRENAMIENTO, PIANO, ANEXO;
 
 
     @Override
@@ -25,17 +30,20 @@ public class menu_principal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_principal);
 
+
+        // SOLO PARA EL DIALOG
+            escojeJuego=new Dialog(this);
+            escojeJuego.setContentView(R.layout.escoje_juego);
+            escojeJuego.setCanceledOnTouchOutside(true);
+            escojeJuego.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        // ACABA SOLO PARA EL DIALOG
+
         mainGrid = (GridLayout) findViewById(R.id.mainGrid);
 
         TEORIA = (ImageButton) findViewById(R.id.teoria);
-        JUEGO = (ImageButton) findViewById(R.id.game);
         ENTRENAMIENTO = (ImageButton) findViewById(R.id.entrenamiento);
         PIANO = (ImageButton) findViewById(R.id.piano);
         ANEXO = (ImageButton) findViewById(R.id.anexo);
-
-
-
-
 
 
         TEORIA.setOnClickListener(new View.OnClickListener()
@@ -44,16 +52,6 @@ public class menu_principal extends AppCompatActivity {
             public void onClick(View v)
             {
                 Intent intent=new Intent (getApplicationContext(), Teoria1_QueEsMusica.class);
-                startActivity(intent);
-            }
-        });
-
-        JUEGO.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent=new Intent (getApplicationContext(), Inicio.class);
                 startActivity(intent);
             }
         });
@@ -90,5 +88,45 @@ public class menu_principal extends AppCompatActivity {
 
 
     }
+
+
+    public void escogerJuego(View v){
+        Intent i;
+
+
+        switch (v.getId()){
+
+            case R.id.game:
+
+                escojeJuego.show();
+                break;
+
+            case R.id.quienquiere:
+
+                i=new Intent(this, PressQuienQuiere.class);
+
+                startActivity(i);
+                break;
+
+            case R.id.concentrese:
+
+                i=new Intent(this, PressConcentrese.class);
+
+                startActivity(i);
+                break;
+
+        }
+
+    }
+
+
+    public void onResume(){
+        super.onResume();
+
+
+    }
+
+
+
 
 }

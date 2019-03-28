@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.os.Handler;
+import android.view.WindowManager;
+
 import com.crashlytics.android.Crashlytics;
 import io.fabric.sdk.android.Fabric;
 
@@ -20,6 +22,10 @@ public class splashscreen extends AppCompatActivity
             super.onCreate(savedInstanceState);
             Fabric.with(this, new Crashlytics());
             setContentView(R.layout.splashscreen);
+
+            //CODIGO PARA ESCONDER EL STATUS BAR
+            getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+            //CODIGO PARA ESCONDER EL STATUS BAR
 
 
             new Handler().postDelayed(new Runnable()

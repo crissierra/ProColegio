@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class juegoInicio extends AppCompatActivity {
+public class PressQuienQuiere extends AppCompatActivity {
 
     MediaPlayer misonido;
     SoundPool soundPool;
@@ -17,7 +17,7 @@ public class juegoInicio extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.juego_inicio);
+        setContentView(R.layout.press_quien_quiere);
 
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
         misonido = MediaPlayer.create(this,R.raw.songjuego);

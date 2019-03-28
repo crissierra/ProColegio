@@ -90,7 +90,7 @@ public class Configura extends AppCompatActivity {
 
                 break;
             case R.id.atras:
-                Intent i=new Intent(this, Inicio.class);
+                Intent i=new Intent(this, PressConcentrese.class);
                 startActivity(i);
 
 

@@ -3,13 +3,13 @@
     <gradient
 
 
-        android:endColor="@color/cafeClaro"
-        android:centerColor="@color/cafeClaroOscuro"
-        android:startColor="@color/cafeClaroClaro"
+        android:endColor="@color/azul_claro"
+        android:centerColor="@color/azul_claro"
+        android:startColor="@color/colorAccent"
         android:angle="90"
 
         />
-    <stroke android:color="@color/fondoApp" android:width="5dp"/>
+    <stroke android:color="@color/colorintro" android:width="5dp"/>
     <corners android:bottomRightRadius="30dp"
         android:bottomLeftRadius="30dp"/>
 

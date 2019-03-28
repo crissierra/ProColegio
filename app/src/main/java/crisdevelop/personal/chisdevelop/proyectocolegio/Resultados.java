@@ -76,7 +76,7 @@ public class Resultados extends AppCompatActivity {
     public void end(View v)
     {
 
-        Intent intent = new Intent(this, juegoInicio.class);
+        Intent intent = new Intent(this, PressQuienQuiere.class);
         startActivity(intent);
         super.onDestroy();
         android.os.Process.killProcess(android.os.Process.myPid());

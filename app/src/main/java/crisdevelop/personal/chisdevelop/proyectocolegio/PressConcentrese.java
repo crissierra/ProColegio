@@ -7,8 +7,9 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.WindowManager;
 
-public class Inicio extends AppCompatActivity {
+public class PressConcentrese extends AppCompatActivity {
 
     private Dialog escojeDificultad;
     private int[] dificultad;
@@ -17,11 +18,16 @@ public class Inicio extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_inicio);
+        setContentView(R.layout.press_concentrese);
+
+        //CODIGO PARA ESCONDER EL STATUS BAR
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //CODIGO PARA ESCONDER EL STATUS BAR
+
 
         escojeDificultad=new Dialog(this);
         escojeDificultad.setContentView(R.layout.escoje_dificultad_mensaje);
-        escojeDificultad.setCanceledOnTouchOutside(false);
+        escojeDificultad.setCanceledOnTouchOutside(true);
         escojeDificultad.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dificultad=new int[2];
     }
@@ -43,12 +49,13 @@ public class Inicio extends AppCompatActivity {
                 startActivity(i);
 
                 break;
-            case R.id.puntajes:
+
+
+            case R.id.volver:
+                i=new Intent(this, menu_principal.class);
+                startActivity(i);
+
                 break;
-
-            // ACA ESTA ROTO EL CODIGO.. DEBERIA ENVIAR A PUNTAJES
-
-
 
             case R.id.facil:
 

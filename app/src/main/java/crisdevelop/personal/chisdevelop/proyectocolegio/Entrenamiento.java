@@ -5,6 +5,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
         import android.view.View;
+        import android.view.WindowManager;
         import android.widget.Button;
         import android.widget.CheckBox;
         import android.widget.EditText;
@@ -31,6 +32,13 @@ public class Entrenamiento extends AppCompatActivity  implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.entrenamiento);
+
+        //CODIGO PARA ESCONDER EL STATUS BAR
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //CODIGO PARA ESCONDER EL STATUS BAR
+
+
+
         setPontos(0);
         edtNome = findViewById(R.id.edtNome);
 
