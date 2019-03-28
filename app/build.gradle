@@ -45,7 +45,7 @@ dependencies {
 
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.6'
     implementation 'com.github.HotBitmapGG:RingProgressBar:V1.2.2'
-    implementation 'com.cuboid:cuboidcirclebutton:1.0.3'
+
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
