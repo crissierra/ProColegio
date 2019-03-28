@@ -11,11 +11,13 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 
-public class Teoria2_NotasMusicales extends AppCompatActivity implements View.OnClickListener
+public class Teoria2_NotasMusicales extends AppCompatActivity  implements View.OnClickListener
 
 {
-     ImageButton HOME,ANTERIOR, CONTINUAR, DO, RE, MI, FA, SOL, LA, SI;
-     MediaPlayer mediaPlayer, nota_do, nota_re, nota_mi, nota_fa, nota_sol, nota_la, nota_si;
+     ImageButton HOME,ANTERIOR, CONTINUAR;
+
+     ImageButton button1;
+     MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -28,13 +30,37 @@ public class Teoria2_NotasMusicales extends AppCompatActivity implements View.On
         setContentView(R.layout.teoria2_notas_musicales);
 
 
-        DO = (ImageButton) findViewById(R.id.nota_do);
+      /*  DO = (ImageButton) findViewById(R.id.nota_do);
         RE = (ImageButton) findViewById(R.id.nota_re);
         MI = (ImageButton) findViewById(R.id.nota_mi);
         FA = (ImageButton) findViewById(R.id.nota_fa);
         SOL = (ImageButton) findViewById(R.id.nota_sol);
         LA = (ImageButton) findViewById(R.id.nota_la);
-        SI = (ImageButton) findViewById(R.id.nota_si);
+        SI = (ImageButton) findViewById(R.id.nota_si);*/
+
+
+      // DESDE ACA
+        ImageButton button1 = (ImageButton) findViewById(R.id.nota_do);
+
+        MediaPlayer mp = MediaPlayer.create(Teoria2_NotasMusicales.this, R.raw.do_60);
+        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
+                {
+
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        // TODO Auto-generated method stub
+                        mp.release();
+                    }
+
+                });
+                   mp.start();
+        // HASTA ACA
+
+
+
+
+
+
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -72,52 +98,45 @@ public class Teoria2_NotasMusicales extends AppCompatActivity implements View.On
 
     }
 
+    public void onClickStringButton(View view)
+         {
+
+            switch (view.getId())
+                {
+                    case R.id.notado :
+                        mediaPlayer = MediaPlayer.create(this, R.raw.do_60);
+                        mediaPlayer.start();
+                        break;
+                    case R.id.notare :
+                        mediaPlayer = MediaPlayer.create(this, R.raw.re_62);
+                        mediaPlayer.start();
+                        break;
+                    case R.id.notami :
+                        mediaPlayer = MediaPlayer.create(this, R.raw.mi_64);
+                        mediaPlayer.start();
+                        break;
+                    case R.id.notafa :
+                        mediaPlayer = MediaPlayer.create(this, R.raw.fa_65);
+                        mediaPlayer.start();
+                        break;
+                    case R.id.notasol :
+                        mediaPlayer = MediaPlayer.create(this, R.raw.sol_67);
+                        mediaPlayer.start();
+                        break;
+                    case R.id.notala :
+                        mediaPlayer = MediaPlayer.create(this, R.raw.la_69);
+                        mediaPlayer.start();
+                        break;
+                    case R.id.notasi :
+                        mediaPlayer = MediaPlayer.create(this, R.raw.si_71);
+                        mediaPlayer.start();
+                        break;
+                }
+
+         }
+
     @Override
-    public void onClick(View v)
-    {
+    public void onClick(View v) {
 
     }
-
-
-    public void onClickStringButton(View view) {
-
-        switch (view.getId()) {
-            case R.id.notado :
-                mediaPlayer = MediaPlayer.create(this, R.raw.do_60);
-                break;
-            case R.id.notare :
-                mediaPlayer = MediaPlayer.create(this, R.raw.re_62);
-                break;
-            case R.id.notami :
-                mediaPlayer = MediaPlayer.create(this, R.raw.mi_64);
-                break;
-            case R.id.notafa :
-                mediaPlayer = MediaPlayer.create(this, R.raw.fa_65);
-                break;
-            case R.id.notasol :
-                mediaPlayer = MediaPlayer.create(this, R.raw.sol_67);
-                break;
-            case R.id.notala :
-                mediaPlayer = MediaPlayer.create(this, R.raw.la_69);
-                break;
-            case R.id.notasi :
-                mediaPlayer = MediaPlayer.create(this, R.raw.si_71);
-                break;
-        }
-
-        mediaPlayer.start();
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
