@@ -22,7 +22,7 @@ import java.util.ArrayList;
 
 import io.netopen.hotbitmapgg.library.view.RingProgressBar;
 
-public class PreguntasUnoseguridad extends AppCompatActivity {
+public class PreguntasQuienQuiere extends AppCompatActivity {
 
     MediaPlayer misonido, sonidocomodin;
 

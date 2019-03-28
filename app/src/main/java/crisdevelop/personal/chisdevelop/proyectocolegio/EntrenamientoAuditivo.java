@@ -16,7 +16,7 @@ import model.Jogador;
 
 import java.util.ArrayList;
 
-public class MainActivityOrigin extends AppCompatActivity {
+public class EntrenamientoAuditivo extends AppCompatActivity {
 
     public static int REQUEST_ADD = 1;
     private static boolean STATUS_REPEAT = false;
@@ -31,7 +31,7 @@ public class MainActivityOrigin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_origin);
+        setContentView(R.layout.entrenamiento_auditivo);
 
         //CODIGO PARA ESCONDER EL STATUS BAR
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);

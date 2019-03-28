@@ -11,7 +11,9 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Anexos"></activity>
+        <activity android:name=".Teoria8_Ejercicio"></activity>
+        <activity android:name=".Teoria7_Negra" />
+        <activity android:name=".Anexos" />
         <activity android:name=".Entrenamiento" />
         <activity
             android:name=".splashscreen"
@@ -23,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivityOrigin"
+            android:name=".EntrenamientoAuditivo"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -75,21 +77,18 @@
         <activity
             android:name=".Teoria5_RitmoLenguaje"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Partida"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Configura"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PressConcentrese"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="io.fabric.ApiKey"

@@ -12,7 +12,7 @@ import java.util.ArrayList;
 /**
  * Created by Usuario on 17/06/2018.
  */
-
+// FALTAN ARCHIVOS DE VOZ 18_2, 20_1, 20_2,
 public class AdapterCarta extends BaseAdapter {
     private Context context;
     private ArrayList<ItemCarta> num;

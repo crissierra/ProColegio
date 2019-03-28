@@ -2,6 +2,8 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
@@ -14,6 +16,7 @@ import io.fabric.sdk.android.Fabric;
 
 public class splashscreen extends AppCompatActivity
     {
+
 
 
         @Override
@@ -30,6 +33,8 @@ public class splashscreen extends AppCompatActivity
 
             new Handler().postDelayed(new Runnable()
             {
+
+
                 @Override
                 public void run()
                 {
@@ -52,6 +57,7 @@ public class splashscreen extends AppCompatActivity
                                 startActivity(new Intent(splashscreen.this,contrasena.class));
                                 finish();
                             }
+
 
 
                 }

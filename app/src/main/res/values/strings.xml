@@ -34,33 +34,43 @@
        "La música es la combinación de sonidos que puedes producir por medio de un cuerpo sonoro, como lo puedes hacer con tus palmas o tus pies."
     </string>
 
+    <string name="gramatica2">
+       " Las notas musicales representan los sonidos en la música, las cuales pueden ser escuchadas en cualquier instrumento musical, incluyendo la voz,"
+       " a través del canto.\n"
+        "¿Recuerdas las notas musicales?\n\n"
+        "Da click en las siguientes teclas para escucharlas\n"
+    </string>
+
+
     <string name="gramatica3">
         "Figuras de duración\n"
        "Son signos que podemos identificar de distinta forma, con ayuda de  ellas podremos determinar su duración."
     </string>
 
 
-
-
     <string name="gramatica4">
-        "Notas musicales: \n"
-        "Las notas musicales representan los sonidos en la música, las cuales pueden ser escuchadas en cualquier instrumento musical,"
-        "incluyendo la voz a través del canto.\n"
-        "¿Recuerdas las notas musicales?\n"
-        "Obsérvalas."
+
+        "Ya que conocemos las figuras de duración super bien.\n"
+         "ahora vamos a pasar al ritmo lenguaje."
+
     </string>
 
 
     <string name="gramatica5">
-       "Figuras de duración\n"
+        "Ritmo Lenguaje\n\n"
+        "Es el estudio de ciertas figuras de duración apoyadas con el acento de nuestro lenguaje castellano.\n"
+        "¿estas preparado para conocerlas?\n"
+        "¡Empecemos!\n"
     </string>
 
+
     <string name="gramatica6">
-       "Son signos que podemos identificar de distinta forma, con ayuda de  ellas podremos determinar su duración.\n"
+       "Vamos a trabajar las siguientes figuras de duración…\n"
     </string>
 
     <string name="gramatica7">
-       "Silencios musicales:\n Son signos que representan la duración sin la ejecución de un sonido, nos permite el descanso y la separación de diferentes frases musicales."
+       "La figura conocida como negra la puedes identificar con una palabra monosílaba, que es aquella que tiene una sola silaba.\n\n"
+       "Ejemplo:  pan, pez, tren, sol.\n"
     </string>
 
     <string name="gramatica8">

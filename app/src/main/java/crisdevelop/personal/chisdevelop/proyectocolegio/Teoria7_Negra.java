@@ -1,17 +1,23 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.view.WindowManager;
-import android.widget.Button;
-import android.widget.ImageButton;
+        import android.content.Intent;
+        import android.media.AudioManager;
+        import android.media.MediaPlayer;
+        import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.view.View;
+        import android.view.WindowManager;
+        import android.widget.Button;
+        import android.widget.ImageButton;
 
-public class Teoria5_RitmoLenguaje extends AppCompatActivity implements View.OnClickListener
+
+public class Teoria7_Negra extends AppCompatActivity  implements View.OnClickListener
 
 {
-    ImageButton HOME, ANTERIOR, CONTINUAR;
+    ImageButton HOME,ANTERIOR, CONTINUAR;
+    MediaPlayer voz7;
+    private MediaPlayer mediaPlayer;
+
 
 
     @Override
@@ -22,7 +28,9 @@ public class Teoria5_RitmoLenguaje extends AppCompatActivity implements View.OnC
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria5_ritmo_lenguaje);
+        setContentView(R.layout.teoria7__negra);
+
+
 
         HOME = (ImageButton) findViewById(R.id.home);
         HOME.setOnClickListener(new View.OnClickListener()
@@ -35,9 +43,19 @@ public class Teoria5_RitmoLenguaje extends AppCompatActivity implements View.OnC
             }
         });
 
-
         ANTERIOR = (ImageButton) findViewById(R.id.anterior);
         ANTERIOR.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent=new Intent (getApplicationContext(), Teoria1_QueEsMusica.class);
+                startActivity(intent);
+            }
+        });
+
+        CONTINUAR = (ImageButton) findViewById(R.id.continuar);
+        CONTINUAR.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -47,29 +65,20 @@ public class Teoria5_RitmoLenguaje extends AppCompatActivity implements View.OnC
             }
         });
 
-
-        CONTINUAR = (ImageButton) findViewById(R.id.continuar);
-        CONTINUAR.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent=new Intent (getApplicationContext(), Teoria6_Splash.class);
-                startActivity(intent);
-            }
-        });
-
     }
 
-    @Override
-    public void onClick(View v)
+
+    public void playnotadevoz(View view)
     {
-
-        switch (v.getId())
-
-        {
-
+        switch (view.getId()) {
+            case R.id.btn_pan :
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_7);
+                break;
         }
+        mediaPlayer.start();
+    }
+    @Override
+    public void onClick(View v) {
 
     }
 }

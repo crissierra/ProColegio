@@ -11,9 +11,8 @@ import android.widget.ImageButton;
 public class Teoria3_FigurasDuracion extends AppCompatActivity implements View.OnClickListener
 
 {
-    Button CONTINUAR;
 
-    ImageButton HOME;
+    ImageButton HOME, ANTERIOR, CONTINUAR;
 
 
     @Override
@@ -39,9 +38,29 @@ public class Teoria3_FigurasDuracion extends AppCompatActivity implements View.O
         });
 
 
-        CONTINUAR = findViewById(R.id.continuar);
-        CONTINUAR.setOnClickListener(this);
 
+        ANTERIOR = (ImageButton) findViewById(R.id.anterior);
+        ANTERIOR.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent=new Intent (getApplicationContext(), Teoria2_NotasMusicales.class);
+                startActivity(intent);
+            }
+        });
+
+
+        CONTINUAR = (ImageButton) findViewById(R.id.continuar);
+        CONTINUAR.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent=new Intent (getApplicationContext(), Teoria4_Splash.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
@@ -49,25 +68,5 @@ public class Teoria3_FigurasDuracion extends AppCompatActivity implements View.O
     public void onClick(View v)
     {
 
-        switch (v.getId())
-
-        {
-            case R.id.menu:
-
-                Intent i= new  Intent(getApplicationContext(), menu_principal.class);
-                startActivity(i);
-                break;
-
-            case R.id.continuar:
-
-                Intent in= new  Intent(getApplicationContext(), Teoria4_Splash.class);
-                startActivity(in);
-                break;
-
-            default:
-                break;
-        }
-      /*  mFirebaseAnalytics.logEvent(btnName,params);
-*/
     }
 }

@@ -15,9 +15,9 @@ public class Teoria2_NotasMusicales extends AppCompatActivity  implements View.O
 
 {
      ImageButton HOME,ANTERIOR, CONTINUAR;
+     private MediaPlayer mediaPlayer;
 
-     ImageButton button1;
-     MediaPlayer mediaPlayer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -28,39 +28,6 @@ public class Teoria2_NotasMusicales extends AppCompatActivity  implements View.O
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teoria2_notas_musicales);
-
-
-      /*  DO = (ImageButton) findViewById(R.id.nota_do);
-        RE = (ImageButton) findViewById(R.id.nota_re);
-        MI = (ImageButton) findViewById(R.id.nota_mi);
-        FA = (ImageButton) findViewById(R.id.nota_fa);
-        SOL = (ImageButton) findViewById(R.id.nota_sol);
-        LA = (ImageButton) findViewById(R.id.nota_la);
-        SI = (ImageButton) findViewById(R.id.nota_si);*/
-
-
-      // DESDE ACA
-        ImageButton button1 = (ImageButton) findViewById(R.id.nota_do);
-
-        MediaPlayer mp = MediaPlayer.create(Teoria2_NotasMusicales.this, R.raw.do_60);
-        mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-                {
-
-                    @Override
-                    public void onCompletion(MediaPlayer mp) {
-                        // TODO Auto-generated method stub
-                        mp.release();
-                    }
-
-                });
-                   mp.start();
-        // HASTA ACA
-
-
-
-
-
-
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -80,7 +47,7 @@ public class Teoria2_NotasMusicales extends AppCompatActivity  implements View.O
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), menu_principal.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria1_QueEsMusica.class);
                 startActivity(intent);
             }
         });
@@ -98,42 +65,34 @@ public class Teoria2_NotasMusicales extends AppCompatActivity  implements View.O
 
     }
 
-    public void onClickStringButton(View view)
-         {
 
-            switch (view.getId())
-                {
-                    case R.id.notado :
+    public void playnota(View view)
+            {
+                switch (view.getId()) {
+                    case R.id.btn_do :
                         mediaPlayer = MediaPlayer.create(this, R.raw.do_60);
-                        mediaPlayer.start();
                         break;
-                    case R.id.notare :
+                    case R.id.btn_re :
                         mediaPlayer = MediaPlayer.create(this, R.raw.re_62);
-                        mediaPlayer.start();
                         break;
-                    case R.id.notami :
+                    case R.id.btn_mi :
                         mediaPlayer = MediaPlayer.create(this, R.raw.mi_64);
-                        mediaPlayer.start();
                         break;
-                    case R.id.notafa :
+                    case R.id.btn_fa :
                         mediaPlayer = MediaPlayer.create(this, R.raw.fa_65);
-                        mediaPlayer.start();
                         break;
-                    case R.id.notasol :
+                    case R.id.btn_sol :
                         mediaPlayer = MediaPlayer.create(this, R.raw.sol_67);
-                        mediaPlayer.start();
                         break;
-                    case R.id.notala :
+                    case R.id.btn_la :
                         mediaPlayer = MediaPlayer.create(this, R.raw.la_69);
-                        mediaPlayer.start();
                         break;
-                    case R.id.notasi :
+                    case R.id.btn_si :
                         mediaPlayer = MediaPlayer.create(this, R.raw.si_71);
-                        mediaPlayer.start();
                         break;
                 }
-
-         }
+                mediaPlayer.start();
+            }
 
     @Override
     public void onClick(View v) {
