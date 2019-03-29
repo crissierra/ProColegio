@@ -14,7 +14,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import io.fabric.sdk.android.Fabric;
 
 
-public class Teoria6_Splash extends AppCompatActivity
+public class Teoria23_Splash extends AppCompatActivity
 {
 
     MediaPlayer voz4;
@@ -24,7 +24,7 @@ public class Teoria6_Splash extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics());
-        setContentView(R.layout.teoria6__splash);
+        setContentView(R.layout.teoria23_splash);
 
         //CODIGO PARA ESCONDER EL STATUS BAR
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -42,18 +42,14 @@ public class Teoria6_Splash extends AppCompatActivity
             public void run()
             {
 
-                Intent intent=new Intent (getApplicationContext(), Teoria7_Negra.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria24_EjerciciosRitmicos.class);
                 startActivity(intent);
 
             }
 
-        },2200);
+        },3200);
     }
 }
-
-
-
-
 
 
 

@@ -31,7 +31,7 @@ import io.fabric.sdk.android.Fabric;
                 //CODIGO PARA ESCONDER EL STATUS BAR
 
                 this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-                voz4 = MediaPlayer.create(this,R.raw.toma_4);
+                voz4 = MediaPlayer.create(this,R.raw.toma_15_1);
                 voz4.start();
 
                 new Handler().postDelayed(new Runnable()

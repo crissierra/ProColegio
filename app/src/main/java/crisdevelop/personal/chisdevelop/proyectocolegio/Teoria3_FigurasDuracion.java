@@ -37,8 +37,6 @@ public class Teoria3_FigurasDuracion extends AppCompatActivity implements View.O
             }
         });
 
-
-
         ANTERIOR = (ImageButton) findViewById(R.id.anterior);
         ANTERIOR.setOnClickListener(new View.OnClickListener()
         {
@@ -49,7 +47,6 @@ public class Teoria3_FigurasDuracion extends AppCompatActivity implements View.O
                 startActivity(intent);
             }
         });
-
 
         CONTINUAR = (ImageButton) findViewById(R.id.continuar);
         CONTINUAR.setOnClickListener(new View.OnClickListener()

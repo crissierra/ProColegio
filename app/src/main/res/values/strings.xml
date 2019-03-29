@@ -35,6 +35,7 @@
     </string>
 
     <string name="gramatica2">
+        "Notas musicales:\n\n"
        " Las notas musicales representan los sonidos en la música, las cuales pueden ser escuchadas en cualquier instrumento musical, incluyendo la voz,"
        " a través del canto.\n"
         "¿Recuerdas las notas musicales?\n\n"
@@ -43,15 +44,15 @@
 
 
     <string name="gramatica3">
-        "Figuras de duración\n"
-       "Son signos que podemos identificar de distinta forma, con ayuda de  ellas podremos determinar su duración."
+        "Figuras de duración:\n\n"
+       "Son signos que podemos identificar de distinta forma, con ayuda de  ellas podremos determinar su duración.\n"
     </string>
 
 
     <string name="gramatica4">
 
         "Ya que conocemos las figuras de duración super bien.\n"
-         "ahora vamos a pasar al ritmo lenguaje."
+         "ahora vamos a pasar al ritmo lenguaje.\n"
 
     </string>
 

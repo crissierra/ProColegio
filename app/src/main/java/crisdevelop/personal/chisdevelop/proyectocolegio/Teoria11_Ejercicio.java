@@ -11,13 +11,11 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.ImageButton;
 
 
-public class Teoria7_Negra extends AppCompatActivity  implements View.OnClickListener
+public class Teoria11_Ejercicio extends AppCompatActivity  implements View.OnClickListener
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
-    MediaPlayer voz7;
     private MediaPlayer mediaPlayer;
-
 
 
     @Override
@@ -28,8 +26,7 @@ public class Teoria7_Negra extends AppCompatActivity  implements View.OnClickLis
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria7__negra);
-
+        setContentView(R.layout.teoria11_ejercicio);
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -49,7 +46,7 @@ public class Teoria7_Negra extends AppCompatActivity  implements View.OnClickLis
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria5_RitmoLenguaje.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria11_Ejercicio.class);
                 startActivity(intent);
             }
         });
@@ -60,7 +57,7 @@ public class Teoria7_Negra extends AppCompatActivity  implements View.OnClickLis
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria8_Ejercicio.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria13_PreMetronomo.class);
                 startActivity(intent);
             }
         });
@@ -70,13 +67,21 @@ public class Teoria7_Negra extends AppCompatActivity  implements View.OnClickLis
 
     public void playnotadevoz(View view)
     {
-        switch (view.getId()) {
-            case R.id.btn_pan :
+        switch (view.getId())
+        {
+            case R.id.notavoz1 :
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_15_1);
+                break;
+            case R.id.notavoz2 :
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_15_1);
+                break;
+            case R.id.notavoz3 :
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_15_1);
                 break;
         }
         mediaPlayer.start();
     }
+
     @Override
     public void onClick(View v) {
 
