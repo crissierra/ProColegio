@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Button;
 
 import model.Jogador;
 
@@ -98,6 +99,8 @@ public class EntrenamientoAuditivo extends AppCompatActivity {
 
         mediaPlayer.start();
     }
+
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
