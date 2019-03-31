@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Teoria31_Compas"></activity>
+        <activity android:name=".Bienvenida"></activity>
+        <activity android:name=".Teoria31_Compas" />
         <activity android:name=".Teoria29_SignosMusicales" />
         <activity android:name=".Teoria28_Pentagrama" />
         <activity android:name=".Teoria26_EscalaMusical" />

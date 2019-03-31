@@ -416,7 +416,7 @@ public class Preguntas extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.preguntas);
+        setContentView(R.layout.quien_quiere_ser);
 
         // EXCLUSIVO PARA PONERLE EL SONIDO A LA ACTIVITY
             this.setVolumeControlStream(AudioManager.STREAM_MUSIC);

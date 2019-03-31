@@ -19,7 +19,7 @@ public class contrasena extends AppCompatActivity
     private EditText CLAVE;
     static Button VALIDAR;
     static Toast m;
-    static TextView RTA_PRIMERAVEZ;
+
     final int DEFAULT = 0;
 
 
@@ -35,12 +35,6 @@ public class contrasena extends AppCompatActivity
 
             CLAVE=findViewById(R.id.clave);
             VALIDAR=findViewById(R.id.validar);
-
-            RTA_PRIMERAVEZ= findViewById(R.id.rta_primeravez);
-
-
-            SharedPreferences prefs = this.getSharedPreferences("primeravez",MODE_PRIVATE);
-            RTA_PRIMERAVEZ.setText(String.valueOf(prefs.getInt("primeravez",DEFAULT)));
 
 
             VALIDAR.setOnClickListener(new View.OnClickListener()
@@ -77,7 +71,7 @@ public class contrasena extends AppCompatActivity
 
 
 
-                                  Intent i=new  Intent(getApplicationContext(), menu_principal.class);
+                                  Intent i=new  Intent(getApplicationContext(), Bienvenida.class);
                                   startActivity(i);
                                }
 

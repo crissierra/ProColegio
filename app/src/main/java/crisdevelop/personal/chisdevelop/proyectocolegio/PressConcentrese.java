@@ -4,6 +4,8 @@ import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,6 +15,7 @@ public class PressConcentrese extends AppCompatActivity {
 
     private Dialog escojeDificultad;
     private int[] dificultad;
+    MediaPlayer misonido;
 
 
     @Override
@@ -23,6 +26,11 @@ public class PressConcentrese extends AppCompatActivity {
         //CODIGO PARA ESCONDER EL STATUS BAR
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //CODIGO PARA ESCONDER EL STATUS BAR
+
+        this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+        misonido = MediaPlayer.create(this,R.raw.songjuego);
+        misonido.start();
+
 
 
         escojeDificultad=new Dialog(this);
@@ -96,6 +104,13 @@ public class PressConcentrese extends AppCompatActivity {
         super.onResume();
 
 
+    }
+    @Override
+    protected void onPause()
+    {
+        super.onPause();
+        misonido.release();
+        finish();
     }
 
 }

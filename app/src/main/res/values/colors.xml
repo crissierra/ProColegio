@@ -25,7 +25,7 @@
 
     <color name="azul_claro">#1669ce</color>
     <color name="azul_claro_oscuro">#1353a1</color>
-
+    <color name="common_google_signin_btn_text_dark_default">@android:color/white</color>
 
 
 

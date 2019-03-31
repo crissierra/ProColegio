@@ -1,13 +1,11 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
         import android.content.Intent;
-        import android.media.AudioManager;
         import android.media.MediaPlayer;
         import android.os.Bundle;
         import android.support.v7.app.AppCompatActivity;
         import android.view.View;
         import android.view.WindowManager;
-        import android.widget.Button;
         import android.widget.ImageButton;
 
 
@@ -69,13 +67,13 @@ public class Teoria16_Ejercicio extends AppCompatActivity  implements View.OnCli
         switch (view.getId())
         {
             case R.id.notavoz1 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_15_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
                 break;
             case R.id.notavoz2 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_15_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_2);
                 break;
             case R.id.notavoz3 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_15_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_3);
                 break;
         }
         mediaPlayer.start();

@@ -1,7 +1,5 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
-import android.content.Context;
-import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
@@ -31,7 +29,7 @@ import io.fabric.sdk.android.Fabric;
                 //CODIGO PARA ESCONDER EL STATUS BAR
 
                 this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-                voz4 = MediaPlayer.create(this,R.raw.toma_15_1);
+                voz4 = MediaPlayer.create(this,R.raw.toma_16_1);
                 voz4.start();
 
                 new Handler().postDelayed(new Runnable()

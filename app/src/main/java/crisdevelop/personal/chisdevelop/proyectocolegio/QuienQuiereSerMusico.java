@@ -22,7 +22,7 @@ import java.util.ArrayList;
 
 import io.netopen.hotbitmapgg.library.view.RingProgressBar;
 
-public class PreguntasQuienQuiere extends AppCompatActivity {
+public class QuienQuiereSerMusico extends AppCompatActivity {
 
     MediaPlayer misonido, sonidocomodin;
 
@@ -421,7 +421,7 @@ public class PreguntasQuienQuiere extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.preguntas);
+        setContentView(R.layout.quien_quiere_ser);
 
         //CODIGO PARA ESCONDER EL STATUS BAR
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);

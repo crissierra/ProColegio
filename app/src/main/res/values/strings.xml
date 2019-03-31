@@ -43,6 +43,13 @@
     </string>
 
 
+    <string name="gramatica2_2">
+        "Silencios Musicales:\n\n"
+       "Son signos que representan la duración sin la ejecución de un sonido, nos permite el descanso y la separación de diferentes frases musicales."
+
+    </string>
+
+
     <string name="gramatica3">
         "Figuras de duración:\n\n"
        "Son signos que podemos identificar de distinta forma, con ayuda de  ellas podremos determinar su duración.\n"
@@ -60,13 +67,15 @@
     <string name="gramatica5">
         "Ritmo Lenguaje\n\n"
         "Es el estudio de ciertas figuras de duración apoyadas con el acento de nuestro lenguaje castellano.\n"
-        "¿estas preparado para conocerlas?\n"
+        "¿estas preparado para conocerlas?\n\n"
         "¡Empecemos!\n"
     </string>
 
 
     <string name="gramatica6">
-       "Vamos a trabajar las siguientes figuras de duración…\n"
+       "Vamos a trabajar las siguientes figuras de duración:\n\n"
+        "- Negra.\n"
+        "- Corchea.\n"
     </string>
 
     <string name="gramatica7">
@@ -100,7 +109,8 @@
     </string>
 
     <string name="gramatica14">
-       "La figura conocida como negra la puedes identificar con una palabra monosílaba, es aquella que tiene una sola silaba."
+           "Metronomo:\n"
+       "Es una herramienta   de gran importancia ya que el    nos ayudara a marcar el pulso de manera auditiva a un tiempo deseado por nosotros mismos."
     </string>
 
 

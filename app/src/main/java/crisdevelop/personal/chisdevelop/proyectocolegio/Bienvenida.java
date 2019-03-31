@@ -12,25 +12,26 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import io.fabric.sdk.android.Fabric;
 
 
-public class Teoria23_Splash extends AppCompatActivity
+public class Bienvenida extends AppCompatActivity
 {
 
-    MediaPlayer voz4;
+    MediaPlayer succes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics());
-        setContentView(R.layout.teoria23_splash);
+        setContentView(R.layout.bienvenida);
 
         //CODIGO PARA ESCONDER EL STATUS BAR
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //CODIGO PARA ESCONDER EL STATUS BAR
 
+
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        voz4 = MediaPlayer.create(this,R.raw.toma_16_1);
-        voz4.start();
+        succes = MediaPlayer.create(this,R.raw.success);
+        succes.start();
 
         new Handler().postDelayed(new Runnable()
         {
@@ -40,14 +41,16 @@ public class Teoria23_Splash extends AppCompatActivity
             public void run()
             {
 
-                Intent intent=new Intent (getApplicationContext(), Teoria24_EjerciciosRitmicos.class);
+                Intent intent=new Intent (getApplicationContext(), menu_principal.class);
                 startActivity(intent);
 
             }
 
-        },3200);
+        },2200);
     }
 }
+
+
 
 
 

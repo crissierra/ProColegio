@@ -72,7 +72,7 @@ public class Teoria7_Negra extends AppCompatActivity  implements View.OnClickLis
     {
         switch (view.getId()) {
             case R.id.btn_pan :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_15_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_7);
                 break;
         }
         mediaPlayer.start();

@@ -38,6 +38,24 @@
     </style>
 
 
+    <style name="botonespress">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/fondo_tranparente</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!--<style name="Widget.Button">
+        <item name="background">@drawable/btn_default</item>
+        <item name="focusable">true</item>
+        <item name="clickable">true</item>
+        <item name="textAppearance">?attr/textAppearanceSmallInverse</item>
+        <item name="textColor">@color/primary_text_light</item>
+        <item name="gravity">center_vertical|center_horizontal</item>
+    </style>-->
+
 
     <style name="botonesnotadevoz">
         <item name="android:layout_width">160dp</item>
