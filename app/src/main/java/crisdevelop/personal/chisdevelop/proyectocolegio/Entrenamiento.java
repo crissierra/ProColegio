@@ -50,7 +50,7 @@ public class Entrenamiento extends AppCompatActivity {
         // LO USO PARA IMPRIMIR EL ESTADO DE LA VARIABLE PRIMERA VEZ
     }
 
-    public void repetirSom(View view)
+/*    public void repetirSom(View view)
     {
         btnRepetir = findViewById(R.id.swtRepeatSound);
         STATUS_REPEAT = btnRepetir.isChecked();
@@ -60,10 +60,19 @@ public class Entrenamiento extends AppCompatActivity {
                 mediaPlayer.release();
             }
         }
-    }
+    }*/
+ /*   @Override
+    protected void onPause()
+    {
+        super.onPause();
+        mediaPlayer.release();
+
+
+        finish();
+    }*/
 
     public void testarOuvidoAbsButton(View view) {
-        Intent intent = new Intent(this, menu_principal.class);
+        Intent intent = new Intent(this, EntrenamientoTest.class);
         startActivityForResult(intent, REQUEST_ADD);
     }
 
@@ -101,7 +110,7 @@ public class Entrenamiento extends AppCompatActivity {
 
 
 
-    @Override
+/*    @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         Jogador jogador = new Jogador();
@@ -123,5 +132,5 @@ public class Entrenamiento extends AppCompatActivity {
 
         }
 
-    }
+    }*/
 }

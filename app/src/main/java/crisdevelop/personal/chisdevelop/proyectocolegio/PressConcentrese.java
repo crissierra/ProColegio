@@ -70,7 +70,7 @@ public class PressConcentrese extends AppCompatActivity {
                 dificultad[0]=8;
                 dificultad[1]=4;
 
-                i=new Intent(this, Partida.class);
+                i=new Intent(this, JuegoConcentrese.class);
                 i.putExtra("capacidad",dificultad[0]);
                 i.putExtra("parejas",dificultad[1]);
                 startActivity(i);
@@ -80,7 +80,7 @@ public class PressConcentrese extends AppCompatActivity {
                 dificultad[0]=12;
                 dificultad[1]=6;
 
-                i=new Intent(this, Partida.class);
+                i=new Intent(this, JuegoConcentrese.class);
 
                 i.putExtra("capacidad",dificultad[0]);
                 i.putExtra("parejas",dificultad[1]);
@@ -90,7 +90,7 @@ public class PressConcentrese extends AppCompatActivity {
                 dificultad[0]=16;
                 dificultad[1]=8;
 
-                i=new Intent(this, Partida.class);
+                i=new Intent(this, JuegoConcentrese.class);
 
                 i.putExtra("capacidad",dificultad[0]);
                 i.putExtra("parejas",dificultad[1]);

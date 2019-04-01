@@ -416,7 +416,7 @@ public class QuienQuiereSer extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.quien_quiere_ser);
+        setContentView(R.layout.juego_quien_quiere_ser);
 
         // EXCLUSIVO PARA PONERLE EL SONIDO A LA ACTIVITY
             this.setVolumeControlStream(AudioManager.STREAM_MUSIC);

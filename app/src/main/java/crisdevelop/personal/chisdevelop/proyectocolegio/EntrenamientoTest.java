@@ -35,10 +35,28 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //CODIGO PARA ESCONDER EL STATUS BAR
 
-
-
         setPontos(0);
         edtNome = findViewById(R.id.edtNome);
+
+
+
+        int index = 0;
+
+        listMedia = new ArrayList<>();
+
+        listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
+        listMedia.add(new NotasMusicais("RE", MediaPlayer.create(this, R.raw.re_62)));
+        listMedia.add(new NotasMusicais("MI", MediaPlayer.create(this, R.raw.mi_64)));
+        listMedia.add(new NotasMusicais("FA", MediaPlayer.create(this, R.raw.fa_65)));
+        listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.sol_67)));
+        listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.la_69)));
+        listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.si_71)));
+
+        Collections.shuffle(listMedia,new Random(System.nanoTime()));
+
+        atualSom = listMedia.get(index);
+        atualSom.getAudio().start();
+
 
         BOTONDO= findViewById(R.id.botondo);
         BOTONDO.setOnClickListener(this);
@@ -88,6 +106,8 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
         switch (v.getId())
 
         {
+
+
             case R.id.botondo:
 
                 if (atualSom.getTitle().contains("DO")) {

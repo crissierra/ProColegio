@@ -24,7 +24,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class Partida extends AppCompatActivity {
+public class JuegoConcentrese extends AppCompatActivity {
 
     private AdapterCarta adapter;
     private int [] numeros;
@@ -43,7 +43,7 @@ public class Partida extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_partida);
+        setContentView(R.layout.juego_concentrese);
 
          gridView=findViewById(R.id.gridView);
 

@@ -61,7 +61,7 @@ public class menu_principal extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), EntrenamientoTest.class);
+                Intent intent=new Intent (getApplicationContext(), Entrenamiento.class);
                 startActivity(intent);
             }
         });

@@ -75,7 +75,7 @@
             android:name=".Teoria5_RitmoLenguaje"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Partida"
+            android:name=".JuegoConcentrese"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
