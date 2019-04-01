@@ -1,48 +1,52 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
-import android.content.Intent;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
-import android.media.SoundPool;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
+ import android.media.AudioManager;
+ import android.media.MediaPlayer;
+ import android.support.v7.app.AppCompatActivity;
+ import android.os.Bundle;
+ import android.content.Intent;
+ import android.os.Handler;
+ import android.view.WindowManager;
+ import com.crashlytics.android.Crashlytics;
+ import io.fabric.sdk.android.Fabric;
 
-public class PressQuienQuiere extends AppCompatActivity {
 
-    MediaPlayer misonido;
-    SoundPool soundPool;
-    int carga;
+public class PressQuienQuiere extends AppCompatActivity
+{
+
+    MediaPlayer succes;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
         setContentView(R.layout.press_quien_quiere);
 
+        //CODIGO PARA ESCONDER EL STATUS BAR
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //CODIGO PARA ESCONDER EL STATUS BAR
+
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        misonido = MediaPlayer.create(this,R.raw.songjuego);
-        misonido.start();
+        succes = MediaPlayer.create(this,R.raw.success);
+        succes.start();
 
-    }
+        new Handler().postDelayed(new Runnable()
+        {
 
-    @Override
-    protected void onPause()
-    {
-        super.onPause();
-        misonido.release();
-        finish();
-    }
 
-    public void start_game(View view)
-    {
+            @Override
+            public void run()
+            {
 
-        Intent i= new Intent(this, Preguntas.class);
-        startActivity(i);
-    }
+                Intent intent=new Intent (getApplicationContext(), QuienQuiereSer.class);
+                startActivity(intent);
 
-    public void about_game(View view)
-    {
-        Intent i= new Intent(this, Anexos.class);
-        startActivity(i);
+            }
+
+        },3000);
     }
 }
+
+
+

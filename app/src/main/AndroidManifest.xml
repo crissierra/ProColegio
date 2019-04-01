@@ -11,31 +11,7 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Bienvenida"></activity>
-        <activity android:name=".Teoria31_Compas" />
-        <activity android:name=".Teoria29_SignosMusicales" />
-        <activity android:name=".Teoria28_Pentagrama" />
-        <activity android:name=".Teoria26_EscalaMusical" />
-        <activity android:name=".Teoria24_EjerciciosRitmicos" />
-        <activity android:name=".Teoria23_Splash" />
-        <activity android:name=".Teoria22_Ejercicios" />
-        <activity android:name=".Teoria21_Ejercicios" />
-        <activity android:name=".Teoria20_Ejercicios" />
-        <activity android:name=".Teoria19_Ejercicios" />
-        <activity android:name=".Teoria18_EjercicioCorcheas" />
-        <activity android:name=".Teoria17_ParejaCorcheas" />
-        <activity android:name=".Teoria16_Ejercicio" />
-        <activity android:name=".Teoria15_Tap" />
-        <activity android:name=".Teoria14_Metronomo" />
-        <activity android:name=".Teoria13_PreMetronomo" />
-        <activity android:name=".Teoria12_Splash" />
-        <activity android:name=".Teoria11_Ejercicio" />
-        <activity android:name=".Teoria10_Ejercicio" />
-        <activity android:name=".Teoria9_Ejercicio" />
-        <activity android:name=".Teoria8_Ejercicio" />
-        <activity android:name=".Teoria7_Negra" />
-        <activity android:name=".Anexos" />
-        <activity android:name=".Entrenamiento" />
+
         <activity
             android:name=".splashscreen"
             android:theme="@style/AppTheme.NoActionBar">
@@ -46,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".EntrenamientoAuditivo"
+            android:name=".Entrenamiento"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -78,7 +54,7 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Preguntas"
+            android:name=".QuienQuiereSer"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Resultados"
@@ -106,6 +82,128 @@
             android:name=".Configura"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Bienvenida"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria31_Compas"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Teoria29_SignosMusicales"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria28_Pentagrama"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria26_EscalaMusical"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria24_EjerciciosRitmicos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria23_Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria22_Ejercicios"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria21_Ejercicios"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria20_Ejercicios"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria19_Ejercicios"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria18_EjercicioCorcheas"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria17_ParejaCorcheas"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria16_Ejercicio"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Teoria15_Tap"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria14_Metronomo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria13_PreMetronomo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria12_Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Teoria11_Ejercicio"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria10_Ejercicio"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".Teoria9_Ejercicio"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria8_Ejercicio"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Teoria7_Negra"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".Anexos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity
+            android:name=".EntrenamientoTest"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
         <activity
             android:name=".PressConcentrese"
             android:screenOrientation="portrait"

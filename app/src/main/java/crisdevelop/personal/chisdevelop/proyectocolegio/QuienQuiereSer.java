@@ -21,7 +21,7 @@ import java.util.ArrayList;
 
 import io.netopen.hotbitmapgg.library.view.RingProgressBar;
 
-public class Preguntas extends AppCompatActivity {
+public class QuienQuiereSer extends AppCompatActivity {
 
     MediaPlayer misonido;
 

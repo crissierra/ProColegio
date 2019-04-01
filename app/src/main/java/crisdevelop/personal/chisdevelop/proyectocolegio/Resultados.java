@@ -69,14 +69,14 @@ public class Resultados extends AppCompatActivity {
 
     public void Restart(View v)
     {
-        Intent intent = new Intent(this, Preguntas.class);
+        Intent intent = new Intent(this, QuienQuiereSer.class);
         startActivity(intent);
     }
 
     public void end(View v)
     {
 
-        Intent intent = new Intent(this, PressQuienQuiere.class);
+        Intent intent = new Intent(this, menu_principal.class);
         startActivity(intent);
         super.onDestroy();
         android.os.Process.killProcess(android.os.Process.myPid());

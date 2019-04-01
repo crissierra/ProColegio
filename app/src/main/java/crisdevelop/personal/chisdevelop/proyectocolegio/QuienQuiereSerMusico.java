@@ -429,7 +429,7 @@ public class QuienQuiereSerMusico extends AppCompatActivity {
 
 
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        misonido = MediaPlayer.create(this,R.raw.reloj45);
+        misonido = MediaPlayer.create(this,R.raw.songjuego);
         misonido.start();
 
 
