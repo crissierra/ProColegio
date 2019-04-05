@@ -44,7 +44,7 @@ public class Teoria11_Ejercicio extends AppCompatActivity  implements View.OnCli
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria11_Ejercicio.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria10_Ejercicio.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class Teoria11_Ejercicio extends AppCompatActivity  implements View.OnCli
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria13_PreMetronomo.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria11_Ejercicio.class);
                 startActivity(intent);
             }
         });
@@ -73,9 +73,7 @@ public class Teoria11_Ejercicio extends AppCompatActivity  implements View.OnCli
             case R.id.notavoz2 :
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
                 break;
-            case R.id.notavoz3 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
-                break;
+
         }
         mediaPlayer.start();
     }

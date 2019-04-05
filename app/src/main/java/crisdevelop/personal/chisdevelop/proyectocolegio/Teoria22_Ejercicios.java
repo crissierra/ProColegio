@@ -55,7 +55,7 @@ public class Teoria22_Ejercicios extends AppCompatActivity  implements View.OnCl
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria23_Splash.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria23_Ejercicio.class);
                 startActivity(intent);
             }
         });

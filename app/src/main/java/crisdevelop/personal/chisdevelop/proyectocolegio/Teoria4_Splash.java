@@ -28,9 +28,9 @@ import io.fabric.sdk.android.Fabric;
                 getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
                 //CODIGO PARA ESCONDER EL STATUS BAR
 
-                this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+                /*this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
                 voz4 = MediaPlayer.create(this,R.raw.toma_16_1);
-                voz4.start();
+                voz4.start();*/
 
                 new Handler().postDelayed(new Runnable()
                 {
@@ -45,7 +45,7 @@ import io.fabric.sdk.android.Fabric;
 
                     }
 
-                },2200);
+                },3500);
             }
         }
 

@@ -79,7 +79,7 @@
     </string>
 
     <string name="gramatica7">
-       "La figura conocida como negra la puedes identificar con una palabra monosílaba, que es aquella que tiene una sola silaba.\n\n"
+       "La figura conocida como negra la puedes identificar con una palabra monosílaba, que es aquella que tiene una sola sílaba.\n\n"
        "Ejemplo:  pan, pez, tren, sol.\n"
     </string>
 
@@ -99,14 +99,20 @@
        "Vamos a trabajar las siguientes figuras de duración:\n"
     </string>
     <string name="gramatica12">
-       "La figura conocida como negra la puedes identificar con una palabra monosílaba, es aquella que tiene una sola silaba.
-        "Ejemplo: pan, pez, tren, sol.\n"
+        "¡Muy bien!\n\n"
+        "Lograste interpretar los ejercicios rítmicos anteriores, ahora vamos a subir de nivel.\n"
+        "Interpretemos los ejercicios rítmicos con sus respectivos silencios.\n\n"
+        "¡Comencemos!\n"
     </string>
 
     <string name="gramatica13">
-        "¡Muy bien!\n Lograste interpretar los anteriores ejercicios rítmicos, ahora vamos a subir de nivel. Interpretemos los siguientes"
-        "ejercicios rítmicos con sus respectivos silencios.\n ¡Comencemos!"
-    </string>
+
+       "¿Quieres saber un truco super importante para los silencios?\n"
+       "El silencio como sabemos es un signo que representa la duración, pero no el sonido.\n"
+       "Ahora, ¿cómo sabemos en qué momento representará esa duración?\n"
+       "Esa duración la escucharemos con ayuda de un amiguito que será nuestro metrónomo, pero...\n\n"
+       "¿Qué es un metrónomo?\n"
+     </string>
 
     <string name="gramatica14">
            "Metronomo:\n"
@@ -115,18 +121,26 @@
 
 
     <string name="gramatica15">
-       "¿Quieres saber un truco super importante para los silencios?\n El silencio, como sabemos, es un signo que representa la duración, pero no el sonido."
+       "En la figura de silencio solamente escucharas el “tap” del metrónomo, esto quiere decir que en el silencio respectivo"
+       "seguirá el tiempo indicado, pero sin la ejecución de un sonido.\n"
     </string>
 
     <string name="gramatica16">
          "En la figura de silencio solamente escucharas el “tap” del metrónomo, esto quiere decir que en el silencio respectivo"
-       "seguirá el tiempo indicado, pero sin la ejecución de un sonido."
+       "seguirá el tiempo indicado, pero sin la ejecución de un sonido.\n"
     </string>
 
 
     <string name="gramatica17">
-       "RITMO LENGUAJE\n"
+       " La pareja de corcheas puedes identificarlas con una palabra bisílaba, es decir, aquella que tiene dos silaba.\n\n"
+       "Ejemplo: ca-sa, ga-to, me-sa, ri-ma.\n"
+
     </string>
 
+    <string name="gramatica22">
+       "Ya que comprendes la lectura rítmica de la figura de duracion de negra,pareja de corchea y silencio de negra hagamos"
+        "ejercicios mezclando los 3.\n\n"
+
+    </string>
 
 </resources>

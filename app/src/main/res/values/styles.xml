@@ -58,8 +58,8 @@
     </style>
 
     <style name="botonesnotas8">
-        <item name="android:layout_width">60dp</item>
-        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">40dp</item>
         <item name="android:layout_marginTop">20dp</item>
         <item name="android:background">@drawable/fondo_tranparente</item>
         <item name="android:textColor">@android:color/white</item>
@@ -69,7 +69,7 @@
 
     <style name="botonesParaNotas">
         <item name="android:layout_width">50dp</item>
-        <item name="android:layout_height">220dp</item>
+        <item name="android:layout_height">200dp</item>
         <item name="android:layout_marginTop">20dp</item>
         <item name="android:background">@drawable/fondo_tranparente</item>
         <item name="android:textColor">@android:color/white</item>

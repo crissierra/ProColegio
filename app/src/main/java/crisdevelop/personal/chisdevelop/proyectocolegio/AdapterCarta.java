@@ -29,7 +29,6 @@ public class AdapterCarta extends BaseAdapter {
 
     };
 
-
     public AdapterCarta(Context context, ArrayList<ItemCarta> num, int plantillaLayour) {
         this.context = context;
         this.num = num;

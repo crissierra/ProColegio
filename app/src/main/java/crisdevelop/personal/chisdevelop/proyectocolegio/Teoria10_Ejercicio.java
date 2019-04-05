@@ -73,9 +73,6 @@ public class Teoria10_Ejercicio extends AppCompatActivity  implements View.OnCli
             case R.id.notavoz2 :
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
                 break;
-            case R.id.notavoz3 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
-                break;
         }
         mediaPlayer.start();
     }

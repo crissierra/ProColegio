@@ -12,7 +12,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import io.fabric.sdk.android.Fabric;
 
 
-public class Teoria23_Splash extends AppCompatActivity
+public class Teoria23_Ejercicio extends AppCompatActivity
 {
 
     MediaPlayer voz4;
@@ -22,7 +22,7 @@ public class Teoria23_Splash extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics());
-        setContentView(R.layout.teoria23_splash);
+        setContentView(R.layout.teoria23_ejercicio);
 
         //CODIGO PARA ESCONDER EL STATUS BAR
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
