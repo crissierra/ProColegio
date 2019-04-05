@@ -17,7 +17,7 @@ public class menu_principal extends AppCompatActivity {
     private Dialog escojeJuego;
 
     GridLayout mainGrid;
-    ImageButton TEORIA, ENTRENAMIENTO, PIANO, ANEXO;
+    ImageButton TEORIA, ENTRENAMIENTO, METRONOMO, ANEXO;
 
 
     @Override
@@ -42,7 +42,7 @@ public class menu_principal extends AppCompatActivity {
 
         TEORIA = (ImageButton) findViewById(R.id.teoria);
         ENTRENAMIENTO = (ImageButton) findViewById(R.id.entrenamiento);
-        PIANO = (ImageButton) findViewById(R.id.piano);
+        METRONOMO = (ImageButton) findViewById(R.id.metronomo);
         ANEXO = (ImageButton) findViewById(R.id.anexo);
 
 
@@ -66,12 +66,12 @@ public class menu_principal extends AppCompatActivity {
             }
         });
 
-        PIANO.setOnClickListener(new View.OnClickListener()
+        METRONOMO.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), piano.class);
+                Intent intent=new Intent (getApplicationContext(), Metronome.class);
                 startActivity(intent);
             }
         });
