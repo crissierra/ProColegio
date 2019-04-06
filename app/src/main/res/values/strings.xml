@@ -20,16 +20,21 @@
     <string name="tempoDeterminado">Tempo</string>
 
 
-
-
     <string name="addPontos">Adicionar</string>
     <string name="cancelJogo">Cancelar</string>
     <string name="selectNote">Selecione a Nota correspondente ao som</string>
     <string name="verifyAnswer">Verificar</string>
 
+    <string name="integrantes">
+        "Integrantes:\n\n"
 
+        "Lisseth Tatiana Gil Suarez\n"
+        "Santiago Lopez Lozano\n"
+        "Lorena Parra Judas\n"
+        "Laura Alejandra Romero Rey\n"
+    </string>
     <string name="gramatica1">
-        ¿Que es la música?\n"
+        "¿Que es la música?\n"
        "La música es la combinación de sonidos que puedes producir por medio de un cuerpo sonoro, como lo puedes hacer con tus palmas o tus pies."
     </string>
 
@@ -139,7 +144,20 @@
     <string name="gramatica22">
        "Ya que comprendes la lectura rítmica de la figura de duracion de negra,pareja de corchea y silencio de negra hagamos"
         "ejercicios mezclando los 3.\n\n"
+    </string>
 
+
+    <string name="gramatica26">
+       "Escala musical:\n\n"
+        "Las notas suben escalón en escalón, hasta alcanzar la cima.\n\n"
+"
+    </string>
+
+    <string name="gramatica28">
+       "Pentagrama:\n\n"
+        "Es el conjunto de 5 líneas que forman 4 espacios para que puedas escribir los signos musicales en él.\n"
+        "Líneas adicionales:\n\n"
+        "Son pequeñas líneas que sirven para que puedas ubicar los signos musicales que queden fuera del pentagrama.\n"
     </string>
 
 
@@ -158,10 +176,6 @@
 
     <string name="pref_pass_taptempo_bpm_to_mainscreen_title">Pass BPM detected by TapTempo to main screen</string>
     <string name="pref_stop_for_other_apps_title">Parar el metrónomo cuando otra APP ejecute audio</string>
-
-
-
-
 
 
 </resources>

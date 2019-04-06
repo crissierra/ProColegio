@@ -15,7 +15,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
 public class Teoria6_Splash extends AppCompatActivity
 {
 
-    MediaPlayer voz4;
+   /* MediaPlayer voz4;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -28,9 +28,9 @@ public class Teoria6_Splash extends AppCompatActivity
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //CODIGO PARA ESCONDER EL STATUS BAR
 
-        this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+       /* this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
         voz4 = MediaPlayer.create(this,R.raw.toma_16_1);
-        voz4.start();
+        voz4.start();*/
 
         new Handler().postDelayed(new Runnable()
         {
