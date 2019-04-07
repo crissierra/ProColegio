@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Teoria27_JuegoEscalera"></activity>
+        <activity android:name=".Desarrollador"></activity>
+        <activity android:name=".Menu_Anexos" />
+        <activity android:name=".Teoria27_JuegoEscalera" />
         <activity android:name=".Teoria26_EscaleraMusical" />
         <activity android:name=".Integrantes" />
         <activity android:name=".SplashPrincipal" />

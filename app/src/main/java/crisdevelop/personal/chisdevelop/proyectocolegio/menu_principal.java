@@ -123,10 +123,5 @@ public class menu_principal extends AppCompatActivity {
     public void onResume(){
         super.onResume();
 
-
     }
-
-
-
-
 }
