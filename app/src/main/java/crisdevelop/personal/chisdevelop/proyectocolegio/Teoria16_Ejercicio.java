@@ -62,6 +62,7 @@ public class Teoria16_Ejercicio extends AppCompatActivity  implements View.OnCli
 
     }
 
+
     public void playnotadevoz(View view)
     {
         switch (view.getId())

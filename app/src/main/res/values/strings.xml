@@ -34,7 +34,7 @@
         "Laura Alejandra Romero Rey\n"
     </string>
     <string name="gramatica1">
-        "¿Que es la música?\n"
+        "¿Qué es la música?\n"
        "La música es la combinación de sonidos que puedes producir por medio de un cuerpo sonoro, como lo puedes hacer con tus palmas o tus pies."
     </string>
 
@@ -71,7 +71,7 @@
     <string name="gramatica5">
         "Ritmo Lenguaje\n\n"
         "Es el estudio de ciertas figuras de duración apoyadas con el acento de nuestro lenguaje castellano.\n"
-        "¿estas preparado para conocerlas?\n\n"
+        "¿Estás preparado para conocerlas?\n\n"
         "¡Empecemos!\n"
     </string>
 
@@ -147,13 +147,45 @@
     </string>
 
 
+    <string name="gramatica24">
+       "El siguiente paso será conocer los ejercicios de dirección en la música así que debemos de estar muy concentrados y atentos.\n\n"
+       "¡Empecemos!\n"
+            </string>
+
+
+    <string name="gramatica25">
+
+       "¿Qué son los ejercicios de dirección?\n\n"
+       "Los ejercicios de dirección son movimientos o figuras hechas por nosotros mismos, con las manos.\n"
+       "Realizaremos el movimiento con el brazo, y el pulso lo marcarás con el chasquido que producirá\n"
+       "tus dedos, donde nos ayudará a marcar rítmicamente a la hora de leer un compás.\n\n"
+        "¡Vamos a conocerlos!\n\n"
+    </string>
+
+
     <string name="gramatica26">
-       "Escala musical:\n\n"
-        "Las notas suben escalón en escalón, hasta alcanzar la cima.\n\n"
-"
+      " Ejercicio de dirección de 2/4\n\n"
+
+       "Este ejercicio de dirección dura 2 tiempos y lo realizaremos así:\n"
+       "Movemos nuestro brazo cada pulso durara solo 1 tiempo, marcaremos los 2 tiempos con el sonido del chasquido\n"
+       "que producirá los dedos de nuestra mano derecha y con ayuda de nuestro metrónomo, cada flechita del ejercicio te ayudara\n"
+       "a separar cada uno de estos tiempos. Pero, ¿cómo lo realizamos?\n\n"
+        "¡Vamos a ver.\n\n"
+
     </string>
 
     <string name="gramatica28">
+         "Dura 3 tiempos y lo realizaremos así:\n\n"
+         "•	Primer movimiento: Hacia abajo.\n"
+         "•	Segundo movimiento: Hacia tu derecha y horizontal.\n"
+         "•	Tercer movimiento: Diagonal hacia arriba completando el movimiento.\n"
+         "Cada movimiento durara 1 tiempo, así que marcaremos 3 tiempos con ayuda del sonido del chasquido de"
+         "nuestros dedos y NUESTRO METRÓNOMO, cada flechita separará cada uno de estos tiempos.\n\n"
+         "¡Vamos a ver!\n\n"
+
+    </string>
+
+    <string name="gramatica47">
        "Pentagrama:\n\n"
         "Es el conjunto de 5 líneas que forman 4 espacios para que puedas escribir los signos musicales en él.\n"
         "Líneas adicionales:\n\n"

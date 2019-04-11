@@ -70,10 +70,10 @@ public class Teoria18_EjercicioCorcheas extends AppCompatActivity  implements Vi
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_18_1);
                 break;
             case R.id.notavoz2 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_18_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_18_2);
                 break;
             case R.id.notavoz3 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_18_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_18_3);
                 break;
         }
         mediaPlayer.start();

@@ -68,13 +68,13 @@ public class Teoria8_Ejercicio extends AppCompatActivity  implements View.OnClic
         switch (view.getId())
         {
             case R.id.notavoz1 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_8_1);
                 break;
             case R.id.notavoz2 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_8_2);
                 break;
             case R.id.notavoz3 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_8_3);
                 break;
         }
         mediaPlayer.start();

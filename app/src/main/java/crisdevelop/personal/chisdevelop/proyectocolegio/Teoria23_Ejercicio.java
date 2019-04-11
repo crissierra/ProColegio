@@ -1,53 +1,86 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
-        import android.media.AudioManager;
-        import android.media.MediaPlayer;
-        import android.support.v7.app.AppCompatActivity;
-        import android.os.Bundle;
         import android.content.Intent;
-        import android.os.Handler;
+        import android.media.MediaPlayer;
+        import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.view.View;
         import android.view.WindowManager;
-
-        import com.crashlytics.android.Crashlytics;
-        import io.fabric.sdk.android.Fabric;
+        import android.widget.ImageButton;
 
 
-public class Teoria23_Ejercicio extends AppCompatActivity
+public class Teoria23_Ejercicio extends AppCompatActivity  implements View.OnClickListener
+
 {
+    ImageButton HOME,ANTERIOR, CONTINUAR;
+    private MediaPlayer mediaPlayer;
 
-    MediaPlayer voz4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        super.onCreate(savedInstanceState);
-        Fabric.with(this, new Crashlytics());
-        setContentView(R.layout.teoria23_ejercicio);
-
         //CODIGO PARA ESCONDER EL STATUS BAR
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //CODIGO PARA ESCONDER EL STATUS BAR
 
-        this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        voz4 = MediaPlayer.create(this,R.raw.toma_16_1);
-        voz4.start();
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.teoria23_ejercicio);
 
-        new Handler().postDelayed(new Runnable()
+
+        HOME = (ImageButton) findViewById(R.id.home);
+        HOME.setOnClickListener(new View.OnClickListener()
         {
-
-
             @Override
-            public void run()
+            public void onClick(View v)
             {
-
-                Intent intent=new Intent (getApplicationContext(), Teoria24_EjerciciosRitmicos.class);
+                Intent intent=new Intent (getApplicationContext(), menu_principal.class);
                 startActivity(intent);
-
             }
+        });
 
-        },3200);
+        ANTERIOR = (ImageButton) findViewById(R.id.anterior);
+        ANTERIOR.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent=new Intent (getApplicationContext(), Teoria21_Ejercicios.class);
+                startActivity(intent);
+            }
+        });
+
+        CONTINUAR = (ImageButton) findViewById(R.id.continuar);
+        CONTINUAR.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent=new Intent (getApplicationContext(), Teoria24_Info.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+
+    public void playnotadevoz(View view)
+    {
+        switch (view.getId())
+        {
+            case R.id.notavoz1 :
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_23_1);
+                break;
+            case R.id.notavoz2 :
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_23_2);
+                break;
+            case R.id.notavoz3 :
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_23_3);
+                break;
+        }
+        mediaPlayer.start();
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }
-
-
-

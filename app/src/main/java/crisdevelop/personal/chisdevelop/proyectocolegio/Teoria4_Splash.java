@@ -45,7 +45,7 @@ import io.fabric.sdk.android.Fabric;
 
                     }
 
-                },3500);
+                },500);
             }
         }
 

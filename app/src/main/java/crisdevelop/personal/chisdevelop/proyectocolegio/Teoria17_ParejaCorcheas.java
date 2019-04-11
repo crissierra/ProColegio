@@ -67,14 +67,9 @@ public class Teoria17_ParejaCorcheas extends AppCompatActivity  implements View.
         switch (view.getId())
         {
             case R.id.notavoz1 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.casa);
                 break;
-            case R.id.notavoz2 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
-                break;
-            case R.id.notavoz3 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
-                break;
+
         }
         mediaPlayer.start();
     }

@@ -55,7 +55,7 @@ public class Teoria21_Ejercicios extends AppCompatActivity  implements View.OnCl
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria22_Ejercicios.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria22_Splash.class);
                 startActivity(intent);
             }
         });
@@ -67,13 +67,13 @@ public class Teoria21_Ejercicios extends AppCompatActivity  implements View.OnCl
         switch (view.getId())
         {
             case R.id.notavoz1 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_21_1);
                 break;
             case R.id.notavoz2 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_21_2);
                 break;
             case R.id.notavoz3 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_21_3);
                 break;
         }
         mediaPlayer.start();

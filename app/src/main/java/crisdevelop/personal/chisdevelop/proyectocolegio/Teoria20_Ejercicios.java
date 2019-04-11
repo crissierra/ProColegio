@@ -44,7 +44,7 @@ public class Teoria20_Ejercicios extends AppCompatActivity  implements View.OnCl
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria20_Ejercicios.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria19_Ejercicios.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class Teoria20_Ejercicios extends AppCompatActivity  implements View.OnCl
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria22_Ejercicios.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria21_Ejercicios.class);
                 startActivity(intent);
             }
         });
@@ -67,14 +67,12 @@ public class Teoria20_Ejercicios extends AppCompatActivity  implements View.OnCl
         switch (view.getId())
         {
             case R.id.notavoz1 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_20_1);
                 break;
             case R.id.notavoz2 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_20_2);
                 break;
-            case R.id.notavoz3 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_16_1);
-                break;
+
         }
         mediaPlayer.start();
     }
