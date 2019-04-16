@@ -1,7 +1,6 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
         import android.content.Intent;
-        import android.media.MediaPlayer;
         import android.os.Bundle;
         import android.support.v7.app.AppCompatActivity;
         import android.view.View;
@@ -9,12 +8,10 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.ImageButton;
 
 
-public class Teoria28_Info extends AppCompatActivity  implements View.OnClickListener
+public class Teoria47_Pentagrama extends AppCompatActivity  implements View.OnClickListener
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
-    private MediaPlayer mediaPlayer;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -24,7 +21,8 @@ public class Teoria28_Info extends AppCompatActivity  implements View.OnClickLis
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria28__info);
+        setContentView(R.layout.teoria47_pentagrama);
+
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -62,14 +60,6 @@ public class Teoria28_Info extends AppCompatActivity  implements View.OnClickLis
 
     }
 
-    public void playnotadevoz(View view)
-    {
-        switch (view.getId())
-        {
-
-        }
-        mediaPlayer.start();
-    }
 
     @Override
     public void onClick(View v) {

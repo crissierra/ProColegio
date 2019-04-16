@@ -27,7 +27,7 @@ public class Teoria29_Video extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teoria29_video);
 
-        getSupportActionBar().hide();
+
         videoView = findViewById(R.id.videoView);
         Uri video = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.video27);
         videoView.setVideoURI(video);
@@ -40,7 +40,7 @@ public class Teoria29_Video extends AppCompatActivity {
                     return;
                 {
 
-                    Intent i=new Intent(getApplicationContext(), Teoria30_InfoCompas.class);
+                    Intent i=new Intent(getApplicationContext(), Teoria50_InfoCompas.class);
                     startActivity(i);
                 }
             }

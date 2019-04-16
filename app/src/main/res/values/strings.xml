@@ -185,6 +185,24 @@
 
     </string>
 
+
+    <string name="gramatica30">
+
+         "Ejercicio de dirección de 4/4\n"
+         "1er movimiento: Hacia abajo de manera VERTICAL.\n"
+         "2do movimiento: Hacia tu izquierda subiendo diagonalmente.\n"
+         "3er movimiento: Hacia tu derecha de manera HORIZONTAL.\n"
+         "4to movimiento: Hacia arriba de manera diagonal conectando con el primero, cada pulso marcara 1 tiempo, entonces vamos a marcar en total 4 tiempos con ayuda de nuestro chasquido"
+         "de nuestros dedos de nuestra mano derecha y NUESTRO METRÓNOMO ,cada flechita nos ayudará a separar los tiempos.\n"
+         "¡Veamos.\n\n"
+
+    </string>
+
+
+
+
+
+
     <string name="gramatica47">
        "Pentagrama:\n\n"
         "Es el conjunto de 5 líneas que forman 4 espacios para que puedas escribir los signos musicales en él.\n"

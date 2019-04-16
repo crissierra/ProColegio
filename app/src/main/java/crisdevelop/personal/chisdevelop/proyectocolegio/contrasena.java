@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Toast;
 import android.view.WindowManager;
 import android.widget.Button;
@@ -71,7 +70,7 @@ public class contrasena extends AppCompatActivity
 
 
 
-                                  Intent i=new  Intent(getApplicationContext(), SplashPrincipal.class);
+                                  Intent i=new  Intent(getApplicationContext(), SplashBienvenidaOpcional.class);
                                   startActivity(i);
                                }
 

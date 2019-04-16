@@ -2,8 +2,6 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
@@ -14,7 +12,7 @@ import com.crashlytics.android.Crashlytics;
 import io.fabric.sdk.android.Fabric;
 
 
-public class splashscreen extends AppCompatActivity
+public class SplashScreenPrincipal extends AppCompatActivity
     {
 
 
@@ -24,7 +22,7 @@ public class splashscreen extends AppCompatActivity
         {
             super.onCreate(savedInstanceState);
             Fabric.with(this, new Crashlytics());
-            setContentView(R.layout.splashscreen);
+            setContentView(R.layout.splashscreenprincipal);
 
             //CODIGO PARA ESCONDER EL STATUS BAR
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -33,8 +31,6 @@ public class splashscreen extends AppCompatActivity
 
             new Handler().postDelayed(new Runnable()
             {
-
-
                 @Override
                 public void run()
                 {
@@ -44,25 +40,20 @@ public class splashscreen extends AppCompatActivity
                     int primeravez = inicio.getInt("primeravez",0);
                     // RECORDAR QUE SPREF INICIA EN 0 PORQUE SE LE DA LA GANA... ASÍ LO AJUSTE EN OTRO NUMERO
 
-
                     //AQUI PONER LOS CONDICIONALES PARA CONTRASEÑA O PARA ENTRAR DE UNA AL MAIN
 
-
-                            if (primeravez >= 1)
+                            if (primeravez >= 50)
                             {
-                                startActivity(new Intent(splashscreen.this, menu_principal.class));
+                                startActivity(new Intent(SplashScreenPrincipal.this, menu_principal.class));
                                 finish();
                             }
                             else{
-                                startActivity(new Intent(splashscreen.this,contrasena.class));
+                                startActivity(new Intent(SplashScreenPrincipal.this,contrasena.class));
                                 finish();
                             }
-
-
-
                 }
 
-             },1200);
+             },2200);
         }
     }
 
