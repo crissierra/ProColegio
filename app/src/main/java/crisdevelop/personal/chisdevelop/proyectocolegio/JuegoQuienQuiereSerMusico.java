@@ -2,12 +2,14 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Handler;
 import android.os.Message;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -499,16 +501,19 @@ public class JuegoQuienQuiereSerMusico extends AppCompatActivity {
     }
 
 
-    @Override
-    protected void onPause()
-    {
-        super.onPause();
-        misonido.release();
-        sonidocomodin.release();
 
-        finish();
-    }
+    public void onPause()
+        {
+            super.onPause();
+            misonido.release();
+            sonidocomodin.release();
+            finish();
+        }
+    public void onResume()
+        {
+            super.onResume();
 
+        }
 
 
     //proceso que verifica la pregunta
@@ -615,7 +620,7 @@ public class JuegoQuienQuiereSerMusico extends AppCompatActivity {
            }
 
            public void onFinish() {
-               tiempo.setText("¡Se acabó el tiempo!");
+               tiempo.setText("¡Game Over!");
                terminarJuego();
            }
        }.start();
@@ -708,16 +713,9 @@ public class JuegoQuienQuiereSerMusico extends AppCompatActivity {
     //quitar 50/50
     public void dishide_cincuenta_cincuent_event(View v)
     {
-
-
-
-
         RadioGroup radioGroup = (RadioGroup)findViewById(R.id.opciones);
         for (int i = 0; i < radioGroup.getChildCount(); i++) {
             ((RadioButton) radioGroup.getChildAt(i)).setVisibility(View.VISIBLE);
         }
     }
-
-
-
 }

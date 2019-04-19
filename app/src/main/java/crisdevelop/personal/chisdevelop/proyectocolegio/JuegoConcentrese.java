@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.preference.PreferenceManager;
@@ -36,7 +38,7 @@ public class JuegoConcentrese extends AppCompatActivity {
     private Dialog mensajeFinal;
     private Animation animationC, animacionA;
 
-
+    MediaPlayer misonido;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,13 @@ public class JuegoConcentrese extends AppCompatActivity {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.juego_concentrese);
+
+
+        this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+        misonido = MediaPlayer.create(this,R.raw.songjuego);
+        misonido.start();
+
+
 
          gridView=findViewById(R.id.gridView);
 
@@ -85,31 +94,28 @@ public class JuegoConcentrese extends AppCompatActivity {
         organizaCartas();
         iniciaAjustes();
 
-
     }
-    public void onPause(){
-        super.onPause();
 
 
-    }
+    public void onPause()
+        {
+            super.onPause();
+        }
     public void onResume(){
         super.onResume();
-
         SharedPreferences datos= PreferenceManager.getDefaultSharedPreferences(this);
-
         tipoP=datos.getBoolean("estado",true);
         if(!tipoP){
             chronometer.start();
             chronometer.setVisibility(View.VISIBLE);
-
         }else {
             TextView textView = findViewById(R.id.mostrarEstado);
             textView.setVisibility(View.VISIBLE);
         }
-
-
-
     }
+
+
+
     public void iniciaAjustes(){
         Button button=findViewById(R.id.ajustes);
         button.setOnClickListener(new View.OnClickListener() {
@@ -188,7 +194,7 @@ public class JuegoConcentrese extends AppCompatActivity {
 
 
 
-                        Toast.makeText(getApplicationContext(), "si", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Con qué otra imagen.", Toast.LENGTH_SHORT).show();
 
                         cartas.get(posicion).setFondoImagenL(R.drawable.fondoimagen2);
 
@@ -262,6 +268,7 @@ public class JuegoConcentrese extends AppCompatActivity {
                 if (valorElegido == cartas.get(posicionActual).getNumero()) {
 
 
+
                     Toast.makeText(getApplicationContext(), "¡correcto!", Toast.LENGTH_SHORT).show();
 
                 } else {
@@ -329,7 +336,8 @@ public class JuegoConcentrese extends AppCompatActivity {
             });
         }
     }
-    public void verificarBaseDatos(){
+    public void verificarBaseDatos()
+        {
 
-    }
+        }
 }

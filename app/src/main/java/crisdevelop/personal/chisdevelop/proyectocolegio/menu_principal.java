@@ -81,7 +81,7 @@ public class menu_principal extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Anexos.class);
+                Intent intent=new Intent (getApplicationContext(), Menu_Anexos.class);
                 startActivity(intent);
             }
         });

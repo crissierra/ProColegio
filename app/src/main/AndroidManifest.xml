@@ -12,9 +12,7 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Teoria30_EjericiosDireccion"></activity>
-        <activity android:name=".Teoria50_InfoCompas" />
-        <activity android:name=".Teoria28_EjerciciosDireccion" />
+
         <activity
             android:name=".SplashScreenPrincipal"
             android:theme="@style/AppTheme.NoActionBar">
@@ -40,9 +38,11 @@
         </activity>
         <activity
             android:name=".contrasena"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".PressQuienQuiere"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".menu_principal"
@@ -62,9 +62,16 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".QuienQuiereSer"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".JuegoQuienQuiereSerMusico"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
             android:name=".Resultados"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".JuegoConcentrese"
@@ -78,29 +85,7 @@
             android:name=".Bienvenida"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Teoria4_Splash"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Teoria3_FigurasDuracion"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Teoria2_NotasMusicales"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Teoria1_QueEsMusica"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Teoria6_Splash"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Teoria5_RitmoLenguaje"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Anexos"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".Metronome"
             android:configChanges="orientation|screenSize|keyboardHidden"
@@ -131,6 +116,32 @@
             android:name=".Desarrollador"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Teoria4_Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Teoria3_FigurasDuracion"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Teoria2_NotasMusicales"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Teoria1_QueEsMusica"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Teoria6_Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Teoria5_RitmoLenguaje"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
             android:name=".Teoria7_Negra"
             android:screenOrientation="portrait"
@@ -231,6 +242,20 @@
             android:name=".Teoria43_EscaleraMusical"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Teoria30_EjericiosDireccion"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Teoria50_InfoCompas"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Teoria28_EjerciciosDireccion"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
 
         <meta-data
             android:name="io.fabric.ApiKey"

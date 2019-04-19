@@ -219,7 +219,7 @@
     <string name="play">Play</string>
     <string name="playing">Playing</string>
     <string name="tapTempo">Tap tempo</string>
-    <string name="wait2secToListenResult">Espera 2 segundos para empezar el tempo calculado.</string>
+    <string name="wait2secToListenResult">Espera 2 segundos para empezar automaticamente el tempo calculado.</string>
     <string name="tapRithm">Toca en cualquier lugar de la pantalla, al ritmo de la canción a calcular.</string>
     <string name="assumeDefaultValues">Assume default values</string>
     <string name="settings">Settings</string>

@@ -11,6 +11,7 @@ import android.os.Message;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -418,6 +419,10 @@ public class QuienQuiereSer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.juego_quien_quiere_ser);
 
+        //CODIGO PARA ESCONDER EL STATUS BAR
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //CODIGO PARA ESCONDER EL STATUS BAR
+
         // EXCLUSIVO PARA PONERLE EL SONIDO A LA ACTIVITY
             this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
             misonido = MediaPlayer.create(this,R.raw.reloj45);
@@ -604,7 +609,7 @@ public class QuienQuiereSer extends AppCompatActivity {
            }
 
            public void onFinish() {
-               tiempo.setText("¡Se acabó el tiempo!");
+               tiempo.setText("¡Game Over!!");
                terminarJuego();
            }
        }.start();
@@ -699,7 +704,4 @@ public class QuienQuiereSer extends AppCompatActivity {
             ((RadioButton) radioGroup.getChildAt(i)).setVisibility(View.VISIBLE);
         }
     }
-
-
-
 }

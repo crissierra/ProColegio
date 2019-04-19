@@ -63,8 +63,6 @@ public class Resultados extends AppCompatActivity {
              //mediaControls.setVisibility(View.GONE);
          }
 
-
-
     }
 
     public void Restart(View v)
@@ -75,7 +73,6 @@ public class Resultados extends AppCompatActivity {
 
     public void end(View v)
     {
-
         Intent intent = new Intent(this, menu_principal.class);
         startActivity(intent);
         super.onDestroy();
