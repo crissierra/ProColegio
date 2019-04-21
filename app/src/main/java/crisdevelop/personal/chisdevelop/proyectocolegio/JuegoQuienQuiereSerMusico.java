@@ -94,7 +94,7 @@ public class JuegoQuienQuiereSerMusico extends AppCompatActivity {
 
             //respuestas codes
             final ArrayList<Integer> Respuestas = new ArrayList<Integer>();
-                    Respuestas.add(3);//0
+               /*     Respuestas.add(3);//0
                     Respuestas.add(2); //pregunta 1
                     Respuestas.add(4); //pregunta 2
                     Respuestas.add(1); //pregunta 3
@@ -108,14 +108,31 @@ public class JuegoQuienQuiereSerMusico extends AppCompatActivity {
                     Respuestas.add(3); //pregunta 11
                     Respuestas.add(4); //pregunta 12
                     Respuestas.add(4); //pregunta 13
-                    Respuestas.add(3); //pregunta 14
+                    Respuestas.add(3); //pregunta 14*/
+
+
+            Respuestas.add(1);//0
+            Respuestas.add(1); //pregunta 1
+            Respuestas.add(1); //pregunta 2
+            Respuestas.add(1); //pregunta 3
+            Respuestas.add(1); //pregunta 4
+            Respuestas.add(1); //pregunta 5
+            Respuestas.add(1); //pregunta 6
+            Respuestas.add(1); //pregunta 7
+            Respuestas.add(1); //pregunta 8
+            Respuestas.add(1); //pregunta 9
+            Respuestas.add(1); //pregunta 10
+            Respuestas.add(1); //pregunta 11
+            Respuestas.add(1); //pregunta 12
+            Respuestas.add(1); //pregunta 13
+            Respuestas.add(1); //pregunta 14
 
 
             //Toast.makeText(v.getContext(),"R-"+Respuestas.get(0),Toast.LENGTH_SHORT).show();
             if (contador<preguntas.size())
             {
-                //Toast.makeText(v.getContext(),preguntas.get(contador),Toast.LENGTH_SHORT).show();
-                //Toast.makeText(v.getContext(),""+preguntas.size(),Toast.LENGTH_SHORT).show();
+                Toast.makeText(v.getContext(),preguntas.get(contador),Toast.LENGTH_SHORT).show();
+                Toast.makeText(v.getContext(),""+preguntas.size(),Toast.LENGTH_SHORT).show();
                 btns.setTag(preguntas.get(contador));
                 tiempo();
                 dishide_cincuenta_cincuent_event(v);
@@ -501,21 +518,6 @@ public class JuegoQuienQuiereSerMusico extends AppCompatActivity {
     }
 
 
-
-    public void onPause()
-        {
-            super.onPause();
-            misonido.release();
-            sonidocomodin.release();
-            finish();
-        }
-    public void onResume()
-        {
-            super.onResume();
-
-        }
-
-
     //proceso que verifica la pregunta
     public boolean validar_respuesta(View v,int r)
     {
@@ -718,4 +720,18 @@ public class JuegoQuienQuiereSerMusico extends AppCompatActivity {
             ((RadioButton) radioGroup.getChildAt(i)).setVisibility(View.VISIBLE);
         }
     }
+
+    public void onPause()
+    {
+        super.onPause();
+        misonido.release();
+        sonidocomodin.release();
+        finish();
+    }
+    public void onResume()
+    {
+        super.onResume();
+
+    }
+
 }

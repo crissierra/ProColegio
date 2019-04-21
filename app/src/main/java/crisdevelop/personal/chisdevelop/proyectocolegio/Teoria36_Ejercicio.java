@@ -9,7 +9,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.ImageButton;
 
 
-public class Teoria28_EjerciciosDireccion extends AppCompatActivity  implements View.OnClickListener
+public class Teoria36_Ejercicio extends AppCompatActivity  implements View.OnClickListener
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
@@ -24,7 +24,7 @@ public class Teoria28_EjerciciosDireccion extends AppCompatActivity  implements 
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria28__ejerciciosdireccion);
+        setContentView(R.layout.teoria36__ejercicio);
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -44,7 +44,7 @@ public class Teoria28_EjerciciosDireccion extends AppCompatActivity  implements 
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria27_Video.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria35_ejercicio.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class Teoria28_EjerciciosDireccion extends AppCompatActivity  implements 
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria29_Video.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria37_Ejercicio.class);
                 startActivity(intent);
             }
         });
@@ -66,6 +66,12 @@ public class Teoria28_EjerciciosDireccion extends AppCompatActivity  implements 
     {
         switch (view.getId())
         {
+            case R.id.notavoz1 :
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_36_1);
+                break;
+            case R.id.notavoz2 :
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_36_2);
+                break;
 
         }
         mediaPlayer.start();

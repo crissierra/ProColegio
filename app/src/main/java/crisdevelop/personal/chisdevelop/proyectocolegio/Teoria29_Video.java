@@ -40,7 +40,7 @@ public class Teoria29_Video extends AppCompatActivity {
                     return;
                 {
 
-                    Intent i=new Intent(getApplicationContext(), Teoria50_InfoCompas.class);
+                    Intent i=new Intent(getApplicationContext(), Teoria30_EjericiosDireccion.class);
                     startActivity(i);
                 }
             }

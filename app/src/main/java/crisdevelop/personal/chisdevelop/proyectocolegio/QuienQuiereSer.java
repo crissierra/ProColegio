@@ -59,7 +59,6 @@ public class QuienQuiereSer extends AppCompatActivity {
     //  ACABA CODIGO PARA EL PROGRESS BAR
 
 
-
     //tiempo
     CountDownTimer MyCountDownTimer=null;
     //manejador de eventos
@@ -85,12 +84,12 @@ public class QuienQuiereSer extends AppCompatActivity {
             preguntas.add("pregunta10");
             preguntas.add("pregunta11");
             preguntas.add("pregunta12");
-            preguntas.add("pregunta13");
-            preguntas.add("pregunta14");
+            /*preguntas.add("pregunta13");
+            preguntas.add("pregunta14");*/
             preguntas.add("Final");
             //respuestas codes
             final ArrayList<Integer> Respuestas = new ArrayList<Integer>();
-            Respuestas.add(3);//0
+     /*       Respuestas.add(3);//0
             Respuestas.add(2); //pregunta 1
             Respuestas.add(4); //pregunta 2
             Respuestas.add(1); //pregunta 3
@@ -104,11 +103,28 @@ public class QuienQuiereSer extends AppCompatActivity {
             Respuestas.add(3); //pregunta 11
             Respuestas.add(4); //pregunta 12
             Respuestas.add(4); //pregunta 13
-            Respuestas.add(3); //pregunta 14
+            Respuestas.add(3); //pregunta 14*/
+
+
+            Respuestas.add(1);//0
+            Respuestas.add(1); //pregunta 1
+            Respuestas.add(1); //pregunta 2
+            Respuestas.add(1); //pregunta 3
+            Respuestas.add(1); //pregunta 4
+            Respuestas.add(1); //pregunta 5
+            Respuestas.add(1); //pregunta 6
+            Respuestas.add(1); //pregunta 7
+            Respuestas.add(1); //pregunta 8
+            Respuestas.add(1); //pregunta 9
+            Respuestas.add(1); //pregunta 10
+            Respuestas.add(1); //pregunta 11
+            Respuestas.add(1); //pregunta 12
+          /*  Respuestas.add(1); //pregunta 13
+            Respuestas.add(1); //pregunta 14*/
 
 
 
-            //Toast.makeText(v.getContext(),"R-"+Respuestas.get(0),Toast.LENGTH_SHORT).show();
+           // Toast.makeText(v.getContext(),"R-"+Respuestas.get(0),Toast.LENGTH_SHORT).show();
             if (contador<preguntas.size())
             {
                 //Toast.makeText(v.getContext(),preguntas.get(contador),Toast.LENGTH_SHORT).show();
@@ -143,6 +159,8 @@ public class QuienQuiereSer extends AppCompatActivity {
 
             System.out.println("contador Aumentado: "+contador);
 
+            // REMUMEN DE TODAS LAS PREGUNTAS
+
             if (v.getTag()=="pregunta1")
             {
                 if(validar_respuesta(v,Respuestas.get(0)))
@@ -151,11 +169,11 @@ public class QuienQuiereSer extends AppCompatActivity {
                     Button btn =(Button) v;
                     //btn.setText("primero");
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("A. $_URL[] ");
-                    opcionesa.add("B. $_GET[] ");
-                    opcionesa.add("C. $_FORM[]");
-                    opcionesa.add("D. Las anteriores respuestas no son correctas");
-                    String preguntaa="En PHP, ¿cómo se obtiene la información de un formulario que ha sido enviado mediante el método \"get\"?";
+                    opcionesa.add("A. Blanca.");
+                    opcionesa.add("B. Negra.");
+                    opcionesa.add("C. Corchea.");
+                    opcionesa.add("D. Redonda");
+                    String preguntaa="El valor de duración de 1/2 pertenece a la figura:";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                 }
 
@@ -169,11 +187,11 @@ public class QuienQuiereSer extends AppCompatActivity {
                     Button btn =(Button) v;
                     //btn.setText("segundo");
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add(" connect_mysql(\"localhost\");");
-                    opcionesa.add("dbopen(\"localhost\"); ");
-                    opcionesa.add("mysql_open(\"localhost\");");
-                    opcionesa.add(" mysql_connect(\"localhost\");");
-                    String preguntaa="En PHP, ¿cuál es la forma correcta de abrir una conexión con una base de datos MySQL?";
+                    opcionesa.add("Dispositivo de audio");
+                    opcionesa.add("Dispositivo para escuchar música ");
+                    opcionesa.add("Una clase de afinador");
+                    opcionesa.add("Herramienta para marcar el pulso ");
+                    String preguntaa="Qué es el metrónomo?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                 }
 
@@ -185,11 +203,11 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("text-transform:capitalize");
-                    opcionesa.add("text-transform:uppercase");
-                    opcionesa.add("text-transform:first-letter");
-                    opcionesa.add("No se puede hacer con CSS");
-                    String preguntaa="¿Cómo se hace en CSS para que cada palabra en un texto comience con una letra en mayúsculas?";
+                    opcionesa.add("Símbolos para notas");
+                    opcionesa.add("Símbolos de silencio");
+                    opcionesa.add("Signos que determinan duración");
+                    opcionesa.add("Figuras aleatorias");
+                    String preguntaa="¿Qué son las figuras de duración?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("tercxero");
                 }
@@ -201,11 +219,11 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("lower() ");
-                    opcionesa.add("lowerCase() ");
-                    opcionesa.add("toLower()");
-                    opcionesa.add("toLowerCase()");
-                    String preguntaa="En JavaScript, ¿qué función se emplea para convertir una cadena a minúsculas?";
+                    opcionesa.add("Representación de sonidos ");
+                    opcionesa.add("Figuras al azar ") ;
+                    opcionesa.add("Esttructoras gramaticales " );
+                    opcionesa.add("Silencios");
+                    String preguntaa="Qué son las notas musicales?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("cuarto");
                 }
@@ -217,11 +235,11 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add(" document.open(\"pagina.html\") ");
-                    opcionesa.add("document.new(\"pagina.html\")");
-                    opcionesa.add("window.open(\"pagina.html\")");
-                    opcionesa.add("window.new(\"pagina.html\") ");
-                    String preguntaa="En JavaScript, ¿cómo se abre una ventana nueva del navegador?";
+                    opcionesa.add("Una clase de nota musical");
+                    opcionesa.add("Ausencia de sonido");
+                    opcionesa.add("Momento de inspiración");
+                    opcionesa.add("Ninguna de las anteriores ");
+                    String preguntaa="Qúe es un silencio?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("quinto");
                 }
@@ -233,11 +251,11 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("method ");
-                    opcionesa.add("post");
-                    opcionesa.add("target");
-                    opcionesa.add("Las anteriores respuestas no son correctas ");
-                    String preguntaa="En un formulario HTML, cuando se pulsa sobre un botón de tipo submit, los datos introducidos en el formulario se envían a la URL indicada en el atributo del formulario llamado";
+                    opcionesa.add("4 lineas y 5 espacios");
+                    opcionesa.add("5 líneas y 5 espacios");
+                    opcionesa.add("5 líneas y 4 espacion");
+                    opcionesa.add("Ninguna de las anteriores");
+                    String preguntaa="Cuántas líneas y espacios tiene el pentagrama?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("sexto");
                 }
@@ -249,11 +267,11 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("<-- El comentario --> ");
-                    opcionesa.add("<--! El comentario !-->");
-                    opcionesa.add("<--! El comentario -->");
-                    opcionesa.add("<!-- El comentario --> ");
-                    String preguntaa="En HTML, la forma correcta de crear un comentario es";
+                    opcionesa.add("Re, Mi, Fa, SOl, La, Si.");
+                    opcionesa.add("Do, Re, Mi, Sol, Fa, La, Si.");
+                    opcionesa.add("Do, Re, Mi, Fa, Sol, La, Si.");
+                    opcionesa.add("Do, Si, La, Sol, Fa, MI, Re.");
+                    String preguntaa="Las notas en orden ascendente son:";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("septimo");
                 }
@@ -265,11 +283,11 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("Definen la forma en la que se codifica un carácter dado en un sistema de representación");
-                    opcionesa.add("nfluye en los caracteres que se pueden almacenar");
-                    opcionesa.add("Influye en el espacio de almacenamiento necesario ");
-                    opcionesa.add("Todas las respuestas son correctas");
-                    String preguntaa="Respecto el juego de caracteres";
+                    opcionesa.add("5 Notas");
+                    opcionesa.add("6 Notas");
+                    opcionesa.add("4 Notas");
+                    opcionesa.add("7 Notas");
+                    String preguntaa="La escala natural tiene:";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("octavo");
                 }
@@ -279,14 +297,13 @@ public class QuienQuiereSer extends AppCompatActivity {
             {
                 if(validar_respuesta(v,Respuestas.get(8)))
                 {
-
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add(" information_schema");
-                    opcionesa.add("mysql ");
-                    opcionesa.add("user ");
-                    opcionesa.add("Las anteriores respuestas no son correctas ");
-                    String preguntaa="En MySQL, la información sobre las cuentas de usuario se almacena en la base de datos";
+                    opcionesa.add("Do");
+                    opcionesa.add("Re");
+                    opcionesa.add("Fa");
+                    opcionesa.add("Si");
+                    String preguntaa="En orden descendente, Sol, Fa, Mi...";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("noveno");
                 }
@@ -297,11 +314,11 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add(" Un lenguaje de programación orientado a objetos basado en JavaScrip");
-                    opcionesa.add(" Un servidor de aplicaciones basado en JavaScript  ");
-                    opcionesa.add("Un formato ligero para el intercambio de datos empleado en JavaScript ");
-                    opcionesa.add("Las anteriores respuestas no son correctas ");
-                    String preguntaa="¿Qué es JSON?";
+                    opcionesa.add("Do");
+                    opcionesa.add("Si");
+                    opcionesa.add("Re");
+                    opcionesa.add("Ninguna de las anteriores");
+                    String preguntaa="En orden ascendente, Fa, Sol, La...?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("decimo");
 
@@ -314,11 +331,11 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add(" <?php>...</?> ");
-                    opcionesa.add(" <script>...</script> ");
-                    opcionesa.add("<?php…?>");
-                    opcionesa.add( "<&>...</&>");
-                    String preguntaa="¿El código PHP se escribe con los delimitadores?";
+                    opcionesa.add("Re");
+                    opcionesa.add("Fa");
+                    opcionesa.add("Sol");
+                    opcionesa.add( "Do");
+                    String preguntaa="En orden ascendente, Si...";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("once");
 
@@ -331,18 +348,18 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add(" ISO-8859-1 también se conoce como Latin1 ");
-                    opcionesa.add("ISO-8859-15 es similar a ISO-8859-1, pero sustituye algunos símbolos poco comunes para incluir, por ejemplo, el símbolo del euro ");
-                    opcionesa.add("Incluye todos los símbolos para las principales lenguas de Europa occidental (alemán, castellano, catalán, danés, finés, francés, inglés, noruego, sueco, etc.)");
-                    opcionesa.add("Todas las respuestas son correctas ");
-                    String preguntaa="Respecto el juego de caracteres ISO-8859-1";
+                    opcionesa.add("Re ");
+                    opcionesa.add("Si");
+                    opcionesa.add("Fa");
+                    opcionesa.add("Sol");
+                    String preguntaa="En orden descendente, Do...";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("doce");
 
                 }
 
             }
-            if (v.getTag()=="pregunta13")
+      /*      if (v.getTag()=="pregunta13")
             {
                 if(validar_respuesta(v,Respuestas.get(12)))//2
                 {
@@ -374,7 +391,7 @@ public class QuienQuiereSer extends AppCompatActivity {
                     //btn.setText("catorce");
                 }
 
-            }
+            }*/
             if(v.getTag()=="Final")
             {
 
@@ -392,7 +409,7 @@ public class QuienQuiereSer extends AppCompatActivity {
                                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
                                         // continue with delete
-                                        validar_respuesta(v,Respuestas.get(14));
+                                        validar_respuesta(v,Respuestas.get(12));
                                         terminarJuego();
                                     }
                                 })
@@ -463,16 +480,16 @@ public class QuienQuiereSer extends AppCompatActivity {
                 // TODO Auto-generated method stub
                 // Se comprueban los radioButton
                 if (checkedId == R.id.radioButton){
-                    answer.setText("Ha pulsado la opción A \n    Última palabra?");
+                    answer.setText("Seleccionaste la opción A \n  Última palabra?");
                     RespuestaH=1;
                 }else if (checkedId == R.id.radioButton2){
-                    answer.setText("Ha pulsado la opción B \n    Última palabra?");
+                    answer.setText("Seleccionaste la opción B \n  Última palabra?");
                     RespuestaH=2;
                 }else if (checkedId == R.id.radioButton3){
-                    answer.setText("Ha pulsado la opción C \n    Última palabra?");
+                    answer.setText("Seleccionaste la opción C \n  Última palabra?");
                     RespuestaH=3;
                 }else if (checkedId == R.id.radioButton4){
-                    answer.setText("Ha pulsado la opción D \n    Última palabra?");
+                    answer.setText("Seleccionaste la opción D \n  Última palabra?");
                     RespuestaH=4;
                 }else{
                     answer.setText("estas en algo que trasciende lo previsto");
@@ -497,39 +514,30 @@ public class QuienQuiereSer extends AppCompatActivity {
     }
 
 
-    @Override
-    protected void onPause()
-    {
-        super.onPause();
-        misonido.release();
-
-        finish();
-    }
-
 
     //proceso que verifica la pregunta
     public boolean validar_respuesta(View v,int r)
     {
         if(RespuestaH== r)
         {
-            Toast.makeText(v.getContext(),"Correcto",Toast.LENGTH_SHORT).show();
+            Toast.makeText(v.getContext(),"¡Correcto!",Toast.LENGTH_SHORT).show();
             ArrayList<Integer> premios= new ArrayList<Integer>();
             premios.add(0);
             premios.add(100);
             premios.add(200);
             premios.add(300);
             premios.add(500);
+            premios.add(600);
+            premios.add(800);
             premios.add(1000);
             premios.add(2000);
-            premios.add(3000);
             premios.add(5000);
-            premios.add(7000);
+            premios.add(8000);
+            premios.add(9000);
             premios.add(10000);
-            premios.add(15000);
-            premios.add(20000);
             premios.add(50000);
-            premios.add(100000);
-            premios.add(300000);
+        /*    premios.add(100000);
+            premios.add(300000);*/
             if (contador<premios.size())
             {
                 puntos=premios.get(contador);
@@ -568,7 +576,7 @@ public class QuienQuiereSer extends AppCompatActivity {
         Intent i=new Intent(this,Resultados.class);
         int gif;
         String estado;
-        if (puntos==300000)
+        if (puntos==50000)
         {
             estado="Ganaste";
             gif=R.drawable.worldclass;
@@ -609,7 +617,7 @@ public class QuienQuiereSer extends AppCompatActivity {
            }
 
            public void onFinish() {
-               tiempo.setText("¡Game Over!!");
+               tiempo.setText("¡Game Over!");
                terminarJuego();
            }
        }.start();
@@ -703,5 +711,22 @@ public class QuienQuiereSer extends AppCompatActivity {
         for (int i = 0; i < radioGroup.getChildCount(); i++) {
             ((RadioButton) radioGroup.getChildAt(i)).setVisibility(View.VISIBLE);
         }
+    }
+
+    public void onPause() {
+        super.onPause();
+
+        misonido.release();
+
+        /*MyCountDownTimer.cancel();*/
+
+        misonido.release();
+
+        finish();
+    }
+    public void onResume()
+    {
+        super.onResume();
+
     }
 }

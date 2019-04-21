@@ -195,9 +195,23 @@
          "4to movimiento: Hacia arriba de manera diagonal conectando con el primero, cada pulso marcara 1 tiempo, entonces vamos a marcar en total 4 tiempos con ayuda de nuestro chasquido"
          "de nuestros dedos de nuestra mano derecha y NUESTRO METRÓNOMO ,cada flechita nos ayudará a separar los tiempos.\n"
          "¡Veamos.\n\n"
+    </string>
+
+    <string name="gramatica32">
+
+         "El silencio es muy importante.\n"
+         "El silencio entre las notas es tan importante como las notas mismas.\n"
 
     </string>
 
+    <string name="gramatica35">
+         "Vamos a trabajar con nuestro primer tempo. Empezaremos después de nuestra marcación, es decir,después de contar hasta cuatro.\n"
+        "¿Preparado?\n\n"
+        "¡Empecemos!\n"
+    </string>
+    <string name="gramatica38">
+         "Si puedes soñarlo, puedes hacerlo.\n"
+    </string>
 
 
 
