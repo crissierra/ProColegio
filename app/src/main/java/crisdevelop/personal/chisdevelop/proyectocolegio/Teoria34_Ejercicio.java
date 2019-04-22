@@ -9,7 +9,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.ImageButton;
 
 
-public class Teoria29_FraseMozart extends AppCompatActivity  implements View.OnClickListener
+public class Teoria34_Ejercicio extends AppCompatActivity  implements View.OnClickListener
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
@@ -24,8 +24,7 @@ public class Teoria29_FraseMozart extends AppCompatActivity  implements View.OnC
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria29__frase_mozart);
-
+        setContentView(R.layout.teoria34__ejercicio);
 
         HOME = (ImageButton) findViewById(R.id.home);
         HOME.setOnClickListener(new View.OnClickListener()
@@ -44,28 +43,38 @@ public class Teoria29_FraseMozart extends AppCompatActivity  implements View.OnC
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria28_EjericiosDireccion.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria33_Ejercicio.class);
                 startActivity(intent);
             }
         });
-
         CONTINUAR = (ImageButton) findViewById(R.id.continuar);
         CONTINUAR.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria30_EjerciciosRitmicos.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria35_Ejercicio.class);
                 startActivity(intent);
             }
         });
-
     }
+    public void playnotadevoz(View view)
+    {
+        switch (view.getId())
+        {
+            case R.id.notavoz1 :
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_34_1);
+                break;
+            case R.id.notavoz2 :
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_34_2);
+                break;
 
+        }
+        mediaPlayer.start();
+    }
 
     @Override
     public void onClick(View v) {
 
     }
 }
-

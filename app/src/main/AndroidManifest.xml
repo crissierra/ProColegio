@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Teoria30_EjerciciosRitmicos"></activity>
+        <activity android:name=".Instrucciones_Entrenamiento"></activity>
+        <activity android:name=".Teoria36_Ejercicio" />
         <activity
             android:name=".SplashScreenPrincipal"
             android:theme="@style/AppTheme.NoActionBar">
@@ -231,19 +232,31 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:name=".Teoria30_EjerciciosRitmicos"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Teoria31_Actividad"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".Teoria32_ejercicio"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Teoria36_Ejercicio"
+            android:name=".Teoria33_Ejercicio"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Teoria34_Ejercicio"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Teoria35_Ejercicio"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Teoria37_Ejercicio"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Teoria38_Ejercicio"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity

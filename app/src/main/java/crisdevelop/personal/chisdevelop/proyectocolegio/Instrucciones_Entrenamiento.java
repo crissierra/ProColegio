@@ -9,7 +9,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.ImageButton;
 
 
-public class Teoria29_FraseMozart extends AppCompatActivity  implements View.OnClickListener
+public class Instrucciones_Entrenamiento extends AppCompatActivity  implements View.OnClickListener
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
@@ -24,7 +24,7 @@ public class Teoria29_FraseMozart extends AppCompatActivity  implements View.OnC
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria29__frase_mozart);
+        setContentView(R.layout.instrucciones__entrenamiento);
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -44,7 +44,7 @@ public class Teoria29_FraseMozart extends AppCompatActivity  implements View.OnC
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria28_EjericiosDireccion.class);
+                Intent intent=new Intent (getApplicationContext(), menu_principal.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class Teoria29_FraseMozart extends AppCompatActivity  implements View.OnC
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria30_EjerciciosRitmicos.class);
+                Intent intent=new Intent (getApplicationContext(), EntrenamientoTest.class);
                 startActivity(intent);
             }
         });
@@ -63,9 +63,13 @@ public class Teoria29_FraseMozart extends AppCompatActivity  implements View.OnC
     }
 
 
+
     @Override
     public void onClick(View v) {
 
     }
+    public void onPause()
+    {
+        super.onPause();
+    }
 }
-

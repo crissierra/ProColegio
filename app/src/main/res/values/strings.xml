@@ -25,6 +25,15 @@
     <string name="selectNote">Selecione a Nota correspondente ao som</string>
     <string name="verifyAnswer">Verificar</string>
 
+    <string name="instrucciones">
+       "Escucharas una nota de piano.\n Debes intentar descifrar qué nota fue la que sonó.\n"
+        "Recuerda tener encendido el sonido de tu celular."
+        "Estas listo?\n\n"
+        "¡Empecemos!"
+    </string>
+
+
+
     <string name="integrantes">
         "Integrantes:\n\n"
 
@@ -174,7 +183,7 @@
 
     </string>
 
-    <string name="gramatica28">
+    <string name="gramatica27">
          "Dura 3 tiempos y lo realizaremos así:\n\n"
          "•	Primer movimiento: Hacia abajo.\n"
          "•	Segundo movimiento: Hacia tu derecha y horizontal.\n"
@@ -186,7 +195,7 @@
     </string>
 
 
-    <string name="gramatica30">
+    <string name="gramatica28">
 
          "Ejercicio de dirección de 4/4\n"
          "1er movimiento: Hacia abajo de manera VERTICAL.\n"
@@ -197,11 +206,27 @@
          "Da click en el siguiente enlace de Youtube\n"
     </string>
 
+
+    <string name="gramatica30">
+         "Ejercicios rítmicos:\n\n"
+        "¿Que son? \n"
+         "Los ejercicios ritmicos son la lectura organizada de las figuras musicales. \n\n"
+        "Ejemplo:\n"
+    </string>
+
+    <string name="gramatica31">
+         " ACTIVIDAD:\n\n"
+        "¡Demuestra lo que aprendiste!\n"
+        "Lee el ejercicio rítmico adecuadamente CON AYUDA DE NUESTRO AMIGO, EL METRONOMO. \n"
+         "Identifica cada figura de duración, vamos a ver nuestras 3 figuras y LEELO DE ACUERDO AL TEMPO. \n\n"
+
+    </string>
+
+
     <string name="gramatica32">
 
          "El silencio es muy importante.\n"
          "El silencio entre las notas es tan importante como las notas mismas.\n"
-
     </string>
 
     <string name="gramatica35">
@@ -209,6 +234,13 @@
         "¿Preparado?\n\n"
         "¡Empecemos!\n"
     </string>
+
+    <string name="gramatica36">
+        "¡SUPER SUPER BIEN\n\n"
+         "Ahora vamos con más. ¿Te atreves a hacerlo más rápido?
+        "¡Vamos, tú puedes!\n"
+    </string>
+
     <string name="gramatica38">
          "Si puedes soñarlo, puedes hacerlo.\n"
     </string>

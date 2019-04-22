@@ -9,7 +9,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.ImageButton;
 
 
-public class Teoria38_Ejercicio extends AppCompatActivity  implements View.OnClickListener
+public class Teoria35_Ejercicio extends AppCompatActivity  implements View.OnClickListener
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
@@ -24,7 +24,7 @@ public class Teoria38_Ejercicio extends AppCompatActivity  implements View.OnCli
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria38__ejercicio);
+        setContentView(R.layout.teoria35__ejercicio);
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -44,7 +44,7 @@ public class Teoria38_Ejercicio extends AppCompatActivity  implements View.OnCli
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria36_Ejercicio.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria33_Ejercicio.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class Teoria38_Ejercicio extends AppCompatActivity  implements View.OnCli
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria38_Ejercicio.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria36_Ejercicio.class);
                 startActivity(intent);
             }
         });

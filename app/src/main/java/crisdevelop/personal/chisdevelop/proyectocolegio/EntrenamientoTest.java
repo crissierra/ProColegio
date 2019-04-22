@@ -7,7 +7,9 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.view.View;
         import android.view.WindowManager;
         import android.widget.Button;
+        import android.widget.CheckBox;
         import android.widget.EditText;
+        import android.widget.TextView;
         import android.widget.Toast;
         import model.NotasMusicais;
         import java.util.ArrayList;
@@ -22,7 +24,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
     private List<NotasMusicais> listMedia;
     private NotasMusicais atualSom;
     private int pontos;
-    private EditText edtNome;
+
 
     static Button BOTONDO,BOTONRE,BOTONMI,BOTONFA, BOTONSOL, BOTONLA, BOTONSI;
 
@@ -30,13 +32,14 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.entrenamiento_test);
+        setPontos(0);
 
         //CODIGO PARA ESCONDER EL STATUS BAR
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         setPontos(0);
-        edtNome = findViewById(R.id.edtNome);
+
 
 
 
@@ -107,12 +110,14 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
         {
 
-
             case R.id.botondo:
+
+                TextView textView = (TextView) findViewById((R.id._txtViewPontos));
 
                 if (atualSom.getTitle().contains("DO")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
+                    textView.setText(getPontos() + "");
                 } else {
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
@@ -180,89 +185,87 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
     public void onCheckBoxClicked(View view) {
 
-            /*boolean checked = ((CheckBox) view).isPressed();
+            boolean checked = ((CheckBox) view).isPressed();
             TextView textView = (TextView) findViewById((R.id._txtViewPontos));
 
-            if (view.getId() == R.id._btnRadioMiAgudo) {
+            if (view.getId() == R.id.botondo) {
                 if (checked && atualSom.getTitle().contains("DO")) {
-                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
+
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+
                 }
                 ((CheckBox) view).setChecked(false);
             }
-            if (view.getId() == R.id._btnRadioSi) {
+            if (view.getId() == R.id.botonre) {
                 if (checked && atualSom.getTitle().contains("RE")) {
-                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
+
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+
                 }
                 ((CheckBox) view).setChecked(false);
             }
-            if (view.getId() == R.id._btnRadioSol) {
+            if (view.getId() == R.id.botonmi) {
                 if (checked && atualSom.getTitle().contains("MI")) {
-                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
+
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+
                 }
                 ((CheckBox) view).setChecked(false);
             }
-            if (view.getId() == R.id._btnRadioRe) {
+            if (view.getId() == R.id.botonfa) {
                 if (checked && atualSom.getTitle().contains("FA")) {
-                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
+
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+
                 }
                 ((CheckBox) view).setChecked(false);
             }
-            if (view.getId() == R.id._btnRadioLa) {
+            if (view.getId() == R.id.botonsol) {
                 if (checked && atualSom.getTitle().contains("SOL")) {
-                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
+
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+
                 }
                 ((CheckBox) view).setChecked(false);
             }
-            if (view.getId() == R.id._btnRadioMiGrave) {
+            if (view.getId() == R.id.botonla) {
                 if (checked && atualSom.getTitle().contains("LA")) {
-                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
+
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+
                 }
                 ((CheckBox) view).setChecked(false);
             }
 
-            if (view.getId() == R.id._btnRadioMiGrave) {
+            if (view.getId() == R.id.botonsi) {
                 if (checked && atualSom.getTitle().contains("SI")) {
-                    Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
+
                     setPontos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
-                    Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+
                 }
                 ((CheckBox) view).setChecked(false);
-            }*/
+            }
     }
 
     public void salvarJogo(View view) {
         Intent intent = new Intent();
 
-        String nome = edtNome.getText().toString();
         int pontuacao = getPontos();
 
-        intent.putExtra("nome", nome);
         intent.putExtra("pontos", pontuacao);
 
         setResult(RESULT_SAVE, intent);

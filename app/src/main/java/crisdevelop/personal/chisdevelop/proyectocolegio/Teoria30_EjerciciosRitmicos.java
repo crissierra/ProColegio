@@ -44,7 +44,7 @@ public class Teoria30_EjerciciosRitmicos extends AppCompatActivity  implements V
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria23_Ejercicio.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria29_FraseMozart.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class Teoria30_EjerciciosRitmicos extends AppCompatActivity  implements V
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria25_Info.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria31_Actividad.class);
                 startActivity(intent);
             }
         });
