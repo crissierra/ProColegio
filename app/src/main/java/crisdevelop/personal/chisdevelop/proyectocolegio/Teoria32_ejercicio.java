@@ -9,7 +9,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.ImageButton;
 
 
-public class Teoria32_FraseMozart extends AppCompatActivity  implements View.OnClickListener
+public class Teoria32_ejercicio extends AppCompatActivity  implements View.OnClickListener
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
@@ -24,7 +24,7 @@ public class Teoria32_FraseMozart extends AppCompatActivity  implements View.OnC
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria32__frase_mozart);
+        setContentView(R.layout.teoria32_ejercicio);
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -44,7 +44,7 @@ public class Teoria32_FraseMozart extends AppCompatActivity  implements View.OnC
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria31_Video3.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria29_FraseMozart.class);
                 startActivity(intent);
             }
         });
@@ -55,17 +55,33 @@ public class Teoria32_FraseMozart extends AppCompatActivity  implements View.OnC
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria35_ejercicio.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria36_Ejercicio.class);
                 startActivity(intent);
             }
         });
 
     }
 
+    public void playnotadevoz(View view)
+    {
+        switch (view.getId())
+        {
+            case R.id.notavoz1 :
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_35_1);
+                break;
+            case R.id.notavoz2 :
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_35_2);
+                break;
+        }
+        mediaPlayer.start();
+    }
 
     @Override
     public void onClick(View v) {
 
     }
+    public void onPause()
+    {
+        super.onPause();
+    }
 }
-

@@ -170,7 +170,7 @@
        "Movemos nuestro brazo cada pulso durara solo 1 tiempo, marcaremos los 2 tiempos con el sonido del chasquido\n"
        "que producirá los dedos de nuestra mano derecha y con ayuda de nuestro metrónomo, cada flechita del ejercicio te ayudara\n"
        "a separar cada uno de estos tiempos. Pero, ¿cómo lo realizamos?\n\n"
-        "¡Vamos a ver.\n\n"
+        "¡Vamos a ver! Da click en el siguiente enlace de Youtube.\n"
 
     </string>
 
@@ -179,9 +179,9 @@
          "•	Primer movimiento: Hacia abajo.\n"
          "•	Segundo movimiento: Hacia tu derecha y horizontal.\n"
          "•	Tercer movimiento: Diagonal hacia arriba completando el movimiento.\n"
-         "Cada movimiento durara 1 tiempo, así que marcaremos 3 tiempos con ayuda del sonido del chasquido de"
+         "Cada movimiento durara 1 tiempo, así que marcaremos 3 tiempos con ayuda del sonido del chasquido de "
          "nuestros dedos y NUESTRO METRÓNOMO, cada flechita separará cada uno de estos tiempos.\n\n"
-         "¡Vamos a ver!\n\n"
+         "¡Vamos a ver! Da click en el siguiente enlace de Youtube.\n"
 
     </string>
 
@@ -192,9 +192,9 @@
          "1er movimiento: Hacia abajo de manera VERTICAL.\n"
          "2do movimiento: Hacia tu izquierda subiendo diagonalmente.\n"
          "3er movimiento: Hacia tu derecha de manera HORIZONTAL.\n"
-         "4to movimiento: Hacia arriba de manera diagonal conectando con el primero, cada pulso marcara 1 tiempo, entonces vamos a marcar en total 4 tiempos con ayuda de nuestro chasquido"
-         "de nuestros dedos de nuestra mano derecha y NUESTRO METRÓNOMO ,cada flechita nos ayudará a separar los tiempos.\n"
-         "¡Veamos.\n\n"
+         "4to movimiento: Hacia arriba de manera diagonal conectando con el primero. Cada pulso marcara 1 tiempo, entonces vamos a marcar 4 tiempos con ayuda del chasquido "
+         "de nuestros dedos y NUESTRO METRÓNOMO ,cada flechita nos ayudará a separar los tiempos.\n"
+         "Da click en el siguiente enlace de Youtube\n"
     </string>
 
     <string name="gramatica32">
@@ -212,9 +212,6 @@
     <string name="gramatica38">
          "Si puedes soñarlo, puedes hacerlo.\n"
     </string>
-
-
-
 
 
     <string name="gramatica47">

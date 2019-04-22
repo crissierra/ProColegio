@@ -42,7 +42,7 @@ public class Teoria47_Pentagrama extends AppCompatActivity  implements View.OnCl
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria27_Video.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria26_EjerciciosDireccion.class);
                 startActivity(intent);
             }
         });
@@ -53,7 +53,7 @@ public class Teoria47_Pentagrama extends AppCompatActivity  implements View.OnCl
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria29_Video.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria26_EjerciciosDireccion.class);
                 startActivity(intent);
             }
         });

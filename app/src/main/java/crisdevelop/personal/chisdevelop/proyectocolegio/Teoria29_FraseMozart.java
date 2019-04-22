@@ -9,7 +9,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.ImageButton;
 
 
-public class Teoria28_EjerciciosDireccion extends AppCompatActivity  implements View.OnClickListener
+public class Teoria29_FraseMozart extends AppCompatActivity  implements View.OnClickListener
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
@@ -24,7 +24,7 @@ public class Teoria28_EjerciciosDireccion extends AppCompatActivity  implements 
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria28__ejerciciosdireccion);
+        setContentView(R.layout.teoria29__frase_mozart);
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -44,7 +44,7 @@ public class Teoria28_EjerciciosDireccion extends AppCompatActivity  implements 
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria27_Video.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria28_EjericiosDireccion.class);
                 startActivity(intent);
             }
         });
@@ -55,24 +55,17 @@ public class Teoria28_EjerciciosDireccion extends AppCompatActivity  implements 
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria29_Video.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria32_ejercicio.class);
                 startActivity(intent);
             }
         });
 
     }
 
-    public void playnotadevoz(View view)
-    {
-        switch (view.getId())
-        {
-
-        }
-        mediaPlayer.start();
-    }
 
     @Override
     public void onClick(View v) {
 
     }
 }
+
