@@ -25,7 +25,6 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
     private NotasMusicais atualSom;
     private int pontos;
 
-
     static Button BOTONDO,BOTONRE,BOTONMI,BOTONFA, BOTONSOL, BOTONLA, BOTONSI;
 
     @Override
@@ -39,9 +38,6 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         setPontos(0);
-
-
-
 
         int index = 0;
 
@@ -59,7 +55,6 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
         atualSom = listMedia.get(index);
         atualSom.getAudio().start();
-
 
         BOTONDO= findViewById(R.id.botondo);
         BOTONDO.setOnClickListener(this);
@@ -86,7 +81,6 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
     public void tocarSom(View view) {
 
         int index = 0;
-
         listMedia = new ArrayList<>();
 
         listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
@@ -107,11 +101,9 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
     public void onClick(View v)
     {
         switch (v.getId())
-
         {
 
             case R.id.botondo:
-
                 TextView textView = (TextView) findViewById((R.id._txtViewPontos));
 
                 if (atualSom.getTitle().contains("DO")) {
@@ -122,7 +114,6 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
                 break;
-
             case R.id.botonre:
 
                 if (atualSom.getTitle().contains("RE")) {
@@ -177,13 +168,11 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
                 break;
-
-
         }
     }
 
 
-    public void onCheckBoxClicked(View view) {
+    public void onClickStringButton(View view) {
 
             boolean checked = ((CheckBox) view).isPressed();
             TextView textView = (TextView) findViewById((R.id._txtViewPontos));
