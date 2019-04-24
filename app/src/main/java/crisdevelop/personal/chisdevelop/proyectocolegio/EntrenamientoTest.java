@@ -15,6 +15,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import java.util.ArrayList;
         import java.util.Collections;
         import java.util.List;
+        import java.util.Locale;
         import java.util.Random;
 
 public class EntrenamientoTest extends AppCompatActivity  implements View.OnClickListener{
@@ -24,6 +25,8 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
     private List<NotasMusicais> listMedia;
     private NotasMusicais atualSom;
     private int pontos;
+
+    static TextView CORRECTOS;
 
     static Button BOTONDO,BOTONRE,BOTONMI,BOTONFA, BOTONSOL, BOTONLA, BOTONSI;
 
@@ -90,9 +93,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
         listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.sol_67)));
         listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.la_69)));
         listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.si_71)));
-
         Collections.shuffle(listMedia,new Random(System.nanoTime()));
-
         atualSom = listMedia.get(index);
         atualSom.getAudio().start();
     }
@@ -103,15 +104,35 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
         switch (v.getId())
         {
 
+
             case R.id.botondo:
-                TextView textView = (TextView) findViewById((R.id._txtViewPontos));
+                CORRECTOS= findViewById(R.id.vercorrectos);
+
 
                 if (atualSom.getTitle().contains("DO")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
+
                     setPontos(getPontos() + 1);
-                    textView.setText(getPontos() + "");
+
+                    CORRECTOS.setText(getPontos() + "");
+
+                    int index = 0;
+                    listMedia = new ArrayList<>();
+
+                    listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
+                    listMedia.add(new NotasMusicais("RE", MediaPlayer.create(this, R.raw.re_62)));
+                    listMedia.add(new NotasMusicais("MI", MediaPlayer.create(this, R.raw.mi_64)));
+                    listMedia.add(new NotasMusicais("FA", MediaPlayer.create(this, R.raw.fa_65)));
+                    listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.sol_67)));
+                    listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.la_69)));
+                    listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.si_71)));
+                    Collections.shuffle(listMedia,new Random(System.nanoTime()));
+                    atualSom = listMedia.get(index);
+                    atualSom.getAudio().start();
+
                 } else {
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
+
                 }
                 break;
             case R.id.botonre:
@@ -119,6 +140,22 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                 if (atualSom.getTitle().contains("RE")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
+                    CORRECTOS.setText(getPontos() + "");
+
+                    int index = 0;
+                    listMedia = new ArrayList<>();
+
+                    listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
+                    listMedia.add(new NotasMusicais("RE", MediaPlayer.create(this, R.raw.re_62)));
+                    listMedia.add(new NotasMusicais("MI", MediaPlayer.create(this, R.raw.mi_64)));
+                    listMedia.add(new NotasMusicais("FA", MediaPlayer.create(this, R.raw.fa_65)));
+                    listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.sol_67)));
+                    listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.la_69)));
+                    listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.si_71)));
+                    Collections.shuffle(listMedia,new Random(System.nanoTime()));
+                    atualSom = listMedia.get(index);
+                    atualSom.getAudio().start();
+
                 } else {
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
@@ -128,6 +165,21 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                 if (atualSom.getTitle().contains("MI")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
+                    CORRECTOS.setText(getPontos() + "");
+
+                    int index = 0;
+                    listMedia = new ArrayList<>();
+
+                    listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
+                    listMedia.add(new NotasMusicais("RE", MediaPlayer.create(this, R.raw.re_62)));
+                    listMedia.add(new NotasMusicais("MI", MediaPlayer.create(this, R.raw.mi_64)));
+                    listMedia.add(new NotasMusicais("FA", MediaPlayer.create(this, R.raw.fa_65)));
+                    listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.sol_67)));
+                    listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.la_69)));
+                    listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.si_71)));
+                    Collections.shuffle(listMedia,new Random(System.nanoTime()));
+                    atualSom = listMedia.get(index);
+                    atualSom.getAudio().start();
                 } else {
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
@@ -137,6 +189,21 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                 if (atualSom.getTitle().contains("FA")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
+                    CORRECTOS.setText(getPontos() + "");
+
+                    int index = 0;
+                    listMedia = new ArrayList<>();
+
+                    listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
+                    listMedia.add(new NotasMusicais("RE", MediaPlayer.create(this, R.raw.re_62)));
+                    listMedia.add(new NotasMusicais("MI", MediaPlayer.create(this, R.raw.mi_64)));
+                    listMedia.add(new NotasMusicais("FA", MediaPlayer.create(this, R.raw.fa_65)));
+                    listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.sol_67)));
+                    listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.la_69)));
+                    listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.si_71)));
+                    Collections.shuffle(listMedia,new Random(System.nanoTime()));
+                    atualSom = listMedia.get(index);
+                    atualSom.getAudio().start();
                 } else {
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
@@ -146,6 +213,21 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                 if (atualSom.getTitle().contains("SOL")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
+                    CORRECTOS.setText(getPontos() + "");
+
+                    int index = 0;
+                    listMedia = new ArrayList<>();
+
+                    listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
+                    listMedia.add(new NotasMusicais("RE", MediaPlayer.create(this, R.raw.re_62)));
+                    listMedia.add(new NotasMusicais("MI", MediaPlayer.create(this, R.raw.mi_64)));
+                    listMedia.add(new NotasMusicais("FA", MediaPlayer.create(this, R.raw.fa_65)));
+                    listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.sol_67)));
+                    listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.la_69)));
+                    listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.si_71)));
+                    Collections.shuffle(listMedia,new Random(System.nanoTime()));
+                    atualSom = listMedia.get(index);
+                    atualSom.getAudio().start();
                 } else {
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
@@ -155,6 +237,21 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                 if (atualSom.getTitle().contains("LA")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
+                    CORRECTOS.setText(getPontos() + "");
+
+                    int index = 0;
+                    listMedia = new ArrayList<>();
+
+                    listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
+                    listMedia.add(new NotasMusicais("RE", MediaPlayer.create(this, R.raw.re_62)));
+                    listMedia.add(new NotasMusicais("MI", MediaPlayer.create(this, R.raw.mi_64)));
+                    listMedia.add(new NotasMusicais("FA", MediaPlayer.create(this, R.raw.fa_65)));
+                    listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.sol_67)));
+                    listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.la_69)));
+                    listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.si_71)));
+                    Collections.shuffle(listMedia,new Random(System.nanoTime()));
+                    atualSom = listMedia.get(index);
+                    atualSom.getAudio().start();
                 } else {
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
@@ -164,6 +261,21 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                 if (atualSom.getTitle().contains("SI")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     setPontos(getPontos() + 1);
+                    CORRECTOS.setText(getPontos() + "");
+
+                    int index = 0;
+                    listMedia = new ArrayList<>();
+
+                    listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
+                    listMedia.add(new NotasMusicais("RE", MediaPlayer.create(this, R.raw.re_62)));
+                    listMedia.add(new NotasMusicais("MI", MediaPlayer.create(this, R.raw.mi_64)));
+                    listMedia.add(new NotasMusicais("FA", MediaPlayer.create(this, R.raw.fa_65)));
+                    listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.sol_67)));
+                    listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.la_69)));
+                    listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.si_71)));
+                    Collections.shuffle(listMedia,new Random(System.nanoTime()));
+                    atualSom = listMedia.get(index);
+                    atualSom.getAudio().start();
                 } else {
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                 }
@@ -175,7 +287,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
     public void onClickStringButton(View view) {
 
             boolean checked = ((CheckBox) view).isPressed();
-            TextView textView = (TextView) findViewById((R.id._txtViewPontos));
+            TextView textView = (TextView) findViewById((R.id.vercorrectos));
 
             if (view.getId() == R.id.botondo) {
                 if (checked && atualSom.getTitle().contains("DO")) {
@@ -211,7 +323,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                 if (checked && atualSom.getTitle().contains("FA")) {
 
                     setPontos(getPontos() + 1);
-                    textView.setText(getPontos() + "");
+
                 } else {
 
                 }
@@ -221,7 +333,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                 if (checked && atualSom.getTitle().contains("SOL")) {
 
                     setPontos(getPontos() + 1);
-                    textView.setText(getPontos() + "");
+
                 } else {
 
                 }
@@ -231,7 +343,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                 if (checked && atualSom.getTitle().contains("LA")) {
 
                     setPontos(getPontos() + 1);
-                    textView.setText(getPontos() + "");
+
                 } else {
 
                 }
@@ -242,7 +354,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                 if (checked && atualSom.getTitle().contains("SI")) {
 
                     setPontos(getPontos() + 1);
-                    textView.setText(getPontos() + "");
+
                 } else {
 
                 }
