@@ -24,9 +24,10 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
     public static int RESULT_CANCEL = 2;
     private List<NotasMusicais> listMedia;
     private NotasMusicais atualSom;
-    private int pontos;
+    private int puntosbuenos;
+    private int puntosmalos;
 
-    static TextView CORRECTOS;
+    static TextView CORRECTOS, INCORRECTOS;
 
     static Button BOTONDO,BOTONRE,BOTONMI,BOTONFA, BOTONSOL, BOTONLA, BOTONSI;
 
@@ -34,13 +35,14 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.entrenamiento_test);
-        setPontos(0);
+
 
         //CODIGO PARA ESCONDER EL STATUS BAR
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //CODIGO PARA ESCONDER EL STATUS BAR
 
-        setPontos(0);
+        correctos(0);
+
 
         int index = 0;
 
@@ -103,16 +105,14 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
     {
         switch (v.getId())
         {
-
-
             case R.id.botondo:
                 CORRECTOS= findViewById(R.id.vercorrectos);
-
+                INCORRECTOS= findViewById(R.id.verincorrectos);
 
                 if (atualSom.getTitle().contains("DO")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
 
-                    setPontos(getPontos() + 1);
+                    correctos(getPontos() + 1);
 
                     CORRECTOS.setText(getPontos() + "");
 
@@ -139,7 +139,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
                 if (atualSom.getTitle().contains("RE")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
-                    setPontos(getPontos() + 1);
+                    correctos(getPontos() + 1);
                     CORRECTOS.setText(getPontos() + "");
 
                     int index = 0;
@@ -164,7 +164,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
                 if (atualSom.getTitle().contains("MI")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
-                    setPontos(getPontos() + 1);
+                    correctos(getPontos() + 1);
                     CORRECTOS.setText(getPontos() + "");
 
                     int index = 0;
@@ -188,7 +188,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
                 if (atualSom.getTitle().contains("FA")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
-                    setPontos(getPontos() + 1);
+                    correctos(getPontos() + 1);
                     CORRECTOS.setText(getPontos() + "");
 
                     int index = 0;
@@ -212,7 +212,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
                 if (atualSom.getTitle().contains("SOL")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
-                    setPontos(getPontos() + 1);
+                    correctos(getPontos() + 1);
                     CORRECTOS.setText(getPontos() + "");
 
                     int index = 0;
@@ -236,7 +236,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
                 if (atualSom.getTitle().contains("LA")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
-                    setPontos(getPontos() + 1);
+                    correctos(getPontos() + 1);
                     CORRECTOS.setText(getPontos() + "");
 
                     int index = 0;
@@ -260,7 +260,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
                 if (atualSom.getTitle().contains("SI")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
-                    setPontos(getPontos() + 1);
+                    correctos(getPontos() + 1);
                     CORRECTOS.setText(getPontos() + "");
 
                     int index = 0;
@@ -286,13 +286,13 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
     public void onClickStringButton(View view) {
 
-            boolean checked = ((CheckBox) view).isPressed();
+         /*   boolean checked = ((CheckBox) view).isPressed();
             TextView textView = (TextView) findViewById((R.id.vercorrectos));
 
             if (view.getId() == R.id.botondo) {
                 if (checked && atualSom.getTitle().contains("DO")) {
 
-                    setPontos(getPontos() + 1);
+                    correctos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
 
@@ -302,7 +302,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
             if (view.getId() == R.id.botonre) {
                 if (checked && atualSom.getTitle().contains("RE")) {
 
-                    setPontos(getPontos() + 1);
+                    correctos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
 
@@ -312,7 +312,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
             if (view.getId() == R.id.botonmi) {
                 if (checked && atualSom.getTitle().contains("MI")) {
 
-                    setPontos(getPontos() + 1);
+                    correctos(getPontos() + 1);
                     textView.setText(getPontos() + "");
                 } else {
 
@@ -322,7 +322,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
             if (view.getId() == R.id.botonfa) {
                 if (checked && atualSom.getTitle().contains("FA")) {
 
-                    setPontos(getPontos() + 1);
+                    correctos(getPontos() + 1);
 
                 } else {
 
@@ -332,7 +332,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
             if (view.getId() == R.id.botonsol) {
                 if (checked && atualSom.getTitle().contains("SOL")) {
 
-                    setPontos(getPontos() + 1);
+                    correctos(getPontos() + 1);
 
                 } else {
 
@@ -342,7 +342,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
             if (view.getId() == R.id.botonla) {
                 if (checked && atualSom.getTitle().contains("LA")) {
 
-                    setPontos(getPontos() + 1);
+                    correctos(getPontos() + 1);
 
                 } else {
 
@@ -353,13 +353,13 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
             if (view.getId() == R.id.botonsi) {
                 if (checked && atualSom.getTitle().contains("SI")) {
 
-                    setPontos(getPontos() + 1);
+                    correctos(getPontos() + 1);
 
                 } else {
 
                 }
                 ((CheckBox) view).setChecked(false);
-            }
+            }*/
     }
 
     public void salvarJogo(View view) {
@@ -367,7 +367,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
         int pontuacao = getPontos();
 
-        intent.putExtra("pontos", pontuacao);
+        intent.putExtra("puntosbuenos", pontuacao);
 
         setResult(RESULT_SAVE, intent);
         finish();
@@ -380,10 +380,10 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
 
     public int getPontos() {
-        return pontos;
+        return puntosbuenos;
     }
 
-    public void setPontos(int pontos) {
-        this.pontos = pontos;
+    public void correctos(int puntosbuenos) {
+        this.puntosbuenos = puntosbuenos;
     }
 }
