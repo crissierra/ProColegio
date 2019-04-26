@@ -1,7 +1,6 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
         import android.content.Intent;
-        import android.media.MediaPlayer;
         import android.os.Bundle;
         import android.support.v7.app.AppCompatActivity;
         import android.view.View;
@@ -9,12 +8,10 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.ImageButton;
 
 
-public class Teoria35_Ejercicio extends AppCompatActivity  implements View.OnClickListener
+public class Teoria43_NotasPemtagrama extends AppCompatActivity  implements View.OnClickListener
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
-    private MediaPlayer mediaPlayer;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -24,7 +21,8 @@ public class Teoria35_Ejercicio extends AppCompatActivity  implements View.OnCli
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria35__ejercicio);
+        setContentView(R.layout.teoria43__notas_pemtagrama);
+
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -44,7 +42,7 @@ public class Teoria35_Ejercicio extends AppCompatActivity  implements View.OnCli
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria34_Ejercicio.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria42_Pentagrama.class);
                 startActivity(intent);
             }
         });
@@ -55,30 +53,18 @@ public class Teoria35_Ejercicio extends AppCompatActivity  implements View.OnCli
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria36_Ejercicio.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria44_NotasPentagrama.class);
                 startActivity(intent);
             }
         });
 
     }
 
-    public void playnotadevoz(View view)
-    {
-        switch (view.getId())
-        {
-            case R.id.notavoz1 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_37_1);
-                break;
-            case R.id.notavoz2 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_37_2);
-                break;
-
-        }
-        mediaPlayer.start();
-    }
 
     @Override
     public void onClick(View v) {
 
     }
 }
+
+

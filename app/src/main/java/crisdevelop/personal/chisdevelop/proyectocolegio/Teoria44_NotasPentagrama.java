@@ -9,7 +9,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.ImageButton;
 
 
-public class Teoria35_Ejercicio extends AppCompatActivity  implements View.OnClickListener
+public class Teoria44_NotasPentagrama extends AppCompatActivity  implements View.OnClickListener
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
@@ -24,7 +24,7 @@ public class Teoria35_Ejercicio extends AppCompatActivity  implements View.OnCli
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria35__ejercicio);
+        setContentView(R.layout.teoria44__notas_pentagrama);
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -44,7 +44,7 @@ public class Teoria35_Ejercicio extends AppCompatActivity  implements View.OnCli
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria34_Ejercicio.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria43_NotasPemtagrama.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class Teoria35_Ejercicio extends AppCompatActivity  implements View.OnCli
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria36_Ejercicio.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria45_SignosMusicales.class);
                 startActivity(intent);
             }
         });
@@ -67,12 +67,11 @@ public class Teoria35_Ejercicio extends AppCompatActivity  implements View.OnCli
         switch (view.getId())
         {
             case R.id.notavoz1 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_37_1);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_361_1);
                 break;
             case R.id.notavoz2 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_37_2);
+                mediaPlayer = MediaPlayer.create(this, R.raw.toma_361_2);
                 break;
-
         }
         mediaPlayer.start();
     }

@@ -9,7 +9,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.ImageButton;
 
 
-public class Teoria35_Ejercicio extends AppCompatActivity  implements View.OnClickListener
+public class Teoria40_EscaleraMusical extends AppCompatActivity  implements View.OnClickListener
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
@@ -24,7 +24,7 @@ public class Teoria35_Ejercicio extends AppCompatActivity  implements View.OnCli
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria35__ejercicio);
+        setContentView(R.layout.teoria40__escalera_musical);
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -44,7 +44,7 @@ public class Teoria35_Ejercicio extends AppCompatActivity  implements View.OnCli
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria34_Ejercicio.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria39_FraseBeethoven.class);
                 startActivity(intent);
             }
         });
@@ -55,27 +55,14 @@ public class Teoria35_Ejercicio extends AppCompatActivity  implements View.OnCli
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria36_Ejercicio.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria41_CompletarNota.class);
                 startActivity(intent);
             }
         });
 
     }
 
-    public void playnotadevoz(View view)
-    {
-        switch (view.getId())
-        {
-            case R.id.notavoz1 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_37_1);
-                break;
-            case R.id.notavoz2 :
-                mediaPlayer = MediaPlayer.create(this, R.raw.toma_37_2);
-                break;
 
-        }
-        mediaPlayer.start();
-    }
 
     @Override
     public void onClick(View v) {

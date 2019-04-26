@@ -1,6 +1,7 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
         import android.content.Intent;
+        import android.media.AudioManager;
         import android.media.MediaPlayer;
         import android.os.Bundle;
         import android.support.v7.app.AppCompatActivity;
@@ -14,6 +15,7 @@ public class Teoria29_FraseMozart extends AppCompatActivity  implements View.OnC
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
     private MediaPlayer mediaPlayer;
+    MediaPlayer misonido;
 
 
     @Override
@@ -25,6 +27,10 @@ public class Teoria29_FraseMozart extends AppCompatActivity  implements View.OnC
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teoria29__frase_mozart);
+
+        this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+        misonido = MediaPlayer.create(this,R.raw.vivaldi12);
+        misonido.start();
 
 
         HOME = (ImageButton) findViewById(R.id.home);

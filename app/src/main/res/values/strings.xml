@@ -33,7 +33,6 @@
     </string>
 
 
-
     <string name="integrantes">
         "Integrantes:\n\n"
 
@@ -217,8 +216,8 @@
     <string name="gramatica31">
          " ACTIVIDAD:\n\n"
         "¡Demuestra lo que aprendiste!\n"
-        "Lee el ejercicio rítmico adecuadamente CON AYUDA DE NUESTRO AMIGO, EL METRONOMO. \n"
-         "Identifica cada figura de duración, vamos a ver nuestras 3 figuras y LEELO DE ACUERDO AL TEMPO. \n\n"
+        "Lee el ejercicio rítmico adecuadamente CON AYUDA DE NUESTRO AMIGO, EL METRÓNOMO. \n\n"
+         "Identifica cada figura de duración, vamos a ver nuestras 3 figuras. Leelo de acuerdo al tempo\n\n"
 
     </string>
 
@@ -242,8 +241,33 @@
     </string>
 
     <string name="gramatica38">
-         "Si puedes soñarlo, puedes hacerlo.\n"
+         "¡Super bien, serás un excelente músico!\n"
     </string>
+
+
+    <string name="gramatica39">
+         "Haz lo necesario para lograr tu más ardiente deseo, y acabarás lográndolo.\n"
+    </string>
+
+
+    <string name="gramatica40">
+        "¿Qué es la escala musical\n"
+         "Las notas suben escalón en escalón, hasta alcanzar la cima.\n"
+    </string>
+
+    <string name="gramatica43">
+       "Como ya sabemos, nuestro pentagrama tiene 5 líneas y 4 espacios. Ahora vamos a conocer las notas en él,"
+       "cada línea tiene una nota y cada espacio tiene una nota, las notas se organizarán de forma graves hasta agudas.\n"
+       "¿Recuerdas la escala musical? En nuestro pentagrama la ubicaremos de forma que suban de línea a espacio.\n"
+       "¿Qué te parece si observamos como seria?\n"
+
+    </string>
+
+    <string name="gramatica45">
+        "Se encargan de darle nombre a las líneas y espacios del pentagrama, te ayudara a leer una canción.\n"
+    </string>
+
+
 
 
     <string name="gramatica47">

@@ -12,7 +12,14 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Instrucciones_Entrenamiento"></activity>
+        <activity android:name=".Teoria46_InfoSignosMusicales"></activity>
+        <activity android:name=".Teoria45_SignosMusicales" />
+        <activity android:name=".Teoria44_NotasPentagrama" />
+        <activity android:name=".Teoria43_NotasPemtagrama" />
+        <activity android:name=".Teoria41_CompletarNota" />
+        <activity android:name=".Teoria39_FraseBeethoven" />
+        <activity android:name=".Teoria38_Felicitaciones" />
+        <activity android:name=".Instrucciones_Entrenamiento" />
         <activity android:name=".Teoria36_Ejercicio" />
         <activity
             android:name=".SplashScreenPrincipal"
@@ -260,15 +267,15 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Teoria47_Pentagrama"
+            android:name=".Teoria42_Pentagrama"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Teoria43_EscaleraMusical"
+            android:name=".Teoria40_EscaleraMusical"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Teoria50_InfoCompas"
+            android:name=".Teoria47_InfoCompas"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 

@@ -1,6 +1,8 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
         import android.content.Intent;
+        import android.media.AudioManager;
+        import android.media.MediaPlayer;
         import android.os.Bundle;
         import android.support.v7.app.AppCompatActivity;
         import android.view.View;
@@ -8,10 +10,13 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.ImageButton;
 
 
-public class Teoria47_Pentagrama extends AppCompatActivity  implements View.OnClickListener
+public class Teoria39_FraseBeethoven extends AppCompatActivity  implements View.OnClickListener
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
+    private MediaPlayer mediaPlayer;
+    MediaPlayer misonido;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -21,8 +26,11 @@ public class Teoria47_Pentagrama extends AppCompatActivity  implements View.OnCl
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria47_pentagrama);
+        setContentView(R.layout.teoria39__frase_beethoven);
 
+        this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+        misonido = MediaPlayer.create(this,R.raw.vivaldi12);
+        misonido.start();
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -42,7 +50,7 @@ public class Teoria47_Pentagrama extends AppCompatActivity  implements View.OnCl
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria26_EjerciciosDireccion.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria38_Felicitaciones.class);
                 startActivity(intent);
             }
         });
@@ -53,7 +61,7 @@ public class Teoria47_Pentagrama extends AppCompatActivity  implements View.OnCl
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria26_EjerciciosDireccion.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria40_EscaleraMusical.class);
                 startActivity(intent);
             }
         });
@@ -66,3 +74,4 @@ public class Teoria47_Pentagrama extends AppCompatActivity  implements View.OnCl
 
     }
 }
+
