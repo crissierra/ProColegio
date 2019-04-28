@@ -59,7 +59,7 @@ public class contrasena extends AppCompatActivity
             final String password = CLAVE.getText().toString();
 
 
-                if   ( password.equals("music") )
+                if   ( password.equals("funnymusic") )
                                {
                                   //  E D I T A R   S H A R E D   P R E F E R E N C E S
                                   SharedPreferences primeravez = getSharedPreferences("primeravez",MODE_PRIVATE);

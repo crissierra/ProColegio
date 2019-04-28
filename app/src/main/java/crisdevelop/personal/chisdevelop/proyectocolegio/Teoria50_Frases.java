@@ -14,8 +14,8 @@ public class Teoria50_Frases extends AppCompatActivity  implements View.OnClickL
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
-    private MediaPlayer mediaPlayer;
-    MediaPlayer misonido;
+
+    private MediaPlayer misonido;
 
 
     @Override
@@ -50,7 +50,7 @@ public class Teoria50_Frases extends AppCompatActivity  implements View.OnClickL
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria38_Felicitaciones.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria47_InfoCompas.class);
                 startActivity(intent);
             }
         });
@@ -61,7 +61,7 @@ public class Teoria50_Frases extends AppCompatActivity  implements View.OnClickL
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria40_EscaleraMusical.class);
+                Intent intent=new Intent (getApplicationContext(), GraciasFinalTeoria.class);
                 startActivity(intent);
             }
         });
@@ -73,5 +73,6 @@ public class Teoria50_Frases extends AppCompatActivity  implements View.OnClickL
     public void onClick(View v) {
 
     }
+
 }
 

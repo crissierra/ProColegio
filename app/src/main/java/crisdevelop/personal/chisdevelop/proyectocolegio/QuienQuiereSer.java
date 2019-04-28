@@ -43,7 +43,7 @@ public class QuienQuiereSer extends AppCompatActivity {
     int progress = 0;
     Handler myHandler = new Handler()
     {
-        @Override
+     /*   @Override
         public void handleMessage(Message msg) {
             if (msg.what ==0) {
                 if (progress < 100)
@@ -52,7 +52,7 @@ public class QuienQuiereSer extends AppCompatActivity {
                     ringProgressBar1.setProgress(progress);
                 }
             }
-        }
+        }*/
     };
     //  ACABA CODIGO PARA EL PROGRESS BAR
 
@@ -462,6 +462,9 @@ public class QuienQuiereSer extends AppCompatActivity {
                         }
                     }
                 }
+
+        // COGIDO EXCLUSIVO PARA EL PROGRESS BAR
+
 // estoy trabajando aqui para parar el contador
                 public void onFinish() {
                     tiempo.setText("¡Game Over!");

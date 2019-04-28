@@ -45,7 +45,7 @@ public class Teoria6_Splash extends AppCompatActivity
 
             }
 
-        },500);
+        },4000);
     }
 }
 

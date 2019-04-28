@@ -44,7 +44,7 @@ public class Teoria47_InfoCompas extends AppCompatActivity  implements View.OnCl
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria45_SignosMusicales.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria46_InfoSignosMusicales.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class Teoria47_InfoCompas extends AppCompatActivity  implements View.OnCl
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria47_InfoCompas.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria50_Frases.class);
                 startActivity(intent);
             }
         });

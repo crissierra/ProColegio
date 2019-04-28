@@ -108,7 +108,7 @@ public class TapTempo extends Base
         if(bpm>0) {
             displayValue = Integer.valueOf(bpm).toString();
         } else {
-            displayValue = "Toque novamente";
+            displayValue = "Continua, al ritmo de la canción";
         }
         TextView bpmTextView = (TextView) findViewById(R.id.bpmTextView);
         bpmTextView.setText(displayValue);

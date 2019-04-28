@@ -55,7 +55,7 @@ public class Teoria40_EscaleraMusical extends AppCompatActivity  implements View
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria41_CompletarNota.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria42_Pentagrama.class);
                 startActivity(intent);
             }
         });
@@ -68,4 +68,5 @@ public class Teoria40_EscaleraMusical extends AppCompatActivity  implements View
     public void onClick(View v) {
 
     }
+
 }

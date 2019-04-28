@@ -80,8 +80,6 @@ public class Teoria32_ejercicio extends AppCompatActivity  implements View.OnCli
     public void onClick(View v) {
 
     }
-    public void onPause()
-    {
-        super.onPause();
-    }
+
+
 }

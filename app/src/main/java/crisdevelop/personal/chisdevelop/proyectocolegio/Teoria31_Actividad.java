@@ -77,4 +77,5 @@ public class Teoria31_Actividad extends AppCompatActivity  implements View.OnCli
     public void onClick(View v) {
 
     }
+
 }

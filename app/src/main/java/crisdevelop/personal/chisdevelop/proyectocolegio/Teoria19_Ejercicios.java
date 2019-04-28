@@ -82,4 +82,5 @@ public class Teoria19_Ejercicios extends AppCompatActivity  implements View.OnCl
     public void onClick(View v) {
 
     }
+
 }

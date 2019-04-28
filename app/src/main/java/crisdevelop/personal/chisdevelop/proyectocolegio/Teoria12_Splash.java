@@ -16,6 +16,7 @@ public class Teoria12_Splash extends AppCompatActivity
 {
 
    /* MediaPlayer voz4;*/
+   MediaPlayer misonido;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -27,6 +28,9 @@ public class Teoria12_Splash extends AppCompatActivity
         //CODIGO PARA ESCONDER EL STATUS BAR
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //CODIGO PARA ESCONDER EL STATUS BAR
+        this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+        misonido = MediaPlayer.create(this,R.raw.victoria);
+        misonido.start();
 
         /*this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
         voz4 = MediaPlayer.create(this,R.raw.toma_16_1);
@@ -45,8 +49,9 @@ public class Teoria12_Splash extends AppCompatActivity
 
             }
 
-        },500);
+        },6000);
     }
+
 }
 
 

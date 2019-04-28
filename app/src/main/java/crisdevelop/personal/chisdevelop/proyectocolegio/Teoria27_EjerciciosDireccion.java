@@ -96,4 +96,5 @@ public class Teoria27_EjerciciosDireccion extends AppCompatActivity  implements 
     public void onClick(View v) {
 
     }
+
 }

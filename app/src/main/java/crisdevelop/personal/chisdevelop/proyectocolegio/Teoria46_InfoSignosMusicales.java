@@ -13,7 +13,6 @@ public class Teoria46_InfoSignosMusicales extends AppCompatActivity  implements 
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
-    private MediaPlayer mediaPlayer;
 
 
     @Override

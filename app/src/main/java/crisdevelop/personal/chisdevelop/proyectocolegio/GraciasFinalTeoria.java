@@ -5,13 +5,15 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.support.v7.app.AppCompatActivity;
         import android.view.View;
         import android.view.WindowManager;
+        import android.widget.Button;
         import android.widget.ImageButton;
 
-
-public class Teoria42_Pentagrama extends AppCompatActivity  implements View.OnClickListener
+public class GraciasFinalTeoria extends AppCompatActivity implements View.OnClickListener
 
 {
-    ImageButton HOME,ANTERIOR, CONTINUAR;
+
+    ImageButton HOME;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -21,11 +23,10 @@ public class Teoria42_Pentagrama extends AppCompatActivity  implements View.OnCl
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria42_pentagrama);
-
-
+        setContentView(R.layout.gracias_final_teoria);
 
         HOME = (ImageButton) findViewById(R.id.home);
+
         HOME.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -36,34 +37,12 @@ public class Teoria42_Pentagrama extends AppCompatActivity  implements View.OnCl
             }
         });
 
-        ANTERIOR = (ImageButton) findViewById(R.id.anterior);
-        ANTERIOR.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent=new Intent (getApplicationContext(), Teoria41_CompletarNota.class);
-                startActivity(intent);
-            }
-        });
-
-        CONTINUAR = (ImageButton) findViewById(R.id.continuar);
-        CONTINUAR.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent=new Intent (getApplicationContext(), Teoria43_NotasPemtagrama.class);
-                startActivity(intent);
-            }
-        });
 
     }
-
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View v)
+    {
 
     }
-
 }

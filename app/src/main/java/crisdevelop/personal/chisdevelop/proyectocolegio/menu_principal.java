@@ -51,7 +51,7 @@ public class menu_principal extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria49_ActividadNotas.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria45_SignosMusicales.class);
                 startActivity(intent);
             }
         });
@@ -113,6 +113,14 @@ public class menu_principal extends AppCompatActivity {
 
                 startActivity(i);
                 break;
+
+            case R.id.solfeo:
+
+                i=new Intent(this, Juego_Solfeo.class);
+
+                startActivity(i);
+                break;
+
 
             case R.id.jeroglifico:
 

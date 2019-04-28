@@ -12,9 +12,7 @@
         android:roundIcon="@mipmap/logofun"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Teoria49_ActividadNotas"></activity>
-        <activity android:name=".Jeroglifico" />
-        <activity android:name=".Teoria50_Frases" />
+
         <activity
             android:name=".SplashScreenPrincipal"
             android:theme="@style/AppTheme.NoActionBar">
@@ -302,6 +300,28 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Teoria46_InfoSignosMusicales"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".Teoria47_InfoCompas"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".GraciasFinalTeoria"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Juego_Solfeo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Jeroglifico"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Teoria50_Frases"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 

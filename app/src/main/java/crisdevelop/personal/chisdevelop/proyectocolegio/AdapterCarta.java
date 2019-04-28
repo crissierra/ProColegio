@@ -110,7 +110,5 @@ public class AdapterCarta extends BaseAdapter {
 // PENDIENTES PARA TERMINAR:
 /*
 
-3. SCROLLABLE.
-4. ARREGLAR PROGRESIVE BAR
 5. SPINNER*/
 

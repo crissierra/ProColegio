@@ -71,7 +71,7 @@
     <string name="gramatica4">
 
         "Ya que conocemos las figuras de duración super bien.\n"
-         "ahora vamos a pasar al ritmo lenguaje.\n"
+         "Ahora vamos a pasar al ritmo lenguaje.\n"
 
     </string>
 
@@ -118,7 +118,6 @@
     </string>
 
     <string name="gramatica13">
-
        "¿Quieres saber un truco super importante para los silencios?\n"
        "El silencio como sabemos es un signo que representa la duración, pero no el sonido.\n"
        "Ahora, ¿cómo sabemos en qué momento representará esa duración?\n"
@@ -150,7 +149,7 @@
     </string>
 
     <string name="gramatica22">
-       "Ya que comprendes la lectura rítmica de la figura de duracion de negra,pareja de corchea y silencio de negra hagamos"
+       "Ya que comprendes la lectura rítmica de la figura de duracion de negra, pareja de corchea y silencio de negra hagamos"
         "ejercicios mezclando los 3.\n\n"
     </string>
 
@@ -262,6 +261,13 @@
     "Son pequeñas líneas que sirven para que puedas ubicar los signos musicales que queden fuera del pentagrama."
     </string>
 
+    <string name="gracias">
+
+    "Muchas gracias,has culminado nuestra sección de gramática. Puedes volver al menú principal y disfrutar de nuestros juegos musicales y actividades.\n"
+    "Y recuerda: \n\n"
+
+    </string>
+
 
     <string name="gramatica43">
        "Como ya sabemos, nuestro pentagrama tiene 5 líneas y 4 espacios. Ahora vamos a conocer las notas en él,"
@@ -282,6 +288,18 @@
         "Líneas adicionales:\n\n"
         "Son pequeñas líneas que sirven para que puedas ubicar los signos musicales que queden fuera del pentagrama.\n"
     </string>
+
+    <string name="gramatica50">
+       "La música es el arte más direct, entra por el oído y va a l corazón\n\n"
+
+    </string>
+
+
+
+
+    LA MUSICA ES EL ARTE MAS DIRECTO,
+    ENTRA POR EL ODIO Y VA AL CORAZON.
+    MAGDALENA MARTINEZ
 
 
     <string name="q1_aString">Es un framework</string>

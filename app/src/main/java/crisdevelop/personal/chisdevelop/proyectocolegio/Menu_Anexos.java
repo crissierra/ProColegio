@@ -17,7 +17,7 @@ public class Menu_Anexos extends AppCompatActivity {
 
 
     GridLayout mainGrid;
-    ImageButton DESARROLLADOR, INTEGRANTES,HOME;
+    ImageButton  INTEGRANTES,HOME;
 
 
     @Override
@@ -34,7 +34,7 @@ public class Menu_Anexos extends AppCompatActivity {
 
         mainGrid = (GridLayout) findViewById(R.id.mainGrid);
 
-        DESARROLLADOR = (ImageButton) findViewById(R.id.desarrollador);
+       /* DESARROLLADOR = (ImageButton) findViewById(R.id.desarrollador);*/
         INTEGRANTES = (ImageButton) findViewById(R.id.integrantes);
 
 
@@ -49,7 +49,7 @@ public class Menu_Anexos extends AppCompatActivity {
             }
         });
 
-        DESARROLLADOR.setOnClickListener(new View.OnClickListener()
+      /*  DESARROLLADOR.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
@@ -57,7 +57,7 @@ public class Menu_Anexos extends AppCompatActivity {
                 Intent intent=new Intent (getApplicationContext(), Desarrollador.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
         INTEGRANTES.setOnClickListener(new View.OnClickListener()
         {

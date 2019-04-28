@@ -78,4 +78,5 @@ public class Teoria17_ParejaCorcheas extends AppCompatActivity  implements View.
     public void onClick(View v) {
 
     }
+
 }

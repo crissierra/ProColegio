@@ -83,4 +83,5 @@ public class Teoria23_Ejercicio extends AppCompatActivity  implements View.OnCli
     public void onClick(View v) {
 
     }
+
 }
