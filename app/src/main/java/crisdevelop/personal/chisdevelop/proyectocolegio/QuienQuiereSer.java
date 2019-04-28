@@ -167,10 +167,10 @@ public class QuienQuiereSer extends AppCompatActivity {
                     Button btn =(Button) v;
                    // btn.setText("primero");
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("A. Blanca.");
-                    opcionesa.add("B. Negra.");
-                    opcionesa.add("C. Corchea.");
-                    opcionesa.add("D. Redonda");
+                    opcionesa.add("A. Blanca. ");
+                    opcionesa.add("B. Negra. ");
+                    opcionesa.add("C. Corchea. ");
+                    opcionesa.add("D. Redonda. ");
                     String preguntaa="El valor de duración de 1/2 de negra pertenece a la figura:";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                 }
@@ -185,9 +185,9 @@ public class QuienQuiereSer extends AppCompatActivity {
                     Button btn =(Button) v;
                     //btn.setText("segundo");
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("Dispositivo de audio");
+                    opcionesa.add("Dispositivo de audio ");
                     opcionesa.add("Dispositivo para escuchar música ");
-                    opcionesa.add("Una clase de afinador");
+                    opcionesa.add("Una clase de afinador ");
                     opcionesa.add("Herramienta para marcar el pulso ");
                     String preguntaa="Qué es el metrónomo?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
@@ -201,10 +201,10 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("Símbolos para notas");
-                    opcionesa.add("Símbolos de silencio");
-                    opcionesa.add("Signos que determinan duración");
-                    opcionesa.add("Figuras aleatorias");
+                    opcionesa.add("Símbolos para notas ");
+                    opcionesa.add("Símbolos de silencio ");
+                    opcionesa.add("Signos que determinan duración ");
+                    opcionesa.add("Figuras aleatorias ");
                     String preguntaa="¿Qué son las figuras de duración?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("tercxero");
@@ -220,7 +220,7 @@ public class QuienQuiereSer extends AppCompatActivity {
                     opcionesa.add("Representación de sonidos ");
                     opcionesa.add("Figuras al azar ") ;
                     opcionesa.add("Estructoras gramaticales " );
-                    opcionesa.add("Silencios");
+                    opcionesa.add("Silencios ");
                     String preguntaa="Qué son las notas musicales?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("cuarto");
@@ -233,9 +233,9 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("Una clase de nota musical");
-                    opcionesa.add("Ausencia de sonido");
-                    opcionesa.add("Momento de inspiración");
+                    opcionesa.add("Una clase de nota musical ");
+                    opcionesa.add("Ausencia de sonido ");
+                    opcionesa.add("Momento de inspiración ");
                     opcionesa.add("Ninguna de las anteriores ");
                     String preguntaa="Qúe es un silencio?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
@@ -249,10 +249,10 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("4 lineas y 5 espacios");
-                    opcionesa.add("5 líneas y 5 espacios");
-                    opcionesa.add("5 líneas y 4 espacion");
-                    opcionesa.add("Ninguna de las anteriores");
+                    opcionesa.add("4 lineas y 5 espacios ");
+                    opcionesa.add("5 líneas y 5 espacios ");
+                    opcionesa.add("5 líneas y 4 espacion ");
+                    opcionesa.add("Ninguna de las anteriores ");
                     String preguntaa="Cuántas líneas y espacios tiene el pentagrama?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("sexto");
@@ -265,10 +265,10 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("Re, Mi, Fa, SOl, La, Si.");
-                    opcionesa.add("Do, Re, Mi, Sol, Fa, La, Si.");
-                    opcionesa.add("Do, Re, Mi, Fa, Sol, La, Si.");
-                    opcionesa.add("Do, Si, La, Sol, Fa, MI, Re.");
+                    opcionesa.add("Re, Mi, Fa, SOl, La, Si. ");
+                    opcionesa.add("Do, Re, Mi, Sol, Fa, La, Si. ");
+                    opcionesa.add("Do, Re, Mi, Fa, Sol, La, Si. ");
+                    opcionesa.add("Do, Si, La, Sol, Fa, MI, Re. ");
                     String preguntaa="Las notas en orden ascendente son:";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("septimo");
@@ -281,10 +281,10 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("5 Notas");
-                    opcionesa.add("6 Notas");
-                    opcionesa.add("4 Notas");
-                    opcionesa.add("7 Notas");
+                    opcionesa.add("5 Notas ");
+                    opcionesa.add("6 Notas ");
+                    opcionesa.add("4 Notas ");
+                    opcionesa.add("7 Notas ");
                     String preguntaa="La escala natural tiene:";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("octavo");
@@ -297,10 +297,10 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("Do");
-                    opcionesa.add("Re");
-                    opcionesa.add("Fa");
-                    opcionesa.add("Si");
+                    opcionesa.add("Do. ");
+                    opcionesa.add("Re. ");
+                    opcionesa.add("Fa. ");
+                    opcionesa.add("Si. ");
                     String preguntaa="En orden descendente. Sol, Fa, Mi y luego...";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("noveno");
@@ -312,10 +312,10 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("Do");
-                    opcionesa.add("Si");
-                    opcionesa.add("Re");
-                    opcionesa.add("Ninguna de las anteriores");
+                    opcionesa.add("Do. ");
+                    opcionesa.add("Si. ");
+                    opcionesa.add("Re. ");
+                    opcionesa.add("Ninguna de las anteriores ");
                     String preguntaa="En orden ascendente, Fa, Sol, La...?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("decimo");
@@ -329,10 +329,10 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("Re");
-                    opcionesa.add("Fa");
-                    opcionesa.add("Sol");
-                    opcionesa.add( "Do");
+                    opcionesa.add("Re. ");
+                    opcionesa.add("Fa. ");
+                    opcionesa.add("Sol. ");
+                    opcionesa.add( "Do. ");
                     String preguntaa="En orden ascendente, Si...";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("once");
@@ -346,10 +346,10 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     Button btn =(Button) v;
                     ArrayList<String> opcionesa= new ArrayList<String>();
-                    opcionesa.add("Re ");
-                    opcionesa.add("Si");
-                    opcionesa.add("Fa");
-                    opcionesa.add("Sol");
+                    opcionesa.add("Re. ");
+                    opcionesa.add("Si. ");
+                    opcionesa.add("Fa. ");
+                    opcionesa.add("Sol. ");
                     String preguntaa="En orden descendente, Do...";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("doce");
@@ -403,7 +403,7 @@ public class QuienQuiereSer extends AppCompatActivity {
                         // Do something after 5s = 5000ms
                         new AlertDialog.Builder(v.getContext())
                                 .setTitle("Final")
-                                .setMessage("Estas seguro de finalizar con esta respuesta")
+                                .setMessage("¿Estas seguro? Ésta es tu última respuesta")
                                 .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                                     public void onClick(DialogInterface dialog, int which) {
                                         // continue with delete

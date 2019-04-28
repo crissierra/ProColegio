@@ -1,6 +1,8 @@
 package crisdevelop.personal.chisdevelop.proyectocolegio;
 
 import android.content.Intent;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -14,6 +16,7 @@ import pl.droidsonroids.gif.GifImageView;
 
 public class Resultados extends AppCompatActivity {
 
+    MediaPlayer misonido;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +47,14 @@ public class Resultados extends AppCompatActivity {
         VideoView simpleVideoView=(VideoView) findViewById(R.id.videoView);
         MediaController mediaControls = null;
          if(gif>0)
-         {
-             pGif.setImageResource(gif);
-             simpleVideoView.setVisibility(View.INVISIBLE);
+             {
+                 pGif.setImageResource(gif);
+                 simpleVideoView.setVisibility(View.INVISIBLE);
 
-         }
+                 this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+                 misonido = MediaPlayer.create(this,R.raw.victoria);
+                 misonido.start();
+             }
         else
          {
              pGif.setVisibility(View.INVISIBLE);

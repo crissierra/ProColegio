@@ -51,7 +51,7 @@ public class menu_principal extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria25_Info.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria49_ActividadNotas.class);
                 startActivity(intent);
             }
         });
@@ -93,7 +93,6 @@ public class menu_principal extends AppCompatActivity {
     public void escogerJuego(View v){
         Intent i;
 
-
         switch (v.getId()){
 
             case R.id.game:
@@ -115,10 +114,14 @@ public class menu_principal extends AppCompatActivity {
                 startActivity(i);
                 break;
 
+            case R.id.jeroglifico:
+
+                i=new Intent(this, Jeroglifico.class);
+
+                startActivity(i);
+                break;
         }
-
     }
-
 
     public void onResume(){
         super.onResume();

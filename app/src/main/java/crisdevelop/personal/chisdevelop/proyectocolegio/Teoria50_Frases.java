@@ -10,14 +10,13 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.ImageButton;
 
 
-public class Teoria38_Felicitaciones extends AppCompatActivity  implements View.OnClickListener
-
+public class Teoria50_Frases extends AppCompatActivity  implements View.OnClickListener
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
     private MediaPlayer mediaPlayer;
-
     MediaPlayer misonido;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -27,12 +26,11 @@ public class Teoria38_Felicitaciones extends AppCompatActivity  implements View.
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria38__felicitaciones);
+        setContentView(R.layout.teoria50__frases);
 
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        misonido = MediaPlayer.create(this,R.raw.victoria);
+        misonido = MediaPlayer.create(this,R.raw.vivaldi12);
         misonido.start();
-
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -52,7 +50,7 @@ public class Teoria38_Felicitaciones extends AppCompatActivity  implements View.
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria37_Ejercicio.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria38_Felicitaciones.class);
                 startActivity(intent);
             }
         });
@@ -63,7 +61,7 @@ public class Teoria38_Felicitaciones extends AppCompatActivity  implements View.
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria39_FraseBeethoven.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria40_EscaleraMusical.class);
                 startActivity(intent);
             }
         });
@@ -71,9 +69,9 @@ public class Teoria38_Felicitaciones extends AppCompatActivity  implements View.
     }
 
 
-
     @Override
     public void onClick(View v) {
 
     }
 }
+

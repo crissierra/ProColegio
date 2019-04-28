@@ -44,7 +44,7 @@ public class Teoria46_InfoSignosMusicales extends AppCompatActivity  implements 
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria44_NotasPentagrama.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria45_SignosMusicales.class);
                 startActivity(intent);
             }
         });
@@ -55,7 +55,7 @@ public class Teoria46_InfoSignosMusicales extends AppCompatActivity  implements 
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria46_InfoSignosMusicales.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria47_InfoCompas.class);
                 startActivity(intent);
             }
         });

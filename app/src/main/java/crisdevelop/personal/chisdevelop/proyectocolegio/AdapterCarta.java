@@ -108,8 +108,8 @@ public class AdapterCarta extends BaseAdapter {
 
 
 // PENDIENTES PARA TERMINAR:
-/*1. aRREGLAR LAS PREGUNTAS CORRECTAS.class
-2. PONER ENTRENAMIENTO ANTES DE ENTRENAMIENTO TEST y probar el cambio del diseño de imagenbuton a button que puse
+/*
+
 3. SCROLLABLE.
 4. ARREGLAR PROGRESIVE BAR
 5. SPINNER*/

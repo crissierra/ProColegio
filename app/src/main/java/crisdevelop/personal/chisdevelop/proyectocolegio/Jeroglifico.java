@@ -10,14 +10,14 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.ImageButton;
 
 
-public class Teoria38_Felicitaciones extends AppCompatActivity  implements View.OnClickListener
-
+public class Jeroglifico extends AppCompatActivity  implements View.OnClickListener
 
 {
-    ImageButton HOME,ANTERIOR, CONTINUAR;
+    ImageButton HOME;
     private MediaPlayer mediaPlayer;
 
     MediaPlayer misonido;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -27,12 +27,11 @@ public class Teoria38_Felicitaciones extends AppCompatActivity  implements View.
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.teoria38__felicitaciones);
+        setContentView(R.layout.jeroglifico);
 
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        misonido = MediaPlayer.create(this,R.raw.victoria);
+        misonido = MediaPlayer.create(this,R.raw.songjuego);
         misonido.start();
-
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -45,29 +44,6 @@ public class Teoria38_Felicitaciones extends AppCompatActivity  implements View.
                 startActivity(intent);
             }
         });
-
-        ANTERIOR = (ImageButton) findViewById(R.id.anterior);
-        ANTERIOR.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent=new Intent (getApplicationContext(), Teoria37_Ejercicio.class);
-                startActivity(intent);
-            }
-        });
-
-        CONTINUAR = (ImageButton) findViewById(R.id.continuar);
-        CONTINUAR.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View v)
-            {
-                Intent intent=new Intent (getApplicationContext(), Teoria39_FraseBeethoven.class);
-                startActivity(intent);
-            }
-        });
-
     }
 
 
@@ -75,5 +51,10 @@ public class Teoria38_Felicitaciones extends AppCompatActivity  implements View.
     @Override
     public void onClick(View v) {
 
+    }
+    public void onPause()
+    {
+        super.onPause();
+        misonido.release();
     }
 }

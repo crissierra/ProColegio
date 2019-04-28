@@ -7,12 +7,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/logo"
+        android:icon="@mipmap/logofun"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/logo"
+        android:roundIcon="@mipmap/logofun"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".Teoria49_ActividadNotas"></activity>
+        <activity android:name=".Jeroglifico" />
+        <activity android:name=".Teoria50_Frases" />
         <activity
             android:name=".SplashScreenPrincipal"
             android:theme="@style/AppTheme.NoActionBar">
@@ -278,8 +280,8 @@
             android:name=".Teoria40_EscaleraMusical"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity android:name=".Teoria41_CompletarNota"
+        <activity
+            android:name=".Teoria41_CompletarNota"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -302,17 +304,6 @@
             android:name=".Teoria46_InfoSignosMusicales"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".Teoria47_InfoCompas"
-            android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-
-
-
-
-
-
 
         <meta-data
             android:name="io.fabric.ApiKey"

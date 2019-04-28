@@ -251,9 +251,17 @@
 
 
     <string name="gramatica40">
-        "¿Qué es la escala musical\n"
-         "Las notas suben escalón en escalón, hasta alcanzar la cima.\n"
+        "¿Qué es la escala musical?\n\n"
+         "Las notas suben de escalón en escalón, hasta alcanzar la cima.\n"
     </string>
+
+    <string name="gramatica42">
+         "Pentagrama:\n\n"
+    "Es el conjunto de 5 líneas que forman 4 espacios para que puedas escribir los signos musicales en él."
+    "Líneas adicionales:\n\n"
+    "Son pequeñas líneas que sirven para que puedas ubicar los signos musicales que queden fuera del pentagrama."
+    </string>
+
 
     <string name="gramatica43">
        "Como ya sabemos, nuestro pentagrama tiene 5 líneas y 4 espacios. Ahora vamos a conocer las notas en él,"
@@ -266,8 +274,6 @@
     <string name="gramatica45">
         "Se encargan de darle nombre a las líneas y espacios del pentagrama, te ayudara a leer una canción.\n"
     </string>
-
-
 
 
     <string name="gramatica47">

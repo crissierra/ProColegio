@@ -82,24 +82,31 @@ public class Entrenamiento extends AppCompatActivity {
         {
             case R.id.notado :
                 mediaPlayer = MediaPlayer.create(this, R.raw.do_60);
+                System.gc();
                 break;
             case R.id.notare :
                 mediaPlayer = MediaPlayer.create(this, R.raw.re_62);
+                System.gc();
                 break;
             case R.id.notami :
                 mediaPlayer = MediaPlayer.create(this, R.raw.mi_64);
+                System.gc();
                 break;
             case R.id.notafa :
                 mediaPlayer = MediaPlayer.create(this, R.raw.fa_65);
+                System.gc();
                 break;
             case R.id.notasol :
                 mediaPlayer = MediaPlayer.create(this, R.raw.sol_67);
+                System.gc();
                 break;
             case R.id.notala :
                 mediaPlayer = MediaPlayer.create(this, R.raw.la_69);
+                System.gc();
                 break;
             case R.id.notasi :
                 mediaPlayer = MediaPlayer.create(this, R.raw.si_71);
+                System.gc();
                 break;
         }
 
