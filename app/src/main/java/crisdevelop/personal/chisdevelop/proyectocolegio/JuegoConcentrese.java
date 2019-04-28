@@ -100,9 +100,11 @@ public class JuegoConcentrese extends AppCompatActivity {
     public void onPause()
         {
             super.onPause();
+            misonido.release();
         }
     public void onResume(){
         super.onResume();
+
         SharedPreferences datos= PreferenceManager.getDefaultSharedPreferences(this);
         tipoP=datos.getBoolean("estado",true);
         if(!tipoP){
@@ -194,7 +196,7 @@ public class JuegoConcentrese extends AppCompatActivity {
 
 
 
-                        Toast.makeText(getApplicationContext(), "Con qué otra imagen.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "Con qué otra imagen?", Toast.LENGTH_SHORT).show();
 
                         cartas.get(posicion).setFondoImagenL(R.drawable.fondoimagen2);
 
@@ -340,4 +342,5 @@ public class JuegoConcentrese extends AppCompatActivity {
         {
 
         }
+
 }

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -22,7 +23,7 @@ import crisdevelop.josantos.metronome.service.Metronome.MetronomeListener;
 import crisdevelop.josantos.metronome.ui.activity.Base;
 
 
-public class Metronome extends Base implements MetronomeListener
+public class Metronomo extends Base implements MetronomeListener
 {
     private NumberPicker npbpm;
     private EditText etMeasure;
@@ -84,7 +85,12 @@ public class Metronome extends Base implements MetronomeListener
     {
         super.onCreate(savedInstanceState);
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
-        setContentView(R.layout.act_metronome);
+        setContentView(R.layout.metronomo);
+
+        //CODIGO PARA ESCONDER EL STATUS BAR
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //CODIGO PARA ESCONDER EL STATUS BAR
+
         metr.setListener(this);
         setupNpbpm();
         setupEtMeasure();
@@ -132,7 +138,7 @@ public class Metronome extends Base implements MetronomeListener
         volumeBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override public void onProgressChanged(SeekBar seekBar, int progressValue, boolean fromUser) {
                 metr.setVolume(progressValue);
-                SharedPreferences prefs=PreferenceManager.getDefaultSharedPreferences(Metronome.this);
+                SharedPreferences prefs=PreferenceManager.getDefaultSharedPreferences(Metronomo.this);
                 SharedPreferences.Editor editor=prefs.edit();
                 editor.putInt("volume", progressValue);
                 editor.commit();

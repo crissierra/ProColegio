@@ -41,7 +41,6 @@ public class QuienQuiereSer extends AppCompatActivity {
     //  CODIGO PARA EL PROGRESS BAR
     static RingProgressBar ringProgressBar1;
     int progress = 0;
-
     Handler myHandler = new Handler()
     {
         @Override
@@ -51,7 +50,6 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
                     progress++;
                     ringProgressBar1.setProgress(progress);
-
                 }
             }
         }
@@ -106,19 +104,19 @@ public class QuienQuiereSer extends AppCompatActivity {
             Respuestas.add(3); //pregunta 14*/
 
 
-            Respuestas.add(1);//0
-            Respuestas.add(1); //pregunta 1
-            Respuestas.add(1); //pregunta 2
-            Respuestas.add(1); //pregunta 3
+            Respuestas.add(4);//0
+            Respuestas.add(3); //pregunta 1
+            Respuestas.add(4); //pregunta 2
+            Respuestas.add(3); //pregunta 3
             Respuestas.add(1); //pregunta 4
-            Respuestas.add(1); //pregunta 5
-            Respuestas.add(1); //pregunta 6
-            Respuestas.add(1); //pregunta 7
-            Respuestas.add(1); //pregunta 8
-            Respuestas.add(1); //pregunta 9
-            Respuestas.add(1); //pregunta 10
-            Respuestas.add(1); //pregunta 11
-            Respuestas.add(1); //pregunta 12
+            Respuestas.add(2); //pregunta 5
+            Respuestas.add(3); //pregunta 6
+            Respuestas.add(3); //pregunta 7
+            Respuestas.add(4); //pregunta 8
+            Respuestas.add(2); //pregunta 9
+            Respuestas.add(2); //pregunta 10
+            Respuestas.add(4); //pregunta 11
+            Respuestas.add(2); //pregunta 12
           /*  Respuestas.add(1); //pregunta 13
             Respuestas.add(1); //pregunta 14*/
 
@@ -167,13 +165,13 @@ public class QuienQuiereSer extends AppCompatActivity {
                 {
 
                     Button btn =(Button) v;
-                    //btn.setText("primero");
+                   // btn.setText("primero");
                     ArrayList<String> opcionesa= new ArrayList<String>();
                     opcionesa.add("A. Blanca.");
                     opcionesa.add("B. Negra.");
                     opcionesa.add("C. Corchea.");
                     opcionesa.add("D. Redonda");
-                    String preguntaa="El valor de duración de 1/2 pertenece a la figura:";
+                    String preguntaa="El valor de duración de 1/2 de negra pertenece a la figura:";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                 }
 
@@ -221,7 +219,7 @@ public class QuienQuiereSer extends AppCompatActivity {
                     ArrayList<String> opcionesa= new ArrayList<String>();
                     opcionesa.add("Representación de sonidos ");
                     opcionesa.add("Figuras al azar ") ;
-                    opcionesa.add("Esttructoras gramaticales " );
+                    opcionesa.add("Estructoras gramaticales " );
                     opcionesa.add("Silencios");
                     String preguntaa="Qué son las notas musicales?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
@@ -303,7 +301,7 @@ public class QuienQuiereSer extends AppCompatActivity {
                     opcionesa.add("Re");
                     opcionesa.add("Fa");
                     opcionesa.add("Si");
-                    String preguntaa="En orden descendente, Sol, Fa, Mi...";
+                    String preguntaa="En orden descendente. Sol, Fa, Mi y luego...";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
                     //btn.setText("noveno");
                 }
@@ -442,7 +440,7 @@ public class QuienQuiereSer extends AppCompatActivity {
 
         // EXCLUSIVO PARA PONERLE EL SONIDO A LA ACTIVITY
             this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-            misonido = MediaPlayer.create(this,R.raw.reloj45);
+            misonido = MediaPlayer.create(this,R.raw.songjuego);
             misonido.start();
         // ACABA EXCLUSIVO PARA PONERLE EL SONIDO A LA ACTIVITY
 
@@ -464,6 +462,16 @@ public class QuienQuiereSer extends AppCompatActivity {
                         }
                     }
                 }
+// estoy trabajando aqui para parar el contador
+                public void onFinish() {
+                    tiempo.setText("¡Game Over!");
+                    terminarJuego();
+                }
+                // estoy trabajando aqui para parar el contador
+
+
+
+
             }).start();
         // ACABA COGIDO EXCLUSIVO PARA EL PROGRESS BAR
 
@@ -610,7 +618,8 @@ public class QuienQuiereSer extends AppCompatActivity {
    public void tiempo()
    {
        kill_tiempo();
-       MyCountDownTimer=new CountDownTimer(46000, 1000) {
+       MyCountDownTimer=new CountDownTimer(46000, 1000)
+       {
 
            public void onTick(long millisUntilFinished) {
                tiempo.setText( millisUntilFinished / 1000+ " s.");
@@ -713,20 +722,18 @@ public class QuienQuiereSer extends AppCompatActivity {
         }
     }
 
-    public void onPause() {
-        super.onPause();
+    public void onPause()
+        {
+            super.onPause();
 
-        misonido.release();
+            misonido.release();
 
-        /*MyCountDownTimer.cancel();*/
-
-        misonido.release();
-
-        finish();
-    }
+            finish();
+        }
     public void onResume()
     {
         super.onResume();
 
     }
+
 }

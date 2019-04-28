@@ -35,14 +35,13 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.entrenamiento_test);
 
-
         //CODIGO PARA ESCONDER EL STATUS BAR
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //CODIGO PARA ESCONDER EL STATUS BAR
 
         incorrectos(0);
         correctos(0);
-
+        promedio(0);
 
         int index = 0;
 
@@ -87,11 +86,9 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
     private void incorrectos(int puntosmalos) {this.puntosmalos = puntosmalos; }
     private void promedio(int puntospromedio) {this.puntospromedio = puntospromedio; }
 
-    public int getPuntosBuenos() {
-        return puntosbuenos;
-    }
+    public int getPuntosBuenos() { return puntosbuenos; }
     public int getPontosMalos() {return puntosmalos;  }
-    public int getPontosPromedio() {return puntospromedio;  }
+    public int getPontosPromedio() {return puntospromedio; }
 
     public void tocarSom(View view) {
 
@@ -314,7 +311,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
                     incorrectos(getPontosMalos() + 1);
                     INCORRECTOS.setText(getPontosMalos() + "");
-                    //PROMEDIO.setText(  (getPuntosBuenos() /                (getPuntosBuenos() + getPontosMalos())   )     +   "%");
+
 
                 }
                 break;

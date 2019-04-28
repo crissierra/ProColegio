@@ -6,13 +6,15 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.support.v7.app.AppCompatActivity;
         import android.view.View;
         import android.view.WindowManager;
+        import android.widget.Button;
         import android.widget.ImageButton;
 
 
-public class Instrucciones_Entrenamiento extends AppCompatActivity  implements View.OnClickListener
+public class Instrucciones_TestEntrenamiento extends AppCompatActivity  implements View.OnClickListener
 
 {
-    ImageButton HOME,ANTERIOR, CONTINUAR;
+    ImageButton HOME;
+    Button ANTERIOR, CONTINUAR;
     private MediaPlayer mediaPlayer;
 
 
@@ -38,7 +40,7 @@ public class Instrucciones_Entrenamiento extends AppCompatActivity  implements V
             }
         });
 
-        ANTERIOR = (ImageButton) findViewById(R.id.anterior);
+        ANTERIOR = (Button) findViewById(R.id.anterior);
         ANTERIOR.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -49,7 +51,7 @@ public class Instrucciones_Entrenamiento extends AppCompatActivity  implements V
             }
         });
 
-        CONTINUAR = (ImageButton) findViewById(R.id.continuar);
+        CONTINUAR = (Button) findViewById(R.id.continuar);
         CONTINUAR.setOnClickListener(new View.OnClickListener()
         {
             @Override

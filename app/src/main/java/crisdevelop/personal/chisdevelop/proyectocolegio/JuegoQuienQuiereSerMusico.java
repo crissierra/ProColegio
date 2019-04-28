@@ -43,16 +43,13 @@ public class JuegoQuienQuiereSerMusico extends AppCompatActivity {
             int progress = 0;
 
             Handler myHandler = new Handler()
-            {
-
-                @Override
+            {   @Override
                 public void handleMessage(Message msg) {
                     if (msg.what ==0) {
                         if (progress < 100)
                         {
                             progress++;
                             ringProgressBar1.setProgress(progress);
-
                         }
                     }
                 }
@@ -66,8 +63,6 @@ public class JuegoQuienQuiereSerMusico extends AppCompatActivity {
     //manejador de eventos
     View.OnClickListener handler = new View.OnClickListener()
     {
-
-
         public void onClick(final View v)
         {
             Button btns =(Button) findViewById(R.id.button2);

@@ -39,8 +39,8 @@ public class Entrenamiento extends AppCompatActivity {
 
 
 
-        rankingList = new ArrayList<>();
-
+      /*  rankingList = new ArrayList<>();
+*/
 
         // LO USO PARA IMPRIMIR EL ESTADO DE LA VARIABLE PRIMERA VEZ
                /* RTA_PRIMERAVEZ= findViewById(R.id.rta_primeravez);
@@ -78,7 +78,8 @@ public class Entrenamiento extends AppCompatActivity {
 
     public void onClickStringButton(View view) {
 
-        switch (view.getId()) {
+        switch (view.getId())
+        {
             case R.id.notado :
                 mediaPlayer = MediaPlayer.create(this, R.raw.do_60);
                 break;
@@ -100,9 +101,6 @@ public class Entrenamiento extends AppCompatActivity {
             case R.id.notasi :
                 mediaPlayer = MediaPlayer.create(this, R.raw.si_71);
                 break;
-        }
-        if (STATUS_REPEAT) {
-            mediaPlayer.setLooping(true);
         }
 
         mediaPlayer.start();
