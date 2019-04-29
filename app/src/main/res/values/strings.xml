@@ -41,11 +41,10 @@
         "Lorena Parra Rudas\n"
         "Laura Alejandra Romero Rey\n\n"
 
-         "Teléfono:\n"
+         "Contacto:\n"
         "5680820\n"
         "3125171524\n\n"
         "Página Web:\n"
-        "www.pendiente.com\n"
 
     </string>
     <string name="gramatica1">
@@ -222,7 +221,7 @@
     <string name="gramatica31">
          " ACTIVIDAD:\n\n"
         "¡Demuestra lo que aprendiste!\n"
-        "Lee el ejercicio rítmico adecuadamente CON AYUDA DE NUESTRO AMIGO, EL METRÓNOMO. \n\n"
+        "Lee el ejercicio rítmico con la ayuda de nuestro metrónomo.\n\n"
          "Identifica cada figura de duración, vamos a ver nuestras 3 figuras. Leelo de acuerdo al tempo\n\n"
 
     </string>
@@ -300,8 +299,6 @@
        "La música es el arte más direct, entra por el oído y va a l corazón\n\n"
 
     </string>
-
-
 
 
     LA MUSICA ES EL ARTE MAS DIRECTO,

@@ -13,7 +13,7 @@ public class Teoria8_Ejercicio extends AppCompatActivity  implements View.OnClic
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
-    private MediaPlayer mediaPlayer;
+    public MediaPlayer mediaPlayer;
 
 
     @Override
@@ -65,8 +65,10 @@ public class Teoria8_Ejercicio extends AppCompatActivity  implements View.OnClic
 
     public void playnotadevoz(View view)
     {
+
         switch (view.getId())
         {
+
             case R.id.notavoz1 :
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_8_1);
                 break;

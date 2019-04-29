@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/logofun"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
+        <activity android:name=".ResultadoEntrenamientoTest"></activity>
         <activity
             android:name=".SplashScreenPrincipal"
             android:theme="@style/AppTheme.NoActionBar">
@@ -87,7 +87,6 @@
         <activity
             android:name=".Metronomo"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:label="Metrónomo"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
@@ -302,12 +301,10 @@
             android:name=".Teoria46_InfoSignosMusicales"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".Teoria47_InfoCompas"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
-
         <activity
             android:name=".GraciasFinalTeoria"
             android:screenOrientation="portrait"

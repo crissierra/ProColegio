@@ -102,8 +102,6 @@ public class PressConcentrese extends AppCompatActivity {
     }
     public void onResume(){
         super.onResume();
-
-
     }
     @Override
     protected void onPause()

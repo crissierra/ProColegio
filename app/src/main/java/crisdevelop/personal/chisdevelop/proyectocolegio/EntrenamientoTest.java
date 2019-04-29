@@ -46,7 +46,6 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
         int index = 0;
 
         listMedia = new ArrayList<>();
-
         listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
         listMedia.add(new NotasMusicais("RE", MediaPlayer.create(this, R.raw.re_62)));
         listMedia.add(new NotasMusicais("MI", MediaPlayer.create(this, R.raw.mi_64)));
@@ -54,30 +53,22 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
         listMedia.add(new NotasMusicais("SOL", MediaPlayer.create(this, R.raw.sol_67)));
         listMedia.add(new NotasMusicais("LA", MediaPlayer.create(this, R.raw.la_69)));
         listMedia.add(new NotasMusicais("SI", MediaPlayer.create(this, R.raw.si_71)));
-
         Collections.shuffle(listMedia,new Random(System.nanoTime()));
-
         atualSom = listMedia.get(index);
         atualSom.getAudio().start();
 
         BOTONDO= findViewById(R.id.botondo);
         BOTONDO.setOnClickListener(this);
-
         BOTONRE= findViewById(R.id.botonre);
         BOTONRE.setOnClickListener(this);
-
         BOTONMI= findViewById(R.id.botonmi);
         BOTONMI.setOnClickListener(this);
-
         BOTONFA= findViewById(R.id.botonfa);
         BOTONFA.setOnClickListener(this);
-
         BOTONSOL= findViewById(R.id.botonsol);
         BOTONSOL.setOnClickListener(this);
-
         BOTONLA= findViewById(R.id.botonla);
         BOTONLA.setOnClickListener(this);
-
         BOTONSI= findViewById(R.id.botonsi);
         BOTONSI.setOnClickListener(this);
     }
@@ -109,12 +100,16 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
     @Override
     public void onClick(View v)
     {
+        CORRECTOS= findViewById(R.id.vercorrectos);
+        INCORRECTOS= findViewById(R.id.verincorrectos);
+        PROMEDIO= findViewById(R.id.verpromedio);
+
         switch (v.getId())
         {
+
+
             case R.id.botondo:
-                CORRECTOS= findViewById(R.id.vercorrectos);
-                INCORRECTOS= findViewById(R.id.verincorrectos);
-                PROMEDIO= findViewById(R.id.verpromedio);
+
 
                 if (atualSom.getTitle().contains("DO")) {
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
@@ -123,8 +118,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                     promedio(getPuntosBuenos() + 1);
 
                     CORRECTOS.setText(getPuntosBuenos() + "");
-                    //PROMEDIO.setText((getPuntosBuenos() /                (getPuntosBuenos() + getPontosMalos()) )     +   "%");
-
+                    PROMEDIO.setText((getPuntosBuenos() + getPontosMalos()) + "");
                     int index = 0;
                     listMedia = new ArrayList<>();
                     listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
@@ -143,8 +137,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
                     incorrectos(getPontosMalos() + 1);
                     INCORRECTOS.setText(getPontosMalos() + "");
-                    // PROMEDIO.setText(  (getPuntosBuenos() /                (getPuntosBuenos() + getPontosMalos()))     +   "%");
-                }
+                    PROMEDIO.setText((getPuntosBuenos() + getPontosMalos()) + "");                }
                 break;
             case R.id.botonre:
 
@@ -152,7 +145,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     correctos(getPuntosBuenos() + 1);
                     CORRECTOS.setText(getPuntosBuenos() + "");
-                    //PROMEDIO.setText(  (getPontosMalos() /                (getPuntosBuenos() + getPontosMalos()))     +   "%");
+                    PROMEDIO.setText((getPuntosBuenos() + getPontosMalos()) + "");
 
                     int index = 0;
                     listMedia = new ArrayList<>();
@@ -172,8 +165,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
                     incorrectos(getPontosMalos() + 1);
                     INCORRECTOS.setText(getPontosMalos() + "");
-                    //PROMEDIO.setText(  (getPuntosBuenos() /                (getPuntosBuenos() + getPontosMalos()))     +   "%");
-                }
+                    PROMEDIO.setText((getPuntosBuenos() + getPontosMalos()) + "");                }
                 break;
             case R.id.botonmi:
 
@@ -181,8 +173,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     correctos(getPuntosBuenos() + 1);
                     CORRECTOS.setText(getPuntosBuenos() + "");
-                    //PROMEDIO.setText(  (getPuntosBuenos() /                (getPuntosBuenos() + getPontosMalos()))     +   "%");
-
+                    PROMEDIO.setText((getPuntosBuenos() + getPontosMalos()) + "");
                     int index = 0;
                     listMedia = new ArrayList<>();
                     listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
@@ -200,8 +191,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
                     incorrectos(getPontosMalos() + 1);
                     INCORRECTOS.setText(getPontosMalos() + "");
-                    //PROMEDIO.setText(  (getPuntosBuenos() /                (getPuntosBuenos() + getPontosMalos()))     +   "%");
-                }
+                    PROMEDIO.setText((getPuntosBuenos() + getPontosMalos()) + "");                }
                 break;
             case R.id.botonfa:
 
@@ -209,8 +199,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     correctos(getPuntosBuenos() + 1);
                     CORRECTOS.setText(getPuntosBuenos() + "");
-                    //PROMEDIO.setText(  (getPuntosBuenos() /                (getPuntosBuenos() + getPontosMalos()))     +   "%");
-
+                    PROMEDIO.setText((getPuntosBuenos() + getPontosMalos()) + "");
                     int index = 0;
                     listMedia = new ArrayList<>();
                     listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
@@ -228,8 +217,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
                     incorrectos(getPontosMalos() + 1);
                     INCORRECTOS.setText(getPontosMalos() + "");
-                    //PROMEDIO.setText(  (getPuntosBuenos() /                (getPuntosBuenos() + getPontosMalos()))     +   "%");
-                }
+                    PROMEDIO.setText((getPuntosBuenos() + getPontosMalos()) + "");                }
                 break;
             case R.id.botonsol:
 
@@ -237,8 +225,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     correctos(getPuntosBuenos() + 1);
                     CORRECTOS.setText(getPuntosBuenos() + "");
-                    //PROMEDIO.setText(  (getPuntosBuenos() /                (getPuntosBuenos() + getPontosMalos()))     +   "%");
-
+                    PROMEDIO.setText((getPuntosBuenos() + getPontosMalos()) + "");
                     int index = 0;
                     listMedia = new ArrayList<>();
                     listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
@@ -255,8 +242,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                     Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
                     incorrectos(getPontosMalos() + 1);
                     INCORRECTOS.setText(getPontosMalos() + "");
-                    //PROMEDIO.setText(  (getPuntosBuenos() /                (getPuntosBuenos() + getPontosMalos()))     +   "%");
-                }
+                    PROMEDIO.setText((getPuntosBuenos() + getPontosMalos()) + "");                }
                 break;
             case R.id.botonla:
 
@@ -264,8 +250,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     correctos(getPuntosBuenos() + 1);
                     CORRECTOS.setText(getPuntosBuenos() + "");
-                    //PROMEDIO.setText(  (getPuntosBuenos() /                (getPuntosBuenos() + getPontosMalos()))     +   "%");
-
+                    PROMEDIO.setText((getPuntosBuenos() + getPontosMalos()) + "");
                     int index = 0;
                     listMedia = new ArrayList<>();
                     listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
@@ -283,8 +268,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
                     incorrectos(getPontosMalos() + 1);
                     INCORRECTOS.setText(getPontosMalos() + "");
-                    //PROMEDIO.setText(  (getPuntosBuenos() /                (getPuntosBuenos() + getPontosMalos()))     +   "%");
-                }
+                    PROMEDIO.setText((getPuntosBuenos() + getPontosMalos()) + "");                }
                 break;
             case R.id.botonsi:
 
@@ -292,8 +276,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
                     Toast.makeText(this, "¡Correcto!", Toast.LENGTH_SHORT).show();
                     correctos(getPuntosBuenos() + 1);
                     CORRECTOS.setText(getPuntosBuenos() + "");
-                    //PROMEDIO.setText(  (getPuntosBuenos() /                (getPuntosBuenos() + getPontosMalos()))     +   "%");
-
+                    PROMEDIO.setText((getPuntosBuenos() + getPontosMalos()) + "");
                     int index = 0;
                     listMedia = new ArrayList<>();
                     listMedia.add(new NotasMusicais("DO", MediaPlayer.create(this, R.raw.do_60)));
@@ -311,7 +294,6 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
                     incorrectos(getPontosMalos() + 1);
                     INCORRECTOS.setText(getPontosMalos() + "");
-
 
                 }
                 break;
