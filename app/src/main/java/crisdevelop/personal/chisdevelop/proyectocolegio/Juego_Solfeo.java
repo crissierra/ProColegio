@@ -26,7 +26,7 @@ public class Juego_Solfeo extends AppCompatActivity  implements View.OnClickList
     private ImageView BIEN1, BIEN2, BIEN3, BIEN4, MAL1, MAL2, MAL3, MAL4;
     final int DEFAULT = 0;
 
-    static TextView INTER_NOTA1, INTER_NOTA2,INTER_NOTA3,INTER_NOTA4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -93,112 +93,70 @@ public void onClick(View v)
         //INSTANCIA DE BOTON VALIDAR
 
         VALIDAR=findViewById(R.id.validar);
-
-        /*VALIDAR=findViewById(R.id.validar);
-        VALIDAR.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-                {
-                    //ValidarNota();
-
-
-
-
-
-        }
-        });*/
-
-
-
-
-
-        }
+     }
 
 
     public void validar(View view)
     {
 
-      /*  BIEN1.setVisibility(View.INVISIBLE);
-        BIEN1.setVisibility(View.INVISIBLE);
-        BIEN1.setVisibility(View.INVISIBLE);
-        BIEN1.setVisibility(View.INVISIBLE);
-
-        BIEN1.setVisibility(View.INVISIBLE);
-        MAL2.setVisibility(View.INVISIBLE);
-        MAL3.setVisibility(View.INVISIBLE);
-        MAL4.setVisibility(View.INVISIBLE);*/
-
-
-
-
             final String note1 = NOTA1.getText().toString();
             if   ( note1.equals("mi") || note1.equals("MI") || note1.equals("Mi")  )
             {
-
-                /*Toast m = Toast.makeText(getApplicationContext(), "Correcta", Toast.LENGTH_SHORT);
-                m.show();*/
-                //   INTER_NOTA1.setText("5.000 und");
-
                 BIEN1.setVisibility(View.VISIBLE);
                 MAL1.setVisibility(View.INVISIBLE);
             }
-            else { /*Toast m = Toast.makeText(getApplicationContext(), "Incorrecta", Toast.LENGTH_SHORT);
-                m.show();*/
-
-                BIEN2.setVisibility(View.INVISIBLE);
-                MAL2.setVisibility(View.VISIBLE);
-            }
+            else {
+                    BIEN1.setVisibility(View.INVISIBLE);
+                    MAL1.setVisibility(View.VISIBLE);
+                 }
 
 
             final String note2 = NOTA2.getText().toString();
             if   ( note2.equals("la") || note2.equals("LA") || note2.equals("La")  )
             {
-               /* Toast m = Toast.makeText(getApplicationContext(), "Correcta", Toast.LENGTH_SHORT);
-                m.show();*/
-                //   INTER_NOTA1.setText("5.000 und");
-
                 BIEN2.setVisibility(View.VISIBLE);
                 MAL2.setVisibility(View.INVISIBLE);
             }
-            else {/* Toast m = Toast.makeText(getApplicationContext(), "Incorrecta", Toast.LENGTH_SHORT);
-                m.show();*/
-
-                BIEN2.setVisibility(View.INVISIBLE);
-                MAL2.setVisibility(View.VISIBLE);
-            }
+            else {
+                    BIEN2.setVisibility(View.INVISIBLE);
+                    MAL2.setVisibility(View.VISIBLE);
+                }
 
 
             final String note3 = NOTA3.getText().toString();
             if   ( note3.equals("re") || note3.equals("RE") || note3.equals("Re")  )
             {
-                /*Toast m = Toast.makeText(getApplicationContext(), "Correcta", Toast.LENGTH_SHORT);
-                m.show();*/
-                //   INTER_NOTA1.setText("5.000 und");
                 BIEN3.setVisibility(View.VISIBLE);
                 MAL3.setVisibility(View.INVISIBLE);
             }
-            else { /*Toast m = Toast.makeText(getApplicationContext(), "Incorrecta", Toast.LENGTH_SHORT);
-                m.show();*/
+            else {
                 BIEN3.setVisibility(View.INVISIBLE);
                 MAL3.setVisibility(View.VISIBLE);
-            }
-
+                 }
 
             final String note4 = NOTA4.getText().toString();
             if   ( note4.equals("fa") || note4.equals("FA") || note4.equals("Fa")  )
             {
-                /*Toast m = Toast.makeText(getApplicationContext(), "Correcta", Toast.LENGTH_SHORT);
-                m.show();*/
-                //   INTER_NOTA1.setText("5.000 und");
                 BIEN4.setVisibility(View.VISIBLE);
                 MAL4.setVisibility(View.INVISIBLE);
             }
-            else { /*Toast m = Toast.makeText(getApplicationContext(), "Incorrecta", Toast.LENGTH_SHORT);
-                m.show();*/
-                BIEN4.setVisibility(View.INVISIBLE);
-                MAL4.setVisibility(View.VISIBLE);
-            }
+            else {
+                    BIEN4.setVisibility(View.INVISIBLE);
+                    MAL4.setVisibility(View.VISIBLE);
+                 }
+
+        if   ( note4.equals("fa") || note4.equals("FA") || note4.equals("Fa")  )
+        {
+            BIEN4.setVisibility(View.VISIBLE);
+            MAL4.setVisibility(View.INVISIBLE);
+        }
+        else {
+            BIEN4.setVisibility(View.INVISIBLE);
+            MAL4.setVisibility(View.VISIBLE);
+        }
+
+
+
 
     }
 

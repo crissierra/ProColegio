@@ -251,7 +251,7 @@ public class QuienQuiereSer extends AppCompatActivity {
                     ArrayList<String> opcionesa= new ArrayList<String>();
                     opcionesa.add("4 lineas y 5 espacios ");
                     opcionesa.add("5 líneas y 5 espacios ");
-                    opcionesa.add("5 líneas y 4 espacion ");
+                    opcionesa.add("5 líneas y 4 espacios ");
                     opcionesa.add("Ninguna de las anteriores ");
                     String preguntaa="Cuántas líneas y espacios tiene el pentagrama?";
                     cambiar_radioGroup(opciones.getId(),pregunta.getId(),opcionesa,preguntaa);
