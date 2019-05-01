@@ -43,7 +43,7 @@ public class Integrantes extends AppCompatActivity {
                                     {
 
                                         // TODO Auto-generated method stub
-                                        Intent in=new Intent(Intent.ACTION_VIEW, Uri.parse("https://firebasestorage.googleapis.com/v0/b/hemody-dfdc4.appspot.com/o/Hoja1.pdf?alt=media&token=7b6f65c2-89ec-4d29-adea-3810e211471d"));
+                                        Intent in=new Intent(Intent.ACTION_VIEW, Uri.parse("https://funnymusicforkids.wixsite.com/official"));
                                         startActivity(in);
 
                                     }

@@ -96,7 +96,9 @@
         <activity
             android:name=".TapTempo"
             android:configChanges="orientation|screenSize|keyboardHidden"
-            android:label="@string/tapTempo" />
+            android:label="@string/tapTempo"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity
             android:name=".EntrenamientoTest"
             android:screenOrientation="portrait"

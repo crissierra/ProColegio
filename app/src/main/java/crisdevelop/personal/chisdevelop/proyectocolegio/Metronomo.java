@@ -151,7 +151,7 @@ public class Metronomo extends Base implements MetronomeListener
     private void setupNoteFiguresList()
     {
         noteFiguresList=(Spinner)findViewById(R.id.noteFiguresList);
-        String[] figureNames=new String[] {"Semicorchea", "Colchea", "División", "División"};
+        String[] figureNames=new String[] {"Partición 1", "Partición 2", "Partición 3", "Partición 4"};
         ArrayAdapter<String> adapter=new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, figureNames);
         noteFiguresList.setAdapter(adapter);
         noteFiguresList.setSelection(2);
