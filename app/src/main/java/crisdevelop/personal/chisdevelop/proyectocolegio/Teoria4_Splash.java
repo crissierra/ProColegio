@@ -76,7 +76,7 @@ public class Teoria4_Splash extends AppCompatActivity
                     }
                     // estoy trabajando aqui para parar el contador
                 }).start();
-// COGIDO EXCLUSIVO PARA EL PROGRESS BAR
+                // COGIDO EXCLUSIVO PARA EL PROGRESS BAR
 
 
 

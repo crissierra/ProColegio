@@ -132,8 +132,8 @@
      </string>
 
     <string name="gramatica14">
-           "Metronomo:\n"
-       "Es una herramienta   de gran importancia ya que el    nos ayudara a marcar el pulso de manera auditiva a un tiempo deseado por nosotros mismos."
+           "Metrónomo:\n"
+       "Es una herramienta de gran importancia ya que él nos ayudará a marcar el pulso de manera auditiva a un tiempo deseado por nosotros mismos."
     </string>
 
 
@@ -149,7 +149,7 @@
 
 
     <string name="gramatica17">
-       " La pareja de corcheas puedes identificarlas con una palabra bisílaba, es decir, aquella que tiene dos silaba.\n\n"
+       " La pareja de corcheas puedes identificarlas con una palabra bisílaba, es decir, aquella que tiene dos sílabas.\n\n"
        "Ejemplo: ca-sa, ga-to, me-sa, ri-ma.\n"
 
     </string>
@@ -169,8 +169,7 @@
     <string name="gramatica25">
 
        "¿Qué son los ejercicios de dirección?\n\n"
-       "Los ejercicios de dirección son movimientos o figuras hechas por nosotros mismos, con las manos.\n"
-       "Realizaremos el movimiento con el brazo, y el pulso lo marcarás con el chasquido que producirá\n"
+       "Los ejercicios de dirección son movimientos o figuras hechas por nosotros mismos, con las manos. Realizaremos el movimiento con el brazo, y el pulso lo marcarás con el chasquido que producirá"
        "tus dedos, donde nos ayudará a marcar rítmicamente a la hora de leer un compás.\n\n"
         "¡Vamos a conocerlos!\n\n"
     </string>
@@ -180,8 +179,7 @@
       " Ejercicio de dirección de 2/4\n\n"
 
        "Este ejercicio de dirección dura 2 tiempos y lo realizaremos así:\n"
-       "Movemos nuestro brazo cada pulso durara solo 1 tiempo, marcaremos los 2 tiempos con el sonido del chasquido\n"
-       "que producirá los dedos de nuestra mano derecha y con ayuda de nuestro metrónomo, cada flechita del ejercicio te ayudara\n"
+       "Movemos nuestro brazo cada pulso durara solo 1 tiempo, marcaremos los 2 tiempos con el sonido del chasquido que producirá los dedos de nuestra mano derecha y con ayuda de nuestro metrónomo, cada flechita del ejercicio te ayudará "
        "a separar cada uno de estos tiempos. Pero, ¿cómo lo realizamos?\n\n"
         "¡Vamos a ver! Da click en el siguiente enlace de Youtube.\n"
 
@@ -192,8 +190,7 @@
          "•	Primer movimiento: Hacia abajo.\n"
          "•	Segundo movimiento: Hacia tu derecha y horizontal.\n"
          "•	Tercer movimiento: Diagonal hacia arriba completando el movimiento.\n"
-         "Cada movimiento durara 1 tiempo, así que marcaremos 3 tiempos con ayuda del sonido del chasquido de "
-         "nuestros dedos y NUESTRO METRÓNOMO, cada flechita separará cada uno de estos tiempos.\n\n"
+         "Cada movimiento durara 1 tiempo, así que marcaremos 3 tiempos con ayuda del sonido del chasquido de nuestros dedos y NUESTRO METRÓNOMO, cada flechita separará cada uno de estos tiempos.\n\n"
          "¡Vamos a ver! Da click en el siguiente enlace de Youtube.\n"
 
     </string>
@@ -205,8 +202,8 @@
          "1er movimiento: Hacia abajo de manera VERTICAL.\n"
          "2do movimiento: Hacia tu izquierda subiendo diagonalmente.\n"
          "3er movimiento: Hacia tu derecha de manera HORIZONTAL.\n"
-         "4to movimiento: Hacia arriba de manera diagonal conectando con el primero. Cada pulso marcara 1 tiempo, entonces vamos a marcar 4 tiempos con ayuda del chasquido "
-         "de nuestros dedos y NUESTRO METRÓNOMO ,cada flechita nos ayudará a separar los tiempos.\n"
+         "4to movimiento: Hacia arriba de manera diagonal conectando con el primero. Cada pulso marcara 1 tiempo, entonces vamos a marcar 4 tiempos con ayuda del chasquido de nuestros dedos y NUESTRO METRÓNOMO ,cada flechita nos ayudará a separar los tiempos.\n"
+
          "Da click en el siguiente enlace de Youtube\n"
     </string>
 
@@ -262,7 +259,7 @@
 
     <string name="gramatica42">
          "Pentagrama:\n\n"
-    "Es el conjunto de 5 líneas que forman 4 espacios para que puedas escribir los signos musicales en él."
+    "Es el conjunto de 5 líneas que forman 4 espacios para que puedas escribir los signos musicales en él.\n"
     "Líneas adicionales:\n\n"
     "Son pequeñas líneas que sirven para que puedas ubicar los signos musicales que queden fuera del pentagrama."
     </string>
@@ -296,14 +293,9 @@
     </string>
 
     <string name="gramatica50">
-       "La música es el arte más direct, entra por el oído y va a l corazón\n\n"
+       "La música es el arte más directo, entra por el oído y va al corazón\n\n"
 
     </string>
-
-
-    LA MUSICA ES EL ARTE MAS DIRECTO,
-    ENTRA POR EL ODIO Y VA AL CORAZON.
-    MAGDALENA MARTINEZ
 
 
     <string name="q1_aString">Es un framework</string>
@@ -321,6 +313,5 @@
 
     <string name="pref_pass_taptempo_bpm_to_mainscreen_title">Pass BPM detected by TapTempo to main screen</string>
     <string name="pref_stop_for_other_apps_title">Parar el metrónomo cuando otra APP ejecute audio</string>
-
 
 </resources>
