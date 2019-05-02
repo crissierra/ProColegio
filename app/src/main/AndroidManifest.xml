@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/logofun"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ResultadoEntrenamientoTest"></activity>
+
+        <activity android:name=".ResultadoEntrenamientoTest" />
         <activity
             android:name=".SplashScreenPrincipal"
             android:theme="@style/AppTheme.NoActionBar">
@@ -98,7 +99,7 @@
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="@string/tapTempo"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".EntrenamientoTest"
             android:screenOrientation="portrait"
@@ -117,6 +118,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Desarrollador"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SplashScreen_Bienvenida"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity

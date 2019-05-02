@@ -14,11 +14,10 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import io.netopen.hotbitmapgg.library.view.RingProgressBar;
 
 
-public class Teoria12_Splash extends AppCompatActivity
+public class SplashScreen_Bienvenida extends AppCompatActivity
 {
+    MediaPlayer succes;
 
-   /* MediaPlayer voz4;*/
-   MediaPlayer misonido;
 
     //  CODIGO PARA EL PROGRESS BAR
     static RingProgressBar ringProgressBar1;
@@ -38,16 +37,21 @@ public class Teoria12_Splash extends AppCompatActivity
     };
     //  ACABA CODIGO PARA EL PROGRESS BAR
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics());
-        setContentView(R.layout.teoria12__splash);
+        setContentView(R.layout.splash_screen__bienvenida);
 
         //CODIGO PARA ESCONDER EL STATUS BAR
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //CODIGO PARA ESCONDER EL STATUS BAR
+
+        this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
+        succes = MediaPlayer.create(this,R.raw.success);
+        succes.start();
 
 
         // COGIDO EXCLUSIVO PARA EL PROGRESS BAR
@@ -56,9 +60,9 @@ public class Teoria12_Splash extends AppCompatActivity
         {
             @Override
             public void run () {
-                for (int i = 0; i < 110; i++)
+                for (int i = 0; i < 100; i++)
                 {
-                    try {  Thread.sleep(100);
+                    try {  Thread.sleep(40);
                         myHandler.sendEmptyMessage(0);
                     }
                     catch (InterruptedException e)
@@ -80,14 +84,6 @@ public class Teoria12_Splash extends AppCompatActivity
 
 
 
-        this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        misonido = MediaPlayer.create(this,R.raw.victoria);
-        misonido.start();
-
-        /*this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
-        voz4 = MediaPlayer.create(this,R.raw.toma_16_1);
-        voz4.start();*/
-
         new Handler().postDelayed(new Runnable()
         {
 
@@ -96,17 +92,14 @@ public class Teoria12_Splash extends AppCompatActivity
             public void run()
             {
 
-                Intent intent=new Intent (getApplicationContext(), Teoria13_PreMetronomo.class);
+                Intent intent=new Intent (getApplicationContext(), menu_principal.class);
                 startActivity(intent);
 
             }
 
-        },10000);
+        },4000);
     }
-
 }
-
-
 
 
 

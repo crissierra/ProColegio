@@ -68,7 +68,7 @@ public class contrasena extends AppCompatActivity
                                   editor.apply();
                                   //  E D I T A R   S H A R E D   P R E F E R E N C E S
 
-                                  Intent i=new  Intent(getApplicationContext(), SplashBienvenidaOpcional.class);
+                                  Intent i=new  Intent(getApplicationContext(), SplashScreen_Bienvenida.class);
                                   startActivity(i);
                                }
 
