@@ -17,6 +17,8 @@ public class Teoria6_Splash extends AppCompatActivity
 
    /* MediaPlayer voz4;*/
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {

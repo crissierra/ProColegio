@@ -9,6 +9,7 @@ package crisdevelop.personal.chisdevelop.proyectocolegio;
         import android.widget.Button;
         import android.widget.CheckBox;
         import android.widget.EditText;
+        import android.widget.ImageButton;
         import android.widget.ImageView;
         import android.widget.TextView;
         import android.widget.Toast;
@@ -29,6 +30,7 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
 
     static TextView CORRECTOS, INCORRECTOS, PROMEDIO;
     private ImageView BIEN, MAL;
+    ImageButton HOME;
 
     static Button BOTONDO,BOTONRE,BOTONMI,BOTONFA, BOTONSOL, BOTONLA, BOTONSI;
 
@@ -40,6 +42,17 @@ public class EntrenamientoTest extends AppCompatActivity  implements View.OnClic
         //CODIGO PARA ESCONDER EL STATUS BAR
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //CODIGO PARA ESCONDER EL STATUS BAR
+
+        HOME = (ImageButton) findViewById(R.id.home);
+        HOME.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent=new Intent (getApplicationContext(), menu_principal.class);
+                startActivity(intent);
+            }
+        });
 
         BIEN=findViewById(R.id.bien);
         MAL=findViewById(R.id.mal);

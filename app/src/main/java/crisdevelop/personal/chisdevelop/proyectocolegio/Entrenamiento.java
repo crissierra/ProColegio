@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Switch;
 import android.widget.TextView;
@@ -24,6 +25,7 @@ public class Entrenamiento extends AppCompatActivity {
     private Switch btnRepetir;
     ArrayAdapter adapter;
     ArrayList<String> rankingList;
+    ImageButton HOME;
 
     static TextView RTA_PRIMERAVEZ;
     final int DEFAULT = 0;
@@ -37,6 +39,17 @@ public class Entrenamiento extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //CODIGO PARA ESCONDER EL STATUS BAR
 
+
+        HOME = (ImageButton) findViewById(R.id.home);
+        HOME.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent=new Intent (getApplicationContext(), menu_principal.class);
+                startActivity(intent);
+            }
+        });
 
 
       /*  rankingList = new ArrayList<>();

@@ -462,7 +462,6 @@ public class QuienQuiereSer extends AppCompatActivity {
                         }
                     }
                 }
-
         // COGIDO EXCLUSIVO PARA EL PROGRESS BAR
 
 // estoy trabajando aqui para parar el contador
@@ -471,12 +470,7 @@ public class QuienQuiereSer extends AppCompatActivity {
                     terminarJuego();
                 }
                 // estoy trabajando aqui para parar el contador
-
-
-
-
             }).start();
-        // ACABA COGIDO EXCLUSIVO PARA EL PROGRESS BAR
 
 
 

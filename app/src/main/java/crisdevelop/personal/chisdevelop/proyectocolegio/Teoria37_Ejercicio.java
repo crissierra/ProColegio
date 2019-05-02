@@ -44,7 +44,7 @@ public class Teoria37_Ejercicio extends AppCompatActivity  implements View.OnCli
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria33_Ejercicio.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria36_Ejercicio.class);
                 startActivity(intent);
             }
         });
