@@ -40,9 +40,18 @@ public class SplashScreenPrincipal extends AppCompatActivity
                     int primeravez = inicio.getInt("primeravez",0);
                     // RECORDAR QUE SPREF INICIA EN 0 PORQUE SE LE DA LA GANA... ASÍ LO AJUSTE EN OTRO NUMERO
 
+
+                    // CREACION DE NUEVA VARIABLE PARA RECUPERAR LA APP (SOLICITADO POR EL USUARIO)
+
+                    SharedPreferences recuperacion =  getSharedPreferences("recuperacionkey", Context.MODE_PRIVATE);
+                    int recuperacionkey = recuperacion.getInt("recuperacionkey",0);
+                    // RECORDAR QUE SPREF INICIA EN 0 PORQUE SE LE DA LA GANA... ASÍ LO AJUSTE EN OTRO NUMERO
+
+
+
                     //AQUI PONER LOS CONDICIONALES PARA CONTRASEÑA O PARA ENTRAR DE UNA AL MAIN
 
-                            if (primeravez >= 50)
+                            if (recuperacionkey >= 50)
                             {
                                 startActivity(new Intent(SplashScreenPrincipal.this, menu_principal.class));
                                 finish();

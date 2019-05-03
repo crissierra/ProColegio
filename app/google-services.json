@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "404413630381",
+    "firebase_url": "https://proyectocolegio-40c9d.firebaseio.com",
+    "project_id": "proyectocolegio-40c9d",
+    "storage_bucket": "proyectocolegio-40c9d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404413630381:android:e9514d6862de8397",
+        "android_client_info": {
+          "package_name": "crisdevelop.personal.chisdevelop.proyectocolegio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404413630381-9jmgup0is8cjglp7ov6lcj1mgreqroiv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "crisdevelop.personal.chisdevelop.proyectocolegio",
+            "certificate_hash": "b365707cae090a7ffb72bff49b07145859b0fd98"
+          }
+        },
+        {
+          "client_id": "404413630381-16abcoj2podfpjs6hhnbpr33qokddre2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAe-KbdYbzPUIrLDEptK9qxVQg6DCoMgs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404413630381-16abcoj2podfpjs6hhnbpr33qokddre2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

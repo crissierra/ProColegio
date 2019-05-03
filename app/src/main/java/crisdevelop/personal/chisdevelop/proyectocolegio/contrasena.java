@@ -59,12 +59,12 @@ public class contrasena extends AppCompatActivity
             final String password = CLAVE.getText().toString();
 
 
-                if   ( password.equals("funnymusic") )
+                if   ( password.equals("funny2019") )
                                {
                                   //  E D I T A R   S H A R E D   P R E F E R E N C E S
-                                  SharedPreferences primeravez = getSharedPreferences("primeravez",MODE_PRIVATE);
-                                  SharedPreferences.Editor editor = primeravez.edit();
-                                  editor.putInt("primeravez", 100);
+                                  SharedPreferences recuperacionkey = getSharedPreferences("recuperacionkey",MODE_PRIVATE);
+                                  SharedPreferences.Editor editor = recuperacionkey.edit();
+                                  editor.putInt("recuperacionkey", 100);
                                   editor.apply();
                                   //  E D I T A R   S H A R E D   P R E F E R E N C E S
 
@@ -74,7 +74,7 @@ public class contrasena extends AppCompatActivity
 
                  else {
 
-                          Toast m = Toast.makeText(getApplicationContext(), "   Contraseña incorrecta.\n Comunícate con los encargados del Proyecto.", Toast.LENGTH_SHORT);
+                          Toast m = Toast.makeText(getApplicationContext(), "                     Contraseña incorrecta.\n Comunícate con los encargados del Proyecto.", Toast.LENGTH_LONG);
                           m.show();
                       }
 
