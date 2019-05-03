@@ -54,8 +54,7 @@
 
     <string name="gramatica2">
         "Notas musicales:\n\n"
-       " Las notas musicales representan los sonidos en la música, las cuales pueden ser escuchadas en cualquier instrumento musical, incluyendo la voz,"
-       " a través del canto.\n"
+       "Las notas musicales representan los sonidos en la música, las cuales pueden ser escuchadas en cualquier instrumento musical, incluyendo la voz, a través del canto.\n"
         "¿Recuerdas las notas musicales?\n\n"
         "Da click en las siguientes teclas para escucharlas\n"
     </string>
@@ -63,14 +62,14 @@
 
     <string name="gramatica2_2">
         "Silencios Musicales:\n\n"
-       "Son signos que representan la duración sin la ejecución de un sonido, nos permite el descanso y la separación de diferentes frases musicales."
+       "Son signos que representan duración sin la ejecución de un sonido, ellos nos permiten la separación de diferentes frases musicales."
 
     </string>
 
 
     <string name="gramatica3">
         "Figuras de duración:\n\n"
-       "Son signos que podemos identificar de distinta forma, con ayuda de  ellas podremos determinar su duración.\n"
+       "Son signos que podemos identificar de distinta forma, con ayuda de ellas podremos determinar su duración.\n"
     </string>
 
 
@@ -125,8 +124,7 @@
 
     <string name="gramatica13">
        "¿Quieres saber un truco super importante para los silencios?\n"
-       "El silencio como sabemos es un signo que representa la duración, pero no el sonido.\n"
-       "Ahora, ¿cómo sabemos en qué momento representará esa duración?\n"
+       "El silencio como sabemos es un signo que representa la duración, pero no el sonido. Ahora, ¿cómo sabemos en qué momento representará esa duración?\n\n"
        "Esa duración la escucharemos con ayuda de un amiguito que será nuestro metrónomo, pero...\n\n"
        "¿Qué es un metrónomo?\n"
      </string>
@@ -147,11 +145,9 @@
        "seguirá el tiempo indicado, pero sin la ejecución de un sonido.\n"
     </string>
 
-
     <string name="gramatica17">
        " La pareja de corcheas puedes identificarlas con una palabra bisílaba, es decir, aquella que tiene dos sílabas.\n\n"
        "Ejemplo: ca-sa, ga-to, me-sa, ri-ma.\n"
-
     </string>
 
     <string name="gramatica22">
@@ -188,8 +184,8 @@
          "Dura 3 tiempos y lo realizaremos así:\n\n"
          "•	Primer movimiento: Hacia abajo.\n"
          "•	Segundo movimiento: Hacia tu derecha y horizontal.\n"
-         "•	Tercer movimiento: Diagonal hacia arriba completando el movimiento.\n"
-         "Cada movimiento durara 1 tiempo, así que marcaremos 3 tiempos con ayuda del sonido del chasquido de nuestros dedos y NUESTRO METRÓNOMO, cada flechita separará cada uno de estos tiempos.\n\n"
+         "•	Tercer movimiento: Diagonal hacia arriba.\n"
+         "Cada movimiento durara 1 tiempo, así que, marcaremos 3 tiempos con ayuda del sonido del chasquido de nuestros dedos y NUESTRO METRÓNOMO, cada flechita separará cada tiempo.\n\n"
          "¡Vamos a ver! Da click en el siguiente enlace de Youtube.\n"
 
     </string>

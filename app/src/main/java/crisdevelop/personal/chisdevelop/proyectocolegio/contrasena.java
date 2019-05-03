@@ -74,7 +74,7 @@ public class contrasena extends AppCompatActivity
 
                  else {
 
-                          Toast m = Toast.makeText(getApplicationContext(), "Contraseña incorrecta", Toast.LENGTH_SHORT);
+                          Toast m = Toast.makeText(getApplicationContext(), "   Contraseña incorrecta.\n Comunícate con los encargados del Proyecto.", Toast.LENGTH_SHORT);
                           m.show();
                       }
 

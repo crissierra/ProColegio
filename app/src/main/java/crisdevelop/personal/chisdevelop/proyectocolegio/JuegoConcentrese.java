@@ -271,7 +271,7 @@ public class JuegoConcentrese extends AppCompatActivity {
 
 
 
-                    Toast.makeText(getApplicationContext(), "¡correcto!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "¡Correcto!", Toast.LENGTH_SHORT).show();
 
                 } else {
 
