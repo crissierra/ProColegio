@@ -26,6 +26,7 @@ public class Teoria9_Ejercicio extends AppCompatActivity  implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teoria9_ejercicio);
 
+        mediaPlayer=new MediaPlayer();
 
         HOME = (ImageButton) findViewById(R.id.home);
         HOME.setOnClickListener(new View.OnClickListener()
@@ -55,6 +56,7 @@ public class Teoria9_Ejercicio extends AppCompatActivity  implements View.OnClic
             @Override
             public void onClick(View v)
             {
+                mediaPlayer.release();
                 Intent intent=new Intent (getApplicationContext(), Teoria10_Ejercicio.class);
                 startActivity(intent);
             }
@@ -68,6 +70,7 @@ public class Teoria9_Ejercicio extends AppCompatActivity  implements View.OnClic
         switch (view.getId())
         {
             case R.id.notavoz1 :
+                mediaPlayer.release();
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_9_1);
                 break;
         }

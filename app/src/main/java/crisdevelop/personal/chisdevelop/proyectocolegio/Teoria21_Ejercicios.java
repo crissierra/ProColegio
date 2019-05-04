@@ -26,6 +26,7 @@ public class Teoria21_Ejercicios extends AppCompatActivity  implements View.OnCl
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teoria21_ejercicios);
 
+        mediaPlayer=new MediaPlayer();
 
         HOME = (ImageButton) findViewById(R.id.home);
         HOME.setOnClickListener(new View.OnClickListener()
@@ -55,6 +56,7 @@ public class Teoria21_Ejercicios extends AppCompatActivity  implements View.OnCl
             @Override
             public void onClick(View v)
             {
+                mediaPlayer.release();
                 Intent intent=new Intent (getApplicationContext(), Teoria22_Splash.class);
                 startActivity(intent);
             }
@@ -67,12 +69,15 @@ public class Teoria21_Ejercicios extends AppCompatActivity  implements View.OnCl
         switch (view.getId())
         {
             case R.id.notavoz1 :
+                mediaPlayer.release();
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_21_1);
                 break;
             case R.id.notavoz2 :
+                mediaPlayer.release();
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_21_2);
                 break;
             case R.id.notavoz3 :
+                mediaPlayer.release();
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_21_3);
                 break;
         }

@@ -14,7 +14,7 @@ public class Teoria29_FraseMozart extends AppCompatActivity  implements View.OnC
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
-    private MediaPlayer mediaPlayer;
+
     MediaPlayer misonido;
 
 
@@ -28,9 +28,12 @@ public class Teoria29_FraseMozart extends AppCompatActivity  implements View.OnC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teoria29__frase_mozart);
 
+        misonido=new MediaPlayer();
+
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
         misonido = MediaPlayer.create(this,R.raw.vivaldi12);
         misonido.start();
+
 
 
         HOME = (ImageButton) findViewById(R.id.home);
@@ -61,6 +64,7 @@ public class Teoria29_FraseMozart extends AppCompatActivity  implements View.OnC
             @Override
             public void onClick(View v)
             {
+                misonido.release();
                 Intent intent=new Intent (getApplicationContext(), Teoria30_EjerciciosRitmicos.class);
                 startActivity(intent);
             }

@@ -26,6 +26,7 @@ public class Teoria45_SignosMusicales extends AppCompatActivity  implements View
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teoria45__signos_musicales);
 
+        mediaPlayer=new MediaPlayer();
 
         HOME = (ImageButton) findViewById(R.id.home);
         HOME.setOnClickListener(new View.OnClickListener()
@@ -55,6 +56,7 @@ public class Teoria45_SignosMusicales extends AppCompatActivity  implements View
             @Override
             public void onClick(View v)
             {
+                mediaPlayer.release();
                 Intent intent=new Intent (getApplicationContext(), Teoria46_InfoSignosMusicales.class);
                 startActivity(intent);
             }
@@ -67,9 +69,11 @@ public class Teoria45_SignosMusicales extends AppCompatActivity  implements View
         switch (view.getId())
         {
             case R.id.notavoz1 :
+                mediaPlayer.release();
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_361_1);
                 break;
             case R.id.notavoz2 :
+                mediaPlayer.release();
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_361_2);
                 break;
         }

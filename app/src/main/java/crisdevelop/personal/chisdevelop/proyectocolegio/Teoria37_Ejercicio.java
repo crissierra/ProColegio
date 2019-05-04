@@ -26,6 +26,7 @@ public class Teoria37_Ejercicio extends AppCompatActivity  implements View.OnCli
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teoria37__ejercicio);
 
+        mediaPlayer=new MediaPlayer();
 
         HOME = (ImageButton) findViewById(R.id.home);
         HOME.setOnClickListener(new View.OnClickListener()
@@ -55,6 +56,7 @@ public class Teoria37_Ejercicio extends AppCompatActivity  implements View.OnCli
             @Override
             public void onClick(View v)
             {
+                mediaPlayer.release();
                 Intent intent=new Intent (getApplicationContext(), Teoria38_Felicitaciones.class);
                 startActivity(intent);
             }
@@ -67,9 +69,11 @@ public class Teoria37_Ejercicio extends AppCompatActivity  implements View.OnCli
         switch (view.getId())
         {
             case R.id.notavoz1 :
+                mediaPlayer.release();
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_37_1);
                 break;
             case R.id.notavoz2 :
+                mediaPlayer.release();
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_37_2);
                 break;
         }

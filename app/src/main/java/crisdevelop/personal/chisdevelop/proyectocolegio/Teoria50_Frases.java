@@ -28,6 +28,8 @@ public class Teoria50_Frases extends AppCompatActivity  implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teoria50__frases);
 
+        misonido=new MediaPlayer();
+
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
         misonido = MediaPlayer.create(this,R.raw.vivaldi12);
         misonido.start();
@@ -61,6 +63,7 @@ public class Teoria50_Frases extends AppCompatActivity  implements View.OnClickL
             @Override
             public void onClick(View v)
             {
+                misonido.release();
                 Intent intent=new Intent (getApplicationContext(), GraciasFinalTeoria.class);
                 startActivity(intent);
             }

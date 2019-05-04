@@ -14,7 +14,7 @@ public class Teoria39_FraseBeethoven extends AppCompatActivity  implements View.
 
 {
     ImageButton HOME,ANTERIOR, CONTINUAR;
-    private MediaPlayer mediaPlayer;
+
     MediaPlayer misonido;
 
 
@@ -27,6 +27,8 @@ public class Teoria39_FraseBeethoven extends AppCompatActivity  implements View.
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teoria39__frase_beethoven);
+
+        misonido=new MediaPlayer();
 
         this.setVolumeControlStream(AudioManager.STREAM_MUSIC);
         misonido = MediaPlayer.create(this,R.raw.vivaldi12);
@@ -61,6 +63,7 @@ public class Teoria39_FraseBeethoven extends AppCompatActivity  implements View.
             @Override
             public void onClick(View v)
             {
+                misonido.release();
                 Intent intent=new Intent (getApplicationContext(), Teoria40_EscaleraMusical.class);
                 startActivity(intent);
             }

@@ -26,6 +26,7 @@ public class Teoria18_EjercicioCorcheas extends AppCompatActivity  implements Vi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teoria18_ejercicio_corcheas);
 
+        mediaPlayer=new MediaPlayer();
 
         HOME = (ImageButton) findViewById(R.id.home);
         HOME.setOnClickListener(new View.OnClickListener()
@@ -55,6 +56,7 @@ public class Teoria18_EjercicioCorcheas extends AppCompatActivity  implements Vi
             @Override
             public void onClick(View v)
             {
+                mediaPlayer.release();
                 Intent intent=new Intent (getApplicationContext(), Teoria19_Ejercicios.class);
                 startActivity(intent);
             }
@@ -67,12 +69,15 @@ public class Teoria18_EjercicioCorcheas extends AppCompatActivity  implements Vi
         switch (view.getId())
         {
             case R.id.notavoz1 :
+                mediaPlayer.release();
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_18_1);
                 break;
             case R.id.notavoz2 :
+                mediaPlayer.release();
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_18_2);
                 break;
             case R.id.notavoz3 :
+                mediaPlayer.release();
                 mediaPlayer = MediaPlayer.create(this, R.raw.toma_18_3);
                 break;
         }

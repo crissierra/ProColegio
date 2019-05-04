@@ -51,7 +51,7 @@ public class menu_principal extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent (getApplicationContext(), Teoria1_QueEsMusica.class);
+                Intent intent=new Intent (getApplicationContext(), Teoria19_Ejercicios.class);
                 startActivity(intent);
             }
         });

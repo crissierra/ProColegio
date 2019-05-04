@@ -26,6 +26,7 @@ public class Teoria17_ParejaCorcheas extends AppCompatActivity  implements View.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.teoria17_pareja_corcheas);
 
+        mediaPlayer=new MediaPlayer();
 
         HOME = (ImageButton) findViewById(R.id.home);
         HOME.setOnClickListener(new View.OnClickListener()
@@ -55,6 +56,7 @@ public class Teoria17_ParejaCorcheas extends AppCompatActivity  implements View.
             @Override
             public void onClick(View v)
             {
+                mediaPlayer.release();
                 Intent intent=new Intent (getApplicationContext(), Teoria18_EjercicioCorcheas.class);
                 startActivity(intent);
             }
@@ -67,6 +69,7 @@ public class Teoria17_ParejaCorcheas extends AppCompatActivity  implements View.
         switch (view.getId())
         {
             case R.id.notavoz1 :
+                mediaPlayer.release();
                 mediaPlayer = MediaPlayer.create(this, R.raw.casa);
                 break;
 
